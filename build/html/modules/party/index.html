@@ -1,0 +1,1320 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Address &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Party" href="module.html" />
+    <link rel="next" title="Party - Siret" href="../party_siret/module.html" />
+    <link rel="prev" title="Party" href="module.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../party_siret/module.html" title="Party - Siret"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Party"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" accesskey="U">Party</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="address">
+<span id="party-address"></span><h1>Address<a class="headerlink" href="#address" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.address</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#party-module"><em>Party</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><em class="menuselection">Party ‣ Addresses</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Address</em>-model introduces the conception of ...</p>
+<div class="section" id="fields">
+<span id="party-address-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="party-party-address-active">
+<dt><em class="guilabel">Active</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">When not ticked the record is deactivated for future use. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Active</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-city">
+<dt><em class="guilabel">City</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">city</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>City</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-country">
+<dt><em class="guilabel">Country</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">country</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../country/index.html#country-country"><em>Country</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Country</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-delivery">
+<dt><em class="guilabel">Delivery</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">delivery</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../stock/module.html#stock-module"><em>Stock Management</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Delivery</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-google-maps-url">
+<dt><em class="guilabel">Google Maps</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">google_maps_url</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../google_maps/module.html#google-maps-module"><em>Google Maps</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Google Maps</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-invoice">
+<dt><em class="guilabel">Invoice</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account_invoice/module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoice</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-name">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Name</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-party">
+<dt><em class="guilabel">Party</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-party"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-siret">
+<dt><em class="guilabel">SIRET</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">siret</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../party_siret/module.html#party-siret-module"><em>Party - Siret</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>SIRET</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-siret-nic">
+<dt><em class="guilabel">SIRET NIC</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">siret_nic</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../party_siret/module.html#party-siret-module"><em>Party - Siret</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>SIRET NIC</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-street">
+<dt><em class="guilabel">Street</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">street</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Street</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-streetbis">
+<dt><em class="guilabel">Street (bis)</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">streetbis</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Street (bis)</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-subdivision">
+<dt><em class="guilabel">Subdivision</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">subdivision</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../country/index.html#country-subdivision"><em>Subdivision</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Subdivision</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-address-zip">
+<dt><em class="guilabel">Zip</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">zip</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Zip</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="category">
+<span id="party-category"></span><h1>Category<a class="headerlink" href="#category" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><p class="first"><tt class="docutils literal"><span class="pre">party.category</span></tt></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><p class="first"><a class="reference internal" href="module.html#party-module"><em>Party</em></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><p class="first"><em class="menuselection">Party ‣ Categories</em></p>
+<p class="last"><em class="menuselection">Party ‣ Categories ‣ Categories</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Category</em>-model introduces the conception of ...</p>
+<div class="section" id="party-category-fields">
+<span id="id1"></span><h2>Fields<a class="headerlink" href="#party-category-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="party-party-category-active">
+<dt><em class="guilabel">Active</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">When not ticked the record is deactivated for future use. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Active</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-category-childs">
+<dt><em class="guilabel">Children</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">childs</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-category"><em>Category</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The children records in a tree-structure. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-tree"><em>Tree</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-category-name">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Name</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-category-parent">
+<dt><em class="guilabel">Parent</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">parent</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-category"><em>Category</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The parent record in a tree-structure. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-tree"><em>Tree</em></a>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Party Administration&#8221;
+have the following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="check-vies-check">
+<span id="party-check-vies-check"></span><h1>Check VIES - Check<a class="headerlink" href="#check-vies-check" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.check_vies.check</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#party-module"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Check VIES - Check</em>-model introduces the conception of ...</p>
+<div class="section" id="party-check-vies-check-fields">
+<span id="id2"></span><h2>Fields<a class="headerlink" href="#party-check-vies-check-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="party-party-check-vies-check-parties-failed">
+<dt><em class="guilabel">Parties Failed</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">parties_failed</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-check-vies-check"><em>Check VIES - Check</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Parties Failed</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-check-vies-check-parties-succeed">
+<dt><em class="guilabel">Parties Succeed</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">parties_succeed</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-check-vies-check"><em>Check VIES - Check</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Parties Succeed</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="check-vies-no-check">
+<span id="party-check-vies-no-check"></span><h1>Check VIES - No Check<a class="headerlink" href="#check-vies-no-check" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.check_vies.no_check</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#party-module"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Check VIES - No Check</em>-model introduces the conception of ...</p>
+</div>
+<div class="section" id="contact-mechanism">
+<span id="party-contact-mechanism"></span><h1>Contact Mechanism<a class="headerlink" href="#contact-mechanism" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.contact_mechanism</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#party-module"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Contact Mechanism</em>-model introduces the conception of ...</p>
+<div class="section" id="party-contact-mechanism-fields">
+<span id="id3"></span><h2>Fields<a class="headerlink" href="#party-contact-mechanism-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="party-party-contact-mechanism-active">
+<dt><em class="guilabel">Active</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">When not ticked the record is deactivated for future use. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Active</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-comment">
+<dt><em class="guilabel">Comment</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">comment</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Comment</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-email">
+<dt><em class="guilabel">E-Mail</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">email</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>E-Mail</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-party">
+<dt><em class="guilabel">Party</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-party"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-sip">
+<dt><em class="guilabel">SIP</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sip</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>SIP</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-skype">
+<dt><em class="guilabel">Skype</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">skype</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Skype</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-type">
+<dt><em class="guilabel">Type</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Phone</em></li>
+<li><em class="guilabel">Mobile</em></li>
+<li><em class="guilabel">Fax</em></li>
+<li><em class="guilabel">E-Mail</em></li>
+<li><em class="guilabel">Website</em></li>
+<li><em class="guilabel">Skype</em></li>
+<li><em class="guilabel">SIP</em></li>
+<li><em class="guilabel">IRC</em></li>
+<li><em class="guilabel">Jabber</em></li>
+<li><em class="guilabel">Other</em></li>
+</ul>
+<p class="last">The <em>Type</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-other-value">
+<dt><em class="guilabel">Value</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">other_value</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Value</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-value">
+<dt><em class="guilabel">Value</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">value</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Value</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-contact-mechanism-website">
+<dt><em class="guilabel">Website</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">website</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Website</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="party">
+<span id="party-party"></span><h1>Party<a class="headerlink" href="#party" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.party</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#party-module"><em>Party</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><em class="menuselection">Party ‣ Parties</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Party</em>-model introduces the conception of ...</p>
+<div class="section" id="party-party-fields">
+<span id="id4"></span><h2>Fields<a class="headerlink" href="#party-party-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="party-party-party-account-payable">
+<dt><em class="guilabel">Account Payable</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_payable</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Account</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account/module.html#account-module"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Account Payable</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-account-receivable">
+<dt><em class="guilabel">Account Receivable</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_receivable</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Account</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account/module.html#account-module"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Account Receivable</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-active">
+<dt><em class="guilabel">Active</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">When not ticked the record is deactivated for future use. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Active</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-addresses">
+<dt><em class="guilabel">Addresses</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">addresses</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-address"><em>Address</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Addresses</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-categories">
+<dt><em class="guilabel">Categories</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">categories</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-category"><em>Category</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Categories</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-code">
+<dt><em class="guilabel">Code</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a>, <a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Code</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-contact-mechanisms">
+<dt><em class="guilabel">Contact Mechanisms</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">contact_mechanisms</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#party-contact-mechanism"><em>Contact Mechanism</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Contact Mechanisms</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-customer-location">
+<dt><em class="guilabel">Customer Location</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">customer_location</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-location"><em>Stock Location</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../stock/module.html#stock-module"><em>Stock Management</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The default destination location when sending products to the party.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-customer-tax-rule">
+<dt><em class="guilabel">Customer Tax Rule</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">customer_tax_rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax-rule"><em>Tax Rule</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account/module.html#account-module"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Apply this rule on taxes when party is customer.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-payment-term">
+<dt><em class="guilabel">Invoice Payment Term</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">payment_term</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account_invoice/index.html#account-invoice-payment-term"><em>Payment Term</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account_invoice/module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoice Payment Term</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-lang">
+<dt><em class="guilabel">Language</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">lang</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../ir/index.html#ir-lang"><em>Language</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Language</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-name">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Name</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-payable">
+<dt><em class="guilabel">Payable</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">payable</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account/module.html#account-module"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payable</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-payable-today">
+<dt><em class="guilabel">Payable Today</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">payable_today</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account/module.html#account-module"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payable Today</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-receivable">
+<dt><em class="guilabel">Receivable</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">receivable</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account/module.html#account-module"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Receivable</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-receivable-today">
+<dt><em class="guilabel">Receivable Today</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">receivable_today</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account/module.html#account-module"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Receivable Today</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-sale-price-list">
+<dt><em class="guilabel">Sale Price List</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale_price_list</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product_price_list/index.html#product-price-list"><em>Price List</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../sale_price_list/module.html#sale-price-list-module"><em>Sale Pricelist</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Sale Price List</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-siren">
+<dt><em class="guilabel">SIREN</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">siren</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../party_siret/module.html#party-siret-module"><em>Party - Siret</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>SIREN</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-supplier-location">
+<dt><em class="guilabel">Supplier Location</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">supplier_location</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-location"><em>Stock Location</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../stock/module.html#stock-module"><em>Stock Management</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The default source location when receiving products from the party.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-supplier-payment-term">
+<dt><em class="guilabel">Supplier Payment Term</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">supplier_payment_term</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account_invoice/index.html#account-invoice-payment-term"><em>Payment Term</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account_invoice/module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Supplier Payment Term</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-supplier-tax-rule">
+<dt><em class="guilabel">Supplier Tax Rule</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">supplier_tax_rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax-rule"><em>Tax Rule</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../account/module.html#account-module"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Apply this rule on taxes when party is supplier.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-vat-code">
+<dt><em class="guilabel">VAT Code</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">vat_code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>VAT Code</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-vat-country">
+<dt><em class="guilabel">VAT Country</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">vat_country</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">&lt;no selection&gt;</em></li>
+<li><em class="guilabel">AL</em></li>
+<li><em class="guilabel">AT</em></li>
+<li><em class="guilabel">BE</em></li>
+<li><em class="guilabel">BG</em></li>
+<li><em class="guilabel">CL</em></li>
+<li><em class="guilabel">CO</em></li>
+<li><em class="guilabel">CY</em></li>
+<li><em class="guilabel">CZ</em></li>
+<li><em class="guilabel">DE</em></li>
+<li><em class="guilabel">DK</em></li>
+<li><em class="guilabel">EE</em></li>
+<li><em class="guilabel">EL</em></li>
+<li><em class="guilabel">ES</em></li>
+<li><em class="guilabel">FI</em></li>
+<li><em class="guilabel">FR</em></li>
+<li><em class="guilabel">GB</em></li>
+<li><em class="guilabel">GR</em></li>
+<li><em class="guilabel">HR</em></li>
+<li><em class="guilabel">HU</em></li>
+<li><em class="guilabel">IE</em></li>
+<li><em class="guilabel">IT</em></li>
+<li><em class="guilabel">LT</em></li>
+<li><em class="guilabel">LU</em></li>
+<li><em class="guilabel">LV</em></li>
+<li><em class="guilabel">MT</em></li>
+<li><em class="guilabel">NL</em></li>
+<li><em class="guilabel">PL</em></li>
+<li><em class="guilabel">PT</em></li>
+<li><em class="guilabel">RO</em></li>
+<li><em class="guilabel">RU</em></li>
+<li><em class="guilabel">SE</em></li>
+<li><em class="guilabel">SI</em></li>
+<li><em class="guilabel">SK</em></li>
+<li><em class="guilabel">SM</em></li>
+<li><em class="guilabel">UA</em></li>
+<li><em class="guilabel">UK</em></li>
+</ul>
+<p class="last">Setting VAT country will enable validation of the VAT number.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-party-vat-number">
+<dt><em class="guilabel">VAT Number</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">vat_number</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Value Added Tax number</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="reports">
+<h2>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><em class="guilabel">Labels</em>:</dt>
+<dd>Labels</dd>
+<dt><em class="guilabel">Letter</em>:</dt>
+<dd>Letter
+The <em>Letter</em>-Report is based on style <tt class="docutils literal"><span class="pre">company/header_A4.odt</span></tt>.</dd>
+</dl>
+</div>
+<div class="section" id="wizards">
+<h2>Wizards<a class="headerlink" href="#wizards" title="Permalink to this headline">¶</a></h2>
+<p><em class="guilabel">Check VIES</em>:</p>
+</div>
+</div>
+<div class="section" id="party-configuration">
+<span id="id5"></span><h1>Party Configuration<a class="headerlink" href="#party-configuration" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.configuration</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#party-module"><em>Party</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><em class="menuselection">Party ‣ Configuration ‣ Party Configuration</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Party Configuration</em>-model introduces the conception of ...</p>
+<div class="section" id="party-configuration-fields">
+<span id="id6"></span><h2>Fields<a class="headerlink" href="#party-configuration-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="party-party-configuration-party-lang">
+<dt><em class="guilabel">Party Language</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party_lang</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../ir/index.html#ir-lang"><em>Language</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The value set on this field will preset the language on new parties</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-party-configuration-party-sequence">
+<dt><em class="guilabel">Party Sequence</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party_sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../ir/index.html#ir-sequence"><em>Sequence</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party Sequence</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Address</a></li>
+<li><a class="reference internal" href="#category">Category</a></li>
+<li><a class="reference internal" href="#check-vies-check">Check VIES - Check</a></li>
+<li><a class="reference internal" href="#check-vies-no-check">Check VIES - No Check</a></li>
+<li><a class="reference internal" href="#contact-mechanism">Contact Mechanism</a></li>
+<li><a class="reference internal" href="#party">Party</a></li>
+<li><a class="reference internal" href="#party-configuration">Party Configuration</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="module.html"
+                        title="previous chapter">Party</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../party_siret/module.html"
+                        title="next chapter">Party - Siret</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules/party/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../party_siret/module.html" title="Party - Siret"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Party"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" >Party</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

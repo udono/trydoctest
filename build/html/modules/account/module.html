@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Account &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="next" title="Account" href="index.html" />
+    <link rel="prev" title="General Conceptions" href="../../general_concepts.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Account"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../../general_concepts.html" title="General Conceptions"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="account">
+<span id="account-module"></span><h1>Account<a class="headerlink" href="#account" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Module Name:</th><td class="field-body"><p class="first">trytond_account</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Models:</th><td class="field-body"><div class="toctree-wrapper first last compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-deferral">Account Deferral</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-move">Account Move</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-move-line">Account Move Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-move-reconciliation-lines">Account Move Reconciliation Lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-tax">Account Tax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-tax-template">Account Tax Template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-template">Account Template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-type">Account Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#account-type-template">Account Type Template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#close-fiscal-year-init">Close Fiscal Year Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#create-chart-account-account">Create Chart Account Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#create-chart-account-init">Create Chart Account Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#create-chart-account-properties">Create Chart Account Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#fiscal-year">Fiscal Year</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#journal">Journal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#journal-period">Journal - Period</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#journal-type">Journal Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#journal-view">Journal View</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#journal-view-column">Journal View Column</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#open-aged-balance-init">Open Aged Balance Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#open-balance-sheet-init">Open Balance Sheet Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#open-chart-account-init">Open Chart Account Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#open-chart-code-init">Open Chart Code Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#open-income-statement-init">Open Income Statement Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#open-journal-ask">Open Journal Ask</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#open-reconcile-lines-init">Open Reconcile Lines Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#open-third-party-balance-init">Open Third Party Balance Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#period">Period</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#print-general-journal-init">Print General Journal Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#print-general-ledger">Print General Ledger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#print-trial-balance-init">Print Trial Balance Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#reconcile-lines-write-off">Reconcile Lines Write-Off</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tax-code">Tax Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tax-code-template">Tax Code Template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tax-group">Tax Group</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tax-line">Tax Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tax-rule">Tax Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tax-rule-line">Tax Rule Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tax-rule-line-template">Tax Rule Line Template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#tax-rule-template">Tax Rule Template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#unreconcile-lines-init">Unreconcile Lines Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#update-chart-account-from-template-init">Update Chart Account from Template Init</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#update-chart-account-from-template-start">Update Chart Account from Template Start</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../../general_concepts.html"
+                        title="previous chapter">General Conceptions</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="next chapter">Account</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules/account/module.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Account"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../../general_concepts.html" title="General Conceptions"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

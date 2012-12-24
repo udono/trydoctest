@@ -1,0 +1,6 @@
+.. _purchase_invoice_line_standalone_module:
+
+================================
+Purchase Invoice Line Standalone
+================================
+:Module Name: trytond_purchase_invoice_line_standalone

@@ -1,0 +1,401 @@
+:tocdepth: 1
+
+
+
+.. _project_work:
+
+Work Effort
+===========
+:Model Name: ``project.work``
+:Inherits from: :ref:`timesheet_work`
+:Base Module: :ref:`project_module`
+
+:Menu:
+    :menuselection:`Project --> Configuration --> Works Efforts`
+
+    :menuselection:`Project --> Configuration --> Works Efforts --> Works
+    Efforts`
+
+    :menuselection:`Project --> Projects`
+
+    :menuselection:`Project --> Projects --> Projects`
+
+    :menuselection:`Project --> Projects --> Tasks`
+
+The *Work Effort*-model introduces the conception of ...
+
+.. _project_work_fields:
+
+Fields
+------
+
+
+.. _project_project_work_actual_finish_date:
+
+:guilabel:`Actual Finish`:
+    :Internal Name: ``actual_finish_date``
+    :Type: :ref:`field_type_date`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Actual Finish*-field is used to store ...
+
+
+
+
+.. _project_project_work_actual_start_date:
+
+:guilabel:`Actual Start`:
+    :Internal Name: ``actual_start_date``
+    :Type: :ref:`field_type_date`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Actual Start*-field is used to store ...
+
+
+
+
+.. _project_project_work_allocations:
+
+:guilabel:`Allocations`:
+    :Internal Name: ``allocations``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`project_allocation`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Allocations*-field is used to store ...
+
+
+
+
+.. _project_project_work_children:
+
+:guilabel:`Children`:
+    :Internal Name: ``children``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`project_work`
+
+    The *Children*-field is used to store ...
+
+
+
+
+.. _project_project_work_comment:
+
+:guilabel:`Comment`:
+    :Internal Name: ``comment``
+    :Type: :ref:`field_type_text`
+
+    The *Comment*-field is used to store ...
+
+
+
+
+.. _project_project_work_constraint_finish_date:
+
+:guilabel:`Constraint Finish`:
+    :Internal Name: ``constraint_finish_date``
+    :Type: :ref:`field_type_date`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Constraint Finish*-field is used to store ...
+
+
+
+
+.. _project_project_work_constraint_start_date:
+
+:guilabel:`Constraint Start`:
+    :Internal Name: ``constraint_start_date``
+    :Type: :ref:`field_type_date`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Constraint Start*-field is used to store ...
+
+
+
+
+.. _project_project_work_party_address:
+
+:guilabel:`Contact Address`:
+    :Internal Name: ``party_address``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_address`
+
+    The *Contact Address*-field is used to store ...
+
+
+
+
+.. _project_project_work_cost:
+
+:guilabel:`Cost`:
+    :Internal Name: ``cost``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`project_revenue_module`
+
+    The *Cost*-field is used to store ...
+
+
+
+
+.. _project_project_work_duration:
+
+:guilabel:`Duration`:
+    :Internal Name: ``duration``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Duration*-field is used to store ...
+
+
+
+
+.. _project_project_work_early_finish_date:
+
+:guilabel:`Early Finish`:
+    :Internal Name: ``early_finish_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Early Finish*-field is used to store ...
+
+
+
+
+.. _project_project_work_early_start_date:
+
+:guilabel:`Early Start`:
+    :Internal Name: ``early_start_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Early Start*-field is used to store ...
+
+
+
+
+.. _project_project_work_effort:
+
+:guilabel:`Effort`:
+    :Internal Name: ``effort``
+    :Type: :ref:`field_type_float`
+
+    Estimated Effort for this work
+
+
+
+
+.. _project_project_work_late_finish_date:
+
+:guilabel:`Late Finish`:
+    :Internal Name: ``late_finish_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Late Finish*-field is used to store ...
+
+
+
+
+.. _project_project_work_late_start_date:
+
+:guilabel:`Late Start`:
+    :Internal Name: ``late_start_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Late Start*-field is used to store ...
+
+
+
+
+.. _project_project_work_list_price:
+
+:guilabel:`List Price`:
+    :Internal Name: ``list_price``
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`project_revenue_module`
+
+    The *List Price*-field is used to store ...
+
+
+
+
+.. _project_project_work_parent:
+
+:guilabel:`Parent`:
+    :Internal Name: ``parent``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`project_work`
+
+    The parent record in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _project_project_work_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+
+
+
+.. _project_project_work_predecessors:
+
+:guilabel:`Predecessors`:
+    :Internal Name: ``predecessors``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`project_work`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Predecessors*-field is used to store ...
+
+
+
+
+.. _project_project_work_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+    :Base Module: :ref:`project_revenue_module`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _project_project_work_requests:
+
+:guilabel:`Requests`:
+    :Internal Name: ``requests``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`res_request`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Requests*-field is used to store ...
+
+
+
+
+.. _project_project_work_revenue:
+
+:guilabel:`Revenue`:
+    :Internal Name: ``revenue``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`project_revenue_module`
+
+    The *Revenue*-field is used to store ...
+
+
+
+
+.. _project_project_work_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+
+    The position of the record order in a list.
+
+
+
+.. _project_project_work_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Opened`
+    * :guilabel:`Done`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _project_project_work_successors:
+
+:guilabel:`Successors`:
+    :Internal Name: ``successors``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`project_work`
+    :Base Module: :ref:`project_plan_module`
+
+    The *Successors*-field is used to store ...
+
+
+
+
+.. _project_project_work_total_effort:
+
+:guilabel:`Total Effort`:
+    :Internal Name: ``total_effort``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    Estimated total effort for this work and the sub-works
+
+
+
+
+.. _project_project_work_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Project`
+    * :guilabel:`Task`
+
+    The *Type*-field is used to store ...
+
+
+
+
+Wizards
+-------
+:guilabel:`Tasks Leveling`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Project Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+

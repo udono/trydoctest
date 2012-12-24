@@ -1,0 +1,138 @@
+
+
+.. _account_open_item_account_init:
+
+Dialog OPOS-Konto
+=================
+ :Modellname: ``account.open_item_account.init``
+ :Basismodul: :ref:`account_party_open_items_module`
+
+Das Modell *"Dialog OPOS-Konto"* ...
+
+
+.. _account_open_item_account_init_fields:
+
+Felder
+------
+
+
+.. _account_open_item_account_init_report_date_field:
+
+:guilabel:`Fällig am`:
+    :Feldname: ``report_date``
+    :Feldtyp: :ref:`field_type_date`
+    :Eigenschaft: :ref:`required`
+
+    Fällig am
+
+
+.. _account_open_item_account_init_reconciled_field:
+
+:guilabel:`mit ausgeglichenen Posten`:
+    :Feldname: ``reconciled``
+    :Feldtyp: :ref:`field_type_boolean`
+
+    mit ausgeglichenen Posten
+
+
+.. _account_open_item_account_init_notes_field:
+
+:guilabel:`Notizen`:
+    :Feldname: ``notes``
+    :Feldtyp: :ref:`field_type_text`
+
+    Notizen
+
+
+.. _account_open_item_account_init_parties_field:
+
+:guilabel:`Parteien`:
+    :Feldname: ``parties``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Zielmodell: :ref:`party_party`
+
+    Parteien
+
+
+.. _account_open_item_list_init:
+
+Dialog OPOS-Liste
+=================
+ :Modellname: ``account.open_item_list.init``
+ :Basismodul: :ref:`account_party_open_items_module`
+
+Das Modell *"Dialog OPOS-Liste"* ...
+
+
+.. _account_open_item_list_init_fields:
+
+Felder
+------
+
+
+.. _account_open_item_list_init_period_field:
+
+:guilabel:`Buchungszeitraum`:
+    :Feldname: ``period``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_period`
+
+    Buchungszeitraum
+
+
+.. _account_open_item_list_init_accounts_field:
+
+:guilabel:`Konten`:
+    :Feldname: ``accounts``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Zielmodell: :ref:`account_account`
+
+    Konten
+
+
+.. _account_open_item_list_init_reconciled_field:
+
+:guilabel:`mit ausgeglichenen Posten`:
+    :Feldname: ``reconciled``
+    :Feldtyp: :ref:`field_type_boolean`
+
+    mit ausgeglichenen Posten
+
+
+.. _account_open_item_list_init_parties_field:
+
+:guilabel:`Parteien`:
+    :Feldname: ``parties``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Zielmodell: :ref:`party_party`
+
+    Parteien
+
+
+.. _account_open_item_list_init_sort_order_field:
+
+:guilabel:`Sortierung`:
+    :Feldname: ``sort_order``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Sortierung
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Name Partei`:
+        Name Partei
+
+    :guilabel:`Code Partei`:
+        Code Partei
+
+
+
+
+.. _account_open_item_list_init_report_date_field:
+
+:guilabel:`Stichtag`:
+    :Feldname: ``report_date``
+    :Feldtyp: :ref:`field_type_date`
+    :Eigenschaft: :ref:`required`
+
+    Stichtag

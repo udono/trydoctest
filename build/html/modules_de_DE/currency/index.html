@@ -1,0 +1,551 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Currency &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Currency" href="module.html" />
+    <link rel="next" title="Dashboard" href="../dashboard/module.html" />
+    <link rel="prev" title="Currency" href="module.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../dashboard/module.html" title="Dashboard"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Currency"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" accesskey="U">Currency</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="currency">
+<span id="currency-currency"></span><h1>Currency<a class="headerlink" href="#currency" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency.currency</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#currency-module"><em>Currency</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><em class="menuselection">Currency ‣ Currencies</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Currency</em>-model introduces the conception of ...</p>
+<div class="section" id="fields">
+<span id="currency-currency-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="currency-currency-currency-active">
+<dt><em class="guilabel">Active</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">When not ticked the record is deactivated for future use. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Active</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-code">
+<dt><em class="guilabel">Code</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Code</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-rate">
+<dt><em class="guilabel">Current rate</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">rate</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Current rate</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-mon-decimal-point">
+<dt><em class="guilabel">Decimal Separator</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">mon_decimal_point</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Decimal Separator</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-digits">
+<dt><em class="guilabel">Display Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Display Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-mon-grouping">
+<dt><em class="guilabel">Grouping</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">mon_grouping</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Grouping</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-name">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Name</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-n-cs-precedes">
+<dt><em class="guilabel">Negative Currency Symbol Precedes</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">n_cs_precedes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Negative Currency Symbol Precedes</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-n-sep-by-space">
+<dt><em class="guilabel">Negative Separate by Space</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">n_sep_by_space</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Negative Separate by Space</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-negative-sign">
+<dt><em class="guilabel">Negative Sign</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">negative_sign</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Negative Sign</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-n-sign-posn">
+<dt><em class="guilabel">Negative Sign Position</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">n_sign_posn</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Negative Sign Position</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-numeric-code">
+<dt><em class="guilabel">Numeric Code</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">numeric_code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Numeric Code</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-p-cs-precedes">
+<dt><em class="guilabel">Positive Currency Symbol Precedes</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">p_cs_precedes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Positive Currency Symbol Precedes</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-p-sep-by-space">
+<dt><em class="guilabel">Positive Separate by Space</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">p_sep_by_space</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Positive Separate by Space</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-positive-sign">
+<dt><em class="guilabel">Positive Sign</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">positive_sign</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Positive Sign</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-p-sign-posn">
+<dt><em class="guilabel">Positive Sign Position</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">p_sign_posn</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Positive Sign Position</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-rates">
+<dt><em class="guilabel">Rates</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">rates</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#currency-currency-rate"><em>Rate</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Rates</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-rounding">
+<dt><em class="guilabel">Rounding factor</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">rounding</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Rounding factor</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-symbol">
+<dt><em class="guilabel">Symbol</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">symbol</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Symbol</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="currency-currency-currency-mon-thousands-sep">
+<dt><em class="guilabel">Thousands Separator</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">mon_thousands_sep</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Thousands Separator</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Currency Administration&#8221;
+have the following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="rate">
+<span id="currency-currency-rate"></span><h1>Rate<a class="headerlink" href="#rate" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency.currency.rate</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#currency-module"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Rate</em>-model introduces the conception of ...</p>
+<div class="section" id="currency-currency-rate-fields">
+<span id="id1"></span><h2>Fields<a class="headerlink" href="#currency-currency-rate-fields" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id2">
+<h2>Access<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Currency Administration&#8221;
+have the following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Currency</a></li>
+<li><a class="reference internal" href="#rate">Rate</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="module.html"
+                        title="previous chapter">Currency</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../dashboard/module.html"
+                        title="next chapter">Dashboard</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/currency/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../dashboard/module.html" title="Dashboard"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Currency"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" >Currency</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

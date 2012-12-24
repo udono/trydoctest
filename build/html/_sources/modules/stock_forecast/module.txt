@@ -1,0 +1,11 @@
+.. _stock_forecast_module:
+
+==============
+Stock Forecast
+==============
+:Module Name: trytond_stock_forecast
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

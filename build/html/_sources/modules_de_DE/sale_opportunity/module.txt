@@ -1,0 +1,11 @@
+.. _sale_opportunity_module:
+
+=============================
+Sales Leads and Opportunities
+=============================
+:Module Name: trytond_sale_opportunity
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

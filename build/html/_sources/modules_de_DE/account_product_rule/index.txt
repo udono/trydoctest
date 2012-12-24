@@ -1,0 +1,246 @@
+
+
+.. _account_account_rule_configuration:
+
+Einstellungen Kontenregeln
+==========================
+ :Modellname: ``account.account.rule.configuration``
+ :Basismodul: :ref:`account_product_rule_module`
+
+ :Menü:
+        :menuselection:`Buchhaltung --> Einstellungen --> Allgemein --> Kontenregeln --> Einstellungen Kontenregeln`
+
+Das Modell *"Einstellungen Kontenregeln"* ...
+
+
+.. _account_account_rule_configuration_fields:
+
+Felder
+------
+
+
+.. _account_account_rule_configuration_default_account_expense_rule_field:
+
+:guilabel:`Standard Aufwandskontenregel`:
+    :Feldname: ``default_account_expense_rule``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account_rule`
+
+    Standard Aufwandskontenregel
+
+
+.. _account_account_rule_configuration_default_account_revenue_rule_field:
+
+:guilabel:`Standard Ertragskontenregel`:
+    :Feldname: ``default_account_revenue_rule``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account_rule`
+
+    Standard Ertragskontenregel
+
+
+.. _account_account_rule:
+
+Kontenregel
+===========
+ :Modellname: ``account.account.rule``
+ :Basismodul: :ref:`account_product_rule_module`
+
+ :Menü:
+        :menuselection:`Buchhaltung --> Einstellungen --> Allgemein --> Kontenregeln`
+
+Das Modell *"Kontenregel"* ...
+
+
+.. _account_account_rule_fields:
+
+Felder
+------
+
+
+.. _account_account_rule_name_field:
+
+:guilabel:`Name`:
+    :Feldname: ``name``
+    :Feldtyp: :ref:`field_type_char`
+    :Eigenschaft: :ref:`required`
+
+    Name
+
+
+.. _account_account_rule_company_field:
+
+:guilabel:`Unternehmen`:
+    :Feldname: ``company``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`company_company`
+
+    Unternehmen
+
+
+.. _account_account_rule_lines_field:
+
+:guilabel:`Zeilen`:
+    :Feldname: ``lines``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Zielmodell: :ref:`account_account_rule_line`
+
+    Zeilen
+
+
+Zugriffsberechtigungen
+----------------------
+Die folgenden Zugriffsberechtigungen für Benutzer gelten für das Modell:
+
+Mitglieder *ohne* Gruppe
+........................
+ :Lesen: erlaubt
+ :Schreiben: verboten
+ :Erstellen: verboten
+ :Löschen: verboten
+
+Mitglieder in Gruppe *Buchhaltung Administration*
+.................................................
+ :Lesen: erlaubt
+ :Schreiben: erlaubt
+ :Erstellen: erlaubt
+ :Löschen: erlaubt
+
+
+
+.. _account_account_rule_line:
+
+Zeile Kontenregel
+=================
+ :Modellname: ``account.account.rule.line``
+ :Basismodul: :ref:`account_product_rule_module`
+
+Das Modell *"Zeile Kontenregel"* ...
+
+
+.. _account_account_rule_line_fields:
+
+Felder
+------
+
+
+.. _account_account_rule_line_account_field:
+
+:guilabel:`Konto`:
+    :Feldname: ``account``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account`
+
+    Konto
+
+
+.. _account_account_rule_line_rule_field:
+
+:guilabel:`Regel`:
+    :Feldname: ``rule``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account_rule`
+
+    Regel
+
+
+.. _account_account_rule_line_sequence_field:
+
+:guilabel:`Reihenfolge`:
+    :Feldname: ``sequence``
+    :Feldtyp: :ref:`field_type_integer`
+    :Eigenschaft: :ref:`required`
+
+    Dieses Feld legt die Position der Sortierreihenfolge in Listen an.
+
+
+
+.. _account_account_rule_line_taxes_field:
+
+:guilabel:`Steuern`:
+    :Feldname: ``taxes``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_tax`
+
+    Steuern
+
+
+Zugriffsberechtigungen
+----------------------
+Die folgenden Zugriffsberechtigungen für Benutzer gelten für das Modell:
+
+Mitglieder *ohne* Gruppe
+........................
+ :Lesen: erlaubt
+ :Schreiben: verboten
+ :Erstellen: verboten
+ :Löschen: verboten
+
+Mitglieder in Gruppe *Buchhaltung Administration*
+.................................................
+ :Lesen: erlaubt
+ :Schreiben: erlaubt
+ :Erstellen: erlaubt
+ :Löschen: erlaubt
+
+
+
+
+
+
+#:after:product/index:section:xxx#
+
+
+
+.. _product_template_account_expense_rule_field:
+
+:guilabel:`Regel Aufwandskonto`:
+    :Feldname: ``account_expense_rule``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account_rule`
+    :Quellmodul: :ref:`account_product_rule_module`
+
+    Diese Kontenregel wird ausgeführt, wenn die Partei ein Lieferant
+    ist.
+
+
+.. _product_template_account_revenue_rule_field:
+
+:guilabel:`Regel Ertragskonto`:
+    :Feldname: ``account_revenue_rule``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account_rule`
+    :Quellmodul: :ref:`account_product_rule_module`
+
+    Diese Kontenregel wird ausgeführt, wenn die Partei ein Kunde ist.
+
+
+#:after:product/index:section:xxx#
+
+
+
+.. _product_category_account_expense_rule_field:
+
+:guilabel:`Regel Aufwandskonto`:
+    :Feldname: ``account_expense_rule``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account_rule`
+    :Quellmodul: :ref:`account_product_rule_module`
+
+    Diese Kontenregel wird ausgeführt, wenn die Partei ein Lieferant
+    ist.
+
+
+.. _product_category_account_revenue_rule_field:
+
+:guilabel:`Regel Ertragskonto`:
+    :Feldname: ``account_revenue_rule``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account_rule`
+    :Quellmodul: :ref:`account_product_rule_module`
+
+    Diese Kontenregel wird ausgeführt, wenn die Partei ein Kunde ist.

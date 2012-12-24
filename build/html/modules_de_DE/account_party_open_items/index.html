@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Dialog OPOS-Konto &mdash; Dokumentation v0.1.0</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="Dokumentation v0.1.0" href="../../index.html" />
+    <link rel="next" title="Einstellungen Kontenregeln" href="../account_product_rule/index.html" />
+    <link rel="prev" title="Steuer Artikeltyp" href="../account_invoice_tax_rule_product_type/index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="../account_product_rule/index.html" title="Einstellungen Kontenregeln"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="../account_invoice_tax_rule_product_type/index.html" title="Steuer Artikeltyp"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="dialog-opos-konto">
+<span id="account-open-item-account-init"></span><h1>Dialog OPOS-Konto<a class="headerlink" href="#dialog-opos-konto" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.open_item_account.init</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-party-open-items-module"><em>Buchhaltung Parteien Offene-Posten-Liste</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Dialog OPOS-Konto&#8221;</em> ...</p>
+<div class="section" id="felder">
+<span id="account-open-item-account-init-fields"></span><h2>Felder<a class="headerlink" href="#felder" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-open-item-account-init-report-date-field">
+<dt><em class="guilabel">Fällig am</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">report_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Fällig am</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-open-item-account-init-reconciled-field">
+<dt><em class="guilabel">mit ausgeglichenen Posten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">reconciled</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Ankreuzfeld</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">mit ausgeglichenen Posten</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-open-item-account-init-notes-field">
+<dt><em class="guilabel">Notizen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">notes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Text (mehrzeilig)</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Notizen</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-open-item-account-init-parties-field">
+<dt><em class="guilabel">Parteien</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">parties</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>M:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-party"><em>Partei</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Parteien</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="dialog-opos-liste">
+<span id="account-open-item-list-init"></span><h1>Dialog OPOS-Liste<a class="headerlink" href="#dialog-opos-liste" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.open_item_list.init</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-party-open-items-module"><em>Buchhaltung Parteien Offene-Posten-Liste</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Dialog OPOS-Liste&#8221;</em> ...</p>
+<div class="section" id="account-open-item-list-init-fields">
+<span id="id1"></span><h2>Felder<a class="headerlink" href="#account-open-item-list-init-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-open-item-list-init-period-field">
+<dt><em class="guilabel">Buchungszeitraum</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">period</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-period"><em>Buchungszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Buchungszeitraum</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-open-item-list-init-accounts-field">
+<dt><em class="guilabel">Konten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">accounts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>M:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Konten</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-open-item-list-init-reconciled-field">
+<dt><em class="guilabel">mit ausgeglichenen Posten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">reconciled</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Ankreuzfeld</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">mit ausgeglichenen Posten</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-open-item-list-init-parties-field">
+<dt><em class="guilabel">Parteien</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">parties</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>M:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-party"><em>Partei</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Parteien</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-open-item-list-init-sort-order-field">
+<dt><em class="guilabel">Sortierung</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sort_order</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sortierung
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Name Partei</em>:</dt>
+<dd>Name Partei</dd>
+<dt><em class="guilabel">Code Partei</em>:</dt>
+<dd>Code Partei</dd>
+</dl>
+</dd>
+</dl>
+<dl class="docutils" id="account-open-item-list-init-report-date-field">
+<dt><em class="guilabel">Stichtag</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">report_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Stichtag</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Dialog OPOS-Konto</a><ul>
+<li><a class="reference internal" href="#felder">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dialog-opos-liste">Dialog OPOS-Liste</a><ul>
+<li><a class="reference internal" href="#account-open-item-list-init-fields">Felder</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="../account_invoice_tax_rule_product_type/index.html"
+                        title="vorheriges Kapitel">Steuer Artikeltyp</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="../account_product_rule/index.html"
+                        title="nächstes Kapitel">Einstellungen Kontenregeln</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/account_party_open_items/index.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="../account_product_rule/index.html" title="Einstellungen Kontenregeln"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="../account_invoice_tax_rule_product_type/index.html" title="Steuer Artikeltyp"
+             >zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
+    </div>
+  </body>
+</html>

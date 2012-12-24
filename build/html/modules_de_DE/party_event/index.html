@@ -1,0 +1,552 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Ereignis &mdash; Dokumentation v0.1.0</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="Dokumentation v0.1.0" href="../../index.html" />
+    <link rel="next" title="Artikel" href="../product/index.html" />
+    <link rel="prev" title="Bank" href="../party_bank/index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="../product/index.html" title="Artikel"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="../party_bank/index.html" title="Bank"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="ereignis">
+<span id="party-event"></span><h1>Ereignis<a class="headerlink" href="#ereignis" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.event</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#party-event-module"><em>Partei Ereignisse</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menü:</th><td class="field-body"><em class="menuselection">Parteien ‣ Ereignisse</em></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Ereignis&#8221;</em> führt das Konzept von Ereignissen ein, die in
+Bezug zu einer oder mehreren <a class="reference internal" href="../party/index.html#party-party"><em>Partei</em></a>en stehen.
+Parteibezogene Ereignisse sind eine Grundfunktion des <em>Customer Relationship
+Management</em> (CRM).
+Parteien Ereignisse können Kommunikationen, Notizen oder andere Informationen
+sein.</p>
+<div class="section" id="felder">
+<span id="party-event-fields"></span><h2>Felder<a class="headerlink" href="#felder" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="party-event-reference-count-field">
+<dt><em class="guilabel">Anzahl Verweise</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">reference_count</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Ganzzahl</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die Anzahl der Verweise über die dieses Ereignis verfügt.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-description-field">
+<dt><em class="guilabel">Beschreibung</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Text (mehrzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die Beschreibung des Ereignisses. Die erste Zeile der Beschreibung
+wird automatisch im Feld Zusammenfassung eingetragen.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-parties-field">
+<dt><em class="guilabel">Parteien</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">parties</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>M:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-party"><em>Partei</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Parteien die zu diesem Ereignis gehören.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-type-field">
+<dt><em class="guilabel">Typ</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Der Ereignistyp. Ein Standardwert kann in den Einstellungen der
+Partei gesetzt werden.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-references-field">
+<dt><em class="guilabel">Verweise</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">references</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#party-event-reference"><em>Ereignisverweis</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die hinterlegten Verweise eines Ereignisses.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-time-field">
+<dt><em class="guilabel">Zeitpunkt</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">time</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-datetime"><em>Zeitpunkt</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Der Zeitpunkt an dem das Ereignis stattfindet.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-summary-field">
+<dt><em class="guilabel">Zusammenfassung</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">summary</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die Zusammenfassung des Ereignisses. Wird automatisch mit der
+ersten Zeile des Beschreibungstexts ausgefüllt.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="ereignistyp">
+<span id="party-event-type"></span><h1>Ereignistyp<a class="headerlink" href="#ereignistyp" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.event.type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#party-event-module"><em>Partei Ereignisse</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menü:</th><td class="field-body"><em class="menuselection">Parteien ‣ Einstellungen ‣ Ereignisse ‣ Ereignistypen</em></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Ereignistyp&#8221;</em> dient der Standardisierung von
+<a class="reference internal" href="#party-event"><em>Ereignis</em></a> en.
+Ereignistypen können frei definiert werden, je nach den zu verwendenden Arten
+von parteibezogenen Ereignissen.
+Ereignistypen sind beispielsweise <em>Notiz</em>, <em>Telefonat</em>, <em>E-Mail</em>, <em>Gespräch</em>.</p>
+<div class="section" id="party-event-type-fields">
+<span id="id1"></span><h2>Felder<a class="headerlink" href="#party-event-type-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="party-event-type-description-field">
+<dt><em class="guilabel">Beschreibung</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Text (mehrzeilig)</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die Beschreibung des Ereignistypen.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-type-code-field">
+<dt><em class="guilabel">Code</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Der Code des Ereignistyps.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-type-name-field">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die Bezeichnung des Ereignistyps.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-type-sequence-field">
+<dt><em class="guilabel">Reihenfolge</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Ganzzahl</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Dieses Feld legt die Position der Sortierreihenfolge in Listen fest.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-type-system-type-field">
+<dt><em class="guilabel">Systemtyp</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">system_type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Der interne Typ auf dem ein Ereignistyp basiert.
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Notiz</em>:</dt>
+<dd>Allgemeiner Standard Systemtyp ohne weitere Funktion.</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="ereignisverknupfung">
+<span id="party-event-link"></span><h1>Ereignisverknüpfung<a class="headerlink" href="#ereignisverknupfung" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.event.link</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#party-event-module"><em>Partei Ereignisse</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menü:</th><td class="field-body"><em class="menuselection">Parteien ‣ Einstellungen ‣ Ereignisse ‣ Ereignisverknüpfungen</em></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Ereignisverknüpfung&#8221;</em> definiert die als
+<a class="reference internal" href="#party-event-reference"><em>Ereignisverweis</em></a> zur Verfügung stehenden <a class="reference internal" href="../ir/index.html#ir-model"><em>Modell</em></a>e.</p>
+<div class="section" id="party-event-link-fields">
+<span id="id2"></span><h2>Felder<a class="headerlink" href="#party-event-link-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="party-event-link-model-field">
+<dt><em class="guilabel">Modell</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">model</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Das zur Verfügung gestellte <a class="reference internal" href="../ir/index.html#ir-model"><em>Modell</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-link-name-field">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Der Name unter dem das <em class="guilabel">Modell</em> in <a class="reference internal" href="#party-event-reference"><em>Ereignisverweis</em></a>
+<em class="guilabel">Verweis (links)</em> aufgeführt werden soll.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-link-sequence-field">
+<dt><em class="guilabel">Reihenfolge</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Ganzzahl</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Dieses Feld legt die Position der Sortierreihenfolge in Listen an.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="ereignisverweis">
+<span id="party-event-reference"></span><h1>Ereignisverweis<a class="headerlink" href="#ereignisverweis" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.event.reference</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#party-event-module"><em>Partei Ereignisse</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Ereignisverweis&#8221;</em> sammelt Verweise auf Ressourcen in anderen
+Modellen.</p>
+<div class="section" id="party-event-reference-fields">
+<span id="id3"></span><h2>Felder<a class="headerlink" href="#party-event-reference-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="party-event-reference-sequence-field">
+<dt><em class="guilabel">Reihenfolge</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Ganzzahl</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Dieses Feld legt die Position der Sortierreihenfolge in Listen fest.</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-event-reference-reference-field">
+<dt><em class="guilabel">Verweis</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">reference</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-reference"><em>Verweis</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die <a class="reference internal" href="#party-event-link"><em>Ereignisverknüpfung</em></a> und der Datensatz auf den verwiesen werden
+soll.</p>
+</dd>
+</dl>
+<p>#:after:party/party_base:section:felder_name_der_name_der_partei_code#</p>
+<dl class="docutils" id="party-party-events-field">
+<dt><em class="guilabel">Ereignisse</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">events</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>M:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#party-event"><em>Ereignis</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#party-event-module"><em>Partei Ereignisse</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die <a class="reference internal" href="#party-event"><em>Ereignis</em></a>e der Partei.</p>
+</dd>
+</dl>
+<p>#:after:party/index:section:xxx#</p>
+<dl class="docutils" id="party-configuration-party-event-type-field">
+<dt><em class="guilabel">Parteien Ereignistyp</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party_event_type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#party-event-type"><em>Ereignistyp</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#party-event-module"><em>Partei Ereignisse</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Der Standard Ereignistyp bei Neuerstellung eines Ereignisses.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Ereignis</a><ul>
+<li><a class="reference internal" href="#felder">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ereignistyp">Ereignistyp</a><ul>
+<li><a class="reference internal" href="#party-event-type-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ereignisverknupfung">Ereignisverknüpfung</a><ul>
+<li><a class="reference internal" href="#party-event-link-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ereignisverweis">Ereignisverweis</a><ul>
+<li><a class="reference internal" href="#party-event-reference-fields">Felder</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="../party_bank/index.html"
+                        title="vorheriges Kapitel">Bank</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="../product/index.html"
+                        title="nächstes Kapitel">Artikel</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/party_event/index.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="../product/index.html" title="Artikel"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="../party_bank/index.html" title="Bank"
+             >zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
+    </div>
+  </body>
+</html>

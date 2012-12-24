@@ -1,0 +1,26 @@
+#:after:party/party_base:section:felder_name_der_name_der_partei_code#
+
+.. _party_party_person_members_field:
+
+:guilabel:`Mitglieder`:
+    :Feldname: ``person_members``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Zielmodell: :ref:`party_party`
+    :Quellmodul: :ref:`party_rollup_person_module`
+
+    Parteien vom Typ *Person* die Mitglieder der aktuellen Partei sind.
+    (Nur verfügbar, wenn der :guilabel:`Typ Partei` der aktuellen Partei
+    *Organisation* ist.)
+
+.. _party_party_organization_members_field:
+
+:guilabel:`Mitglied in Organisationen`:
+    :Feldname: ``organization_members``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Zielmodell: :ref:`party_party`
+    :Quellmodul: :ref:`party_rollup_person_module`
+
+    Die Parteien vom Typ *Organisation*, bei denen die aktuelle Partei
+    Mitglied ist.
+    (Nur verfügbar, wenn der :guilabel:`Typ Partei` der aktuellen Partei
+    *Person* ist.)

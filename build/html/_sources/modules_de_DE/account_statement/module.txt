@@ -1,0 +1,11 @@
+.. _account_statement_module:
+
+=================
+Account Statement
+=================
+:Module Name: trytond_account_statement
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

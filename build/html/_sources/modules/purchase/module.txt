@@ -1,0 +1,11 @@
+.. _purchase_module:
+
+========
+Purchase
+========
+:Module Name: trytond_purchase
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

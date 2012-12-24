@@ -1,0 +1,6 @@
+.. _party_siret_module:
+
+=============
+Party - Siret
+=============
+:Module Name: trytond_party_siret

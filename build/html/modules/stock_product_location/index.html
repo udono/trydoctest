@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Product Location &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Stock Product Location" href="module.html" />
+    <link rel="next" title="Stock Supply Management" href="../stock_supply/module.html" />
+    <link rel="prev" title="Stock Product Location" href="module.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../stock_supply/module.html" title="Stock Supply Management"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Stock Product Location"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" accesskey="U">Stock Product Location</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="product-location">
+<span id="stock-product-location"></span><h1>Product Location<a class="headerlink" href="#product-location" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">stock.product.location</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#stock-product-location-module"><em>Stock Product Location</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Product Location</em>-model introduces the conception of ...</p>
+<div class="section" id="fields">
+<span id="stock-product-location-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="stock-product-location-stock-product-location-product">
+<dt><em class="guilabel">Product</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-product"><em>Product</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Product</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-product-location-stock-product-location-sequence">
+<dt><em class="guilabel">Sequence</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The position of the record order in a list.</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-product-location-stock-product-location-location">
+<dt><em class="guilabel">Storage Location</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">location</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-location"><em>Stock Location</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Storage Location</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-product-location-stock-product-location-warehouse">
+<dt><em class="guilabel">Warehouse</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">warehouse</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-location"><em>Stock Location</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Warehouse</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="module.html"
+                        title="previous chapter">Stock Product Location</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../stock_supply/module.html"
+                        title="next chapter">Stock Supply Management</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules/stock_product_location/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../stock_supply/module.html" title="Stock Supply Management"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Stock Product Location"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" >Stock Product Location</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

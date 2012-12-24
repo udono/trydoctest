@@ -1,0 +1,51 @@
+:tocdepth: 1
+
+
+
+.. _product_product_cost_history:
+
+History of Product Cost
+=======================
+:Model Name: ``product.product.cost_history``
+:Base Module: :ref:`product_cost_history_module`
+
+The *History of Product Cost*-model introduces the conception of ...
+
+.. _product_product_cost_history_fields:
+
+Fields
+------
+
+
+.. _product_cost_history_product_product_cost_history_cost_price:
+
+:guilabel:`Cost Price`:
+    :Internal Name: ``cost_price``
+    :Type: :ref:`field_type_numeric`
+
+    The *Cost Price*-field is used to store ...
+
+
+
+
+.. _product_cost_history_product_product_cost_history_date:
+
+:guilabel:`Date`:
+    :Internal Name: ``date``
+    :Type: :ref:`field_type_datetime`
+
+    The *Date*-field is used to store ...
+
+
+
+
+.. _product_cost_history_product_product_cost_history_template:
+
+:guilabel:`Product`:
+    :Internal Name: ``template``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_template`
+
+    The *Product*-field is used to store ...
+
+

@@ -1,0 +1,1610 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Kontenplan Eigenschaften Erstellen &mdash; Dokumentation v0.1.0</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="Dokumentation v0.1.0" href="../../index.html" />
+    <link rel="next" title="Mitarbeiter" href="../company/index.html" />
+    <link rel="prev" title="Einstellungen Kontenregeln" href="../account_product_rule/index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="../company/index.html" title="Mitarbeiter"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="../account_product_rule/index.html" title="Einstellungen Kontenregeln"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="kontenplan-eigenschaften-erstellen">
+<span id="account-account-create-chart-account-properties-fiscalyear"></span><h1>Kontenplan Eigenschaften Erstellen<a class="headerlink" href="#kontenplan-eigenschaften-erstellen" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.account.create_chart_account.properties.fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Kontenplan Eigenschaften Erstellen&#8221;</em> ...</p>
+<div class="section" id="felder">
+<span id="account-account-create-chart-account-properties-fiscalyear-fields"></span><h2>Felder<a class="headerlink" href="#felder" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-account-create-chart-account-properties-fiscalyear-fiscalyear-field">
+<dt><em class="guilabel">Geschäftsjahr</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a>, <a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-fiscalyear"><em>Geschäftsjahr</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Geschäftsjahr</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-create-chart-account-properties-fiscalyear-account-receivable-field">
+<dt><em class="guilabel">Standardkonto Forderungen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_receivable</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Standardkonto Forderungen</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-create-chart-account-properties-fiscalyear-account-payable-field">
+<dt><em class="guilabel">Standardkonto Verbindlichkeiten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_payable</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Standardkonto Verbindlichkeiten</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="kontenplan-konten-geschaftsjahr-erstellen">
+<span id="account-account-create-chart-account-account-fiscalyear"></span><h1>Kontenplan Konten Geschäftsjahr Erstellen<a class="headerlink" href="#kontenplan-konten-geschaftsjahr-erstellen" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.account.create_chart_account.account.fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Kontenplan Konten Geschäftsjahr Erstellen&#8221;</em> ...</p>
+<div class="section" id="account-account-create-chart-account-account-fiscalyear-fields">
+<span id="id1"></span><h2>Felder<a class="headerlink" href="#account-account-create-chart-account-account-fiscalyear-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-account-create-chart-account-account-fiscalyear-fiscalyear-field">
+<dt><em class="guilabel">Geschäftsjahr</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-fiscalyear"><em>Geschäftsjahr</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Geschäftsjahr</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-create-chart-account-account-fiscalyear-account-template-field">
+<dt><em class="guilabel">Kontenvorlage</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_template</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account-template"><em>Kontenvorlage</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Kontenvorlage</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-create-chart-account-account-fiscalyear-company-field">
+<dt><em class="guilabel">Unternehmen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Unternehmen</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Unternehmen</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="konto-journal">
+<span id="account-journal-account"></span><h1>Konto Journal<a class="headerlink" href="#konto-journal" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.journal.account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Konto Journal&#8221;</em> ...</p>
+<div class="section" id="account-journal-account-fields">
+<span id="id2"></span><h2>Felder<a class="headerlink" href="#account-journal-account-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-journal-account-fiscalyear-field">
+<dt><em class="guilabel">Geschäftsjahr</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-fiscalyear"><em>Geschäftsjahr</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Geschäftsjahr</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-journal-account-journal-field">
+<dt><em class="guilabel">Journal</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">journal</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-journal"><em>Journal</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Journal</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-journal-account-account-field">
+<dt><em class="guilabel">Konto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Konto</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-journal-account-type-field">
+<dt><em class="guilabel">Typ</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Typ
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Habenkonto</em>:</dt>
+<dd>Habenkonto</dd>
+<dt><em class="guilabel">Sollkonto</em>:</dt>
+<dd>Sollkonto</dd>
+</dl>
+</dd>
+</dl>
+<dl class="docutils" id="account-journal-account-company-field">
+<dt><em class="guilabel">Unternehmen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Unternehmen</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Unternehmen</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="konto-offnen-init">
+<span id="account-account-open-account-init"></span><h1>Konto Öffnen Init<a class="headerlink" href="#konto-offnen-init" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.account.open_account.init</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Konto Öffnen Init&#8221;</em> ...</p>
+<div class="section" id="account-account-open-account-init-fields">
+<span id="id3"></span><h2>Felder<a class="headerlink" href="#account-account-open-account-init-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-account-open-account-init-fiscalyear-field">
+<dt><em class="guilabel">Geschäftsjahr</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-fiscalyear"><em>Geschäftsjahr</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Leer lassen für alle geöffneten Geschäftsjahre</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-open-account-init-with-moves-only-field">
+<dt><em class="guilabel">Nur Konten mit Buchungen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">with_moves_only</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Ankreuzfeld</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Nur Konten mit Buchungen</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-open-account-init-company-field">
+<dt><em class="guilabel">Unternehmen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Unternehmen</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Unternehmen</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="konto-partei">
+<span id="party-account"></span><h1>Konto Partei<a class="headerlink" href="#konto-partei" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party.account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Konto Partei&#8221;</em> ...</p>
+<div class="section" id="party-account-fields">
+<span id="id4"></span><h2>Felder<a class="headerlink" href="#party-account-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="party-account-fiscalyear-field">
+<dt><em class="guilabel">Geschäftsjahr</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-fiscalyear"><em>Geschäftsjahr</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Geschäftsjahr</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-account-account-field">
+<dt><em class="guilabel">Konto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Konto</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-account-party-field">
+<dt><em class="guilabel">Partei</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-party"><em>Partei</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Partei</p>
+</dd>
+</dl>
+<dl class="docutils" id="party-account-type-field">
+<dt><em class="guilabel">Typ</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Typ
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Forderungen</em>:</dt>
+<dd>Forderungen</dd>
+<dt><em class="guilabel">Verbindlichkeiten</em>:</dt>
+<dd>Verbindlichkeiten</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="steuer-kennziffer">
+<span id="tax-code"></span><h1>Steuer Kennziffer<a class="headerlink" href="#steuer-kennziffer" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax.code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Steuer Kennziffer&#8221;</em> ...</p>
+<div class="section" id="tax-code-fields">
+<span id="id5"></span><h2>Felder<a class="headerlink" href="#tax-code-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="tax-code-valid-to-field">
+<dt><em class="guilabel">Gültig bis</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">valid_to</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gültig bis</p>
+</dd>
+</dl>
+<dl class="docutils" id="tax-code-valid-from-field">
+<dt><em class="guilabel">Gültig von</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">valid_from</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gültig von</p>
+</dd>
+</dl>
+<dl class="docutils" id="tax-code-tax-field">
+<dt><em class="guilabel">Steuer</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax"><em>Konto Steuer</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Steuer</p>
+</dd>
+</dl>
+<dl class="docutils" id="tax-code-type-field">
+<dt><em class="guilabel">Typ</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Typ
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Bemessungsgrundlage Rechnung</em>:</dt>
+<dd>Bemessungsgrundlage Rechnung</dd>
+<dt><em class="guilabel">Steuer Rechnung</em>:</dt>
+<dd>Steuer Rechnung</dd>
+<dt><em class="guilabel">Bemessungsgrundlage Gutschrift</em>:</dt>
+<dd>Bemessungsgrundlage Gutschrift</dd>
+<dt><em class="guilabel">Steuer Gutschrift</em>:</dt>
+<dd>Steuer Gutschrift</dd>
+</dl>
+</dd>
+</dl>
+<dl class="docutils" id="tax-code-sign-field">
+<dt><em class="guilabel">Vorzeichen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sign</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Betrag</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gewöhnlich 1 oder -1</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="steuer-kennziffernvorlage">
+<span id="account-tax-tax-code-template"></span><h1>Steuer Kennziffernvorlage<a class="headerlink" href="#steuer-kennziffernvorlage" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.tax.tax.code.template</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Steuer Kennziffernvorlage&#8221;</em> ...</p>
+<div class="section" id="account-tax-tax-code-template-fields">
+<span id="id6"></span><h2>Felder<a class="headerlink" href="#account-tax-tax-code-template-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-tax-tax-code-template-valid-to-field">
+<dt><em class="guilabel">Gültig bis</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">valid_to</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gültig bis</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-code-template-valid-from-field">
+<dt><em class="guilabel">Gültig von</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">valid_from</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gültig von</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-code-template-account-template-field">
+<dt><em class="guilabel">Kontenvorlage</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_template</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account-template"><em>Kontenvorlage</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Kontenvorlage</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-code-template-tax-field">
+<dt><em class="guilabel">Steuer</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax-template"><em>Konto Steuervorlage</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Steuer</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-code-template-code-field">
+<dt><em class="guilabel">Steuerkennziffer</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax-code-template"><em>Steuer Kennziffer Vorlage</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Steuerkennziffer</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-code-template-type-field">
+<dt><em class="guilabel">Typ</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Typ
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Bemessungsgrundlage Rechnung</em>:</dt>
+<dd>Bemessungsgrundlage Rechnung</dd>
+<dt><em class="guilabel">Steuer Rechnung</em>:</dt>
+<dd>Steuer Rechnung</dd>
+<dt><em class="guilabel">Bemessungsgrundlage Gutschrift</em>:</dt>
+<dd>Bemessungsgrundlage Gutschrift</dd>
+<dt><em class="guilabel">Steuer Gutschrift</em>:</dt>
+<dd>Steuer Gutschrift</dd>
+</dl>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-code-template-sign-field">
+<dt><em class="guilabel">Vorzeichen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sign</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Betrag</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gewöhnlich 1 oder -1</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="steuerkontenvorlage">
+<span id="account-tax-tax-account-template"></span><h1>Steuerkontenvorlage<a class="headerlink" href="#steuerkontenvorlage" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.tax.tax.account.template</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Steuerkontenvorlage&#8221;</em> ...</p>
+<div class="section" id="account-tax-tax-account-template-fields">
+<span id="id7"></span><h2>Felder<a class="headerlink" href="#account-tax-tax-account-template-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-tax-tax-account-template-account-template-field">
+<dt><em class="guilabel">Kontenvorlage</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_template</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account-template"><em>Kontenvorlage</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Kontenvorlage</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-account-template-account-field">
+<dt><em class="guilabel">Konto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account-template"><em>Kontenvorlage</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Konto</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-account-template-tax-field">
+<dt><em class="guilabel">Steuer</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax-template"><em>Konto Steuervorlage</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Steuer</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-tax-account-template-type-field">
+<dt><em class="guilabel">Typ</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Typ
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Konto für Rechnung</em>:</dt>
+<dd>Konto für Rechnung</dd>
+<dt><em class="guilabel">Konto für Gutschrift</em>:</dt>
+<dd>Konto für Gutschrift</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="steuerkonto">
+<span id="tax-account"></span><h1>Steuerkonto<a class="headerlink" href="#steuerkonto" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax.account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Steuerkonto&#8221;</em> ...</p>
+<div class="section" id="tax-account-fields">
+<span id="id8"></span><h2>Felder<a class="headerlink" href="#tax-account-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="tax-account-fiscalyear-field">
+<dt><em class="guilabel">Geschäftsjahr</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-fiscalyear"><em>Geschäftsjahr</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Geschäftsjahr</p>
+</dd>
+</dl>
+<dl class="docutils" id="tax-account-account-field">
+<dt><em class="guilabel">Konto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Konto</p>
+</dd>
+</dl>
+<dl class="docutils" id="tax-account-tax-field">
+<dt><em class="guilabel">Steuer</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax"><em>Konto Steuer</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Steuer</p>
+</dd>
+</dl>
+<dl class="docutils" id="tax-account-type-field">
+<dt><em class="guilabel">Typ</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Typ
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Konto für Rechnung</em>:</dt>
+<dd>Konto für Rechnung</dd>
+<dt><em class="guilabel">Konto für Gutschrift</em>:</dt>
+<dd>Konto für Gutschrift</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="vorlagen-sammlung">
+<span id="account-tax-template-collection"></span><h1>Vorlagen Sammlung<a class="headerlink" href="#vorlagen-sammlung" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.tax.template.collection</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Vorlagen Sammlung&#8221;</em> ...</p>
+<div class="section" id="account-tax-template-collection-fields">
+<span id="id9"></span><h2>Felder<a class="headerlink" href="#account-tax-template-collection-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils" id="account-account-type-fiscalyear-field">
+<dt><em class="guilabel">Geschäftsjahr</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-fiscalyear"><em>Geschäftsjahr</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Geschäftsjahr</p>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils" id="account-tax-code-template-valid-to-field">
+<dt><em class="guilabel">Gültig bis</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">valid_to</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gültig bis</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-tax-code-template-valid-from-field">
+<dt><em class="guilabel">Gültig von</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">valid_from</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gültig von</p>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Gültig bis</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">valid_to</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gültig bis</p>
+</dd>
+<dt><em class="guilabel">Gültig von</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">valid_from</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gültig von</p>
+</dd>
+<dt><em class="guilabel">Typ</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Typ
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Bemessungsgrundlage Rechnung</em>:</dt>
+<dd>Bemessungsgrundlage Rechnung</dd>
+<dt><em class="guilabel">Steuer Rechnung</em>:</dt>
+<dd>Steuer Rechnung</dd>
+<dt><em class="guilabel">Bemessungsgrundlage Gutschrift</em>:</dt>
+<dd>Bemessungsgrundlage Gutschrift</dd>
+<dt><em class="guilabel">Steuer Gutschrift</em>:</dt>
+<dd>Steuer Gutschrift</dd>
+</dl>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Konten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">accounts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>M:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Konten</p>
+</dd>
+<dt><em class="guilabel">Kontenumfang</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">range_accounts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Kontenumfang
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Alle Konten</em>:</dt>
+<dd>Alle Konten</dd>
+<dt><em class="guilabel">Kontenauswahl</em>:</dt>
+<dd>Kontenauswahl</dd>
+</dl>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Abschlussbedingung</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">close_condition</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Abschlussbedingung
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Ausgeglichen</em>:</dt>
+<dd>Ausgeglichen</dd>
+<dt><em class="guilabel">Keine</em>:</dt>
+<dd>Keine</dd>
+</dl>
+</dd>
+<dt><em class="guilabel">Buchungszeilen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">move_lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-move-line"><em>Buchungszeile</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Buchungszeilen</p>
+</dd>
+<dt><em class="guilabel">Geschäftsjahr</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">fiscalyear</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-fiscalyear"><em>Geschäftsjahr</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Geschäftsjahr</p>
+</dd>
+<dt><em class="guilabel">Nachfolger</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">successor</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Nachfolger</p>
+</dd>
+<dt><em class="guilabel">Saldenvortragskonto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">opening_balance_account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Ankreuzfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Saldenvortragskonto</p>
+</dd>
+<dt><em class="guilabel">Startsaldo</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">starting_balance</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Betrag</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Startsaldo</p>
+</dd>
+<dt><em class="guilabel">Vorgänger</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">predecessors</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Vorgänger</p>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Standardkonto Forderungen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">default_account_receivable</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Standardkonto Forderungen</p>
+</dd>
+<dt><em class="guilabel">Standardkonto Verbindlichkeiten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">default_account_payable</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Standardkonto Verbindlichkeiten</p>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Buchungszeitraum</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">period</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-period"><em>Buchungszeitraum</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Wählen Sie in diesem Feld einen Buchnungszeitraum aus, wenn Sie
+einen Bericht für einen spezifischen Buchungszeitraum erstellen
+wollen.</p>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Defaultkonten Journale</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">journal_accounts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-journal-account"><em>Konto Journal</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Defaultkonten Journale</p>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Vorlagen Kennziffern</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">template_codes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-tax-tax-code-template"><em>Steuer Kennziffernvorlage</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Vorlagen Kennziffern</p>
+</dd>
+<dt><em class="guilabel">Vorlagen Konten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">template_accounts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-tax-tax-account-template"><em>Steuerkontenvorlage</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Vorlagen Konten</p>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Abschlussbedingung</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">close_condition</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a>, <a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Abschlussbedingung
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Ausgeglichen</em>:</dt>
+<dd>Ausgeglichen</dd>
+<dt><em class="guilabel">Keine</em>:</dt>
+<dd>Keine</dd>
+</dl>
+</dd>
+<dt><em class="guilabel">Nachfolger</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">successor</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account-template"><em>Kontenvorlage</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Nachfolger</p>
+</dd>
+<dt><em class="guilabel">Vorgänger</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">predecessors</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>nur lesbar</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account-template"><em>Kontenvorlage</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Vorgänger</p>
+</dd>
+</dl>
+<p>#:after:account/index:section:xxx#</p>
+<dl class="docutils">
+<dt><em class="guilabel">Search Key</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">search_key</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Can be used to define a custom key for the search.</p>
+</dd>
+<dt><em class="guilabel">Steuerkennziffern</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">codes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#tax-code"><em>Steuer Kennziffer</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Steuerkennziffern</p>
+</dd>
+<dt><em class="guilabel">Steuerkonten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">accounts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#tax-account"><em>Steuerkonto</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-timeline-module"><em>Buchhaltung Gültigkeitszeitraum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Steuerkonten</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Kontenplan Eigenschaften Erstellen</a><ul>
+<li><a class="reference internal" href="#felder">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kontenplan-konten-geschaftsjahr-erstellen">Kontenplan Konten Geschäftsjahr Erstellen</a><ul>
+<li><a class="reference internal" href="#account-account-create-chart-account-account-fiscalyear-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#konto-journal">Konto Journal</a><ul>
+<li><a class="reference internal" href="#account-journal-account-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#konto-offnen-init">Konto Öffnen Init</a><ul>
+<li><a class="reference internal" href="#account-account-open-account-init-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#konto-partei">Konto Partei</a><ul>
+<li><a class="reference internal" href="#party-account-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#steuer-kennziffer">Steuer Kennziffer</a><ul>
+<li><a class="reference internal" href="#tax-code-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#steuer-kennziffernvorlage">Steuer Kennziffernvorlage</a><ul>
+<li><a class="reference internal" href="#account-tax-tax-code-template-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#steuerkontenvorlage">Steuerkontenvorlage</a><ul>
+<li><a class="reference internal" href="#account-tax-tax-account-template-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#steuerkonto">Steuerkonto</a><ul>
+<li><a class="reference internal" href="#tax-account-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vorlagen-sammlung">Vorlagen Sammlung</a><ul>
+<li><a class="reference internal" href="#account-tax-template-collection-fields">Felder</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="../account_product_rule/index.html"
+                        title="vorheriges Kapitel">Einstellungen Kontenregeln</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="../company/index.html"
+                        title="nächstes Kapitel">Mitarbeiter</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/account_timeline/index.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="../company/index.html" title="Mitarbeiter"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="../account_product_rule/index.html" title="Einstellungen Kontenregeln"
+             >zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
+    </div>
+  </body>
+</html>

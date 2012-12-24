@@ -1,0 +1,6 @@
+.. _account_be_module:
+
+===============
+Account Belgium
+===============
+:Module Name: trytond_account_be

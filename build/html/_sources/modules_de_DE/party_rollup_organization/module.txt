@@ -1,0 +1,10 @@
+.. _party_rollup_organization_module:
+
+============================
+Partei Struktur Organisation
+============================
+:Modul Name: trytond_party_rollup_organization
+
+
+Das *Partei-Struktur-Organisation-Modul* führt das Konzept zur Strukturierung
+von Parteien des Typs *Organisation* ein.

@@ -1,0 +1,991 @@
+
+
+.. _account_account_create_chart_account_properties_fiscalyear:
+
+Kontenplan Eigenschaften Erstellen
+==================================
+ :Modellname: ``account.account.create_chart_account.properties.fiscalyear``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Kontenplan Eigenschaften Erstellen"* ...
+
+
+.. _account_account_create_chart_account_properties_fiscalyear_fields:
+
+Felder
+------
+
+
+.. _account_account_create_chart_account_properties_fiscalyear_fiscalyear_field:
+
+:guilabel:`Geschäftsjahr`:
+    :Feldname: ``fiscalyear``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`, :ref:`readonly`
+    :Zielmodell: :ref:`account_fiscalyear`
+
+    Geschäftsjahr
+
+
+.. _account_account_create_chart_account_properties_fiscalyear_account_receivable_field:
+
+:guilabel:`Standardkonto Forderungen`:
+    :Feldname: ``account_receivable``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account`
+
+    Standardkonto Forderungen
+
+
+.. _account_account_create_chart_account_properties_fiscalyear_account_payable_field:
+
+:guilabel:`Standardkonto Verbindlichkeiten`:
+    :Feldname: ``account_payable``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account`
+
+    Standardkonto Verbindlichkeiten
+
+
+.. _account_account_create_chart_account_account_fiscalyear:
+
+Kontenplan Konten Geschäftsjahr Erstellen
+=========================================
+ :Modellname: ``account.account.create_chart_account.account.fiscalyear``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Kontenplan Konten Geschäftsjahr Erstellen"* ...
+
+
+.. _account_account_create_chart_account_account_fiscalyear_fields:
+
+Felder
+------
+
+
+.. _account_account_create_chart_account_account_fiscalyear_fiscalyear_field:
+
+:guilabel:`Geschäftsjahr`:
+    :Feldname: ``fiscalyear``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_fiscalyear`
+
+    Geschäftsjahr
+
+
+.. _account_account_create_chart_account_account_fiscalyear_account_template_field:
+
+:guilabel:`Kontenvorlage`:
+    :Feldname: ``account_template``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account_template`
+
+    Kontenvorlage
+
+
+.. _account_account_create_chart_account_account_fiscalyear_company_field:
+
+:guilabel:`Unternehmen`:
+    :Feldname: ``company``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`company_company`
+
+    Unternehmen
+
+
+.. _account_journal_account:
+
+Konto Journal
+=============
+ :Modellname: ``account.journal.account``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Konto Journal"* ...
+
+
+.. _account_journal_account_fields:
+
+Felder
+------
+
+
+.. _account_journal_account_fiscalyear_field:
+
+:guilabel:`Geschäftsjahr`:
+    :Feldname: ``fiscalyear``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_fiscalyear`
+
+    Geschäftsjahr
+
+
+.. _account_journal_account_journal_field:
+
+:guilabel:`Journal`:
+    :Feldname: ``journal``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_journal`
+
+    Journal
+
+
+.. _account_journal_account_account_field:
+
+:guilabel:`Konto`:
+    :Feldname: ``account``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account`
+
+    Konto
+
+
+.. _account_journal_account_type_field:
+
+:guilabel:`Typ`:
+    :Feldname: ``type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Typ
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Habenkonto`:
+        Habenkonto
+
+    :guilabel:`Sollkonto`:
+        Sollkonto
+
+
+
+
+.. _account_journal_account_company_field:
+
+:guilabel:`Unternehmen`:
+    :Feldname: ``company``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`company_company`
+
+    Unternehmen
+
+
+.. _account_account_open_account_init:
+
+Konto Öffnen Init
+=================
+ :Modellname: ``account.account.open_account.init``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Konto Öffnen Init"* ...
+
+
+.. _account_account_open_account_init_fields:
+
+Felder
+------
+
+
+.. _account_account_open_account_init_fiscalyear_field:
+
+:guilabel:`Geschäftsjahr`:
+    :Feldname: ``fiscalyear``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_fiscalyear`
+
+    Leer lassen für alle geöffneten Geschäftsjahre
+
+
+.. _account_account_open_account_init_with_moves_only_field:
+
+:guilabel:`Nur Konten mit Buchungen`:
+    :Feldname: ``with_moves_only``
+    :Feldtyp: :ref:`field_type_boolean`
+
+    Nur Konten mit Buchungen
+
+
+.. _account_account_open_account_init_company_field:
+
+:guilabel:`Unternehmen`:
+    :Feldname: ``company``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`company_company`
+
+    Unternehmen
+
+
+.. _party_account:
+
+Konto Partei
+============
+ :Modellname: ``party.account``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Konto Partei"* ...
+
+
+.. _party_account_fields:
+
+Felder
+------
+
+
+.. _party_account_fiscalyear_field:
+
+:guilabel:`Geschäftsjahr`:
+    :Feldname: ``fiscalyear``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_fiscalyear`
+
+    Geschäftsjahr
+
+
+.. _party_account_account_field:
+
+:guilabel:`Konto`:
+    :Feldname: ``account``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account`
+
+    Konto
+
+
+.. _party_account_party_field:
+
+:guilabel:`Partei`:
+    :Feldname: ``party``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`party_party`
+
+    Partei
+
+
+.. _party_account_type_field:
+
+:guilabel:`Typ`:
+    :Feldname: ``type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Typ
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Forderungen`:
+        Forderungen
+
+    :guilabel:`Verbindlichkeiten`:
+        Verbindlichkeiten
+
+
+
+
+.. _tax_code:
+
+Steuer Kennziffer
+=================
+ :Modellname: ``tax.code``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Steuer Kennziffer"* ...
+
+
+.. _tax_code_fields:
+
+Felder
+------
+
+
+.. _tax_code_valid_to_field:
+
+:guilabel:`Gültig bis`:
+    :Feldname: ``valid_to``
+    :Feldtyp: :ref:`field_type_date`
+
+    Gültig bis
+
+
+.. _tax_code_valid_from_field:
+
+:guilabel:`Gültig von`:
+    :Feldname: ``valid_from``
+    :Feldtyp: :ref:`field_type_date`
+
+    Gültig von
+
+
+.. _tax_code_tax_field:
+
+:guilabel:`Steuer`:
+    :Feldname: ``tax``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_tax`
+
+    Steuer
+
+
+.. _tax_code_type_field:
+
+:guilabel:`Typ`:
+    :Feldname: ``type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Typ
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Bemessungsgrundlage Rechnung`:
+        Bemessungsgrundlage Rechnung
+
+    :guilabel:`Steuer Rechnung`:
+        Steuer Rechnung
+
+    :guilabel:`Bemessungsgrundlage Gutschrift`:
+        Bemessungsgrundlage Gutschrift
+
+    :guilabel:`Steuer Gutschrift`:
+        Steuer Gutschrift
+
+
+
+
+.. _tax_code_sign_field:
+
+:guilabel:`Vorzeichen`:
+    :Feldname: ``sign``
+    :Feldtyp: :ref:`field_type_numeric`
+    :Eigenschaft: :ref:`required`
+
+    Gewöhnlich 1 oder -1
+
+
+.. _account_tax_tax_code_template:
+
+Steuer Kennziffernvorlage
+=========================
+ :Modellname: ``account.tax.tax.code.template``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Steuer Kennziffernvorlage"* ...
+
+
+.. _account_tax_tax_code_template_fields:
+
+Felder
+------
+
+
+.. _account_tax_tax_code_template_valid_to_field:
+
+:guilabel:`Gültig bis`:
+    :Feldname: ``valid_to``
+    :Feldtyp: :ref:`field_type_date`
+
+    Gültig bis
+
+
+.. _account_tax_tax_code_template_valid_from_field:
+
+:guilabel:`Gültig von`:
+    :Feldname: ``valid_from``
+    :Feldtyp: :ref:`field_type_date`
+
+    Gültig von
+
+
+.. _account_tax_tax_code_template_account_template_field:
+
+:guilabel:`Kontenvorlage`:
+    :Feldname: ``account_template``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account_template`
+
+    Kontenvorlage
+
+
+.. _account_tax_tax_code_template_tax_field:
+
+:guilabel:`Steuer`:
+    :Feldname: ``tax``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_tax_template`
+
+    Steuer
+
+
+.. _account_tax_tax_code_template_code_field:
+
+:guilabel:`Steuerkennziffer`:
+    :Feldname: ``code``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_tax_code_template`
+
+    Steuerkennziffer
+
+
+.. _account_tax_tax_code_template_type_field:
+
+:guilabel:`Typ`:
+    :Feldname: ``type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Typ
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Bemessungsgrundlage Rechnung`:
+        Bemessungsgrundlage Rechnung
+
+    :guilabel:`Steuer Rechnung`:
+        Steuer Rechnung
+
+    :guilabel:`Bemessungsgrundlage Gutschrift`:
+        Bemessungsgrundlage Gutschrift
+
+    :guilabel:`Steuer Gutschrift`:
+        Steuer Gutschrift
+
+
+
+
+.. _account_tax_tax_code_template_sign_field:
+
+:guilabel:`Vorzeichen`:
+    :Feldname: ``sign``
+    :Feldtyp: :ref:`field_type_numeric`
+    :Eigenschaft: :ref:`required`
+
+    Gewöhnlich 1 oder -1
+
+
+.. _account_tax_tax_account_template:
+
+Steuerkontenvorlage
+===================
+ :Modellname: ``account.tax.tax.account.template``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Steuerkontenvorlage"* ...
+
+
+.. _account_tax_tax_account_template_fields:
+
+Felder
+------
+
+
+.. _account_tax_tax_account_template_account_template_field:
+
+:guilabel:`Kontenvorlage`:
+    :Feldname: ``account_template``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account_template`
+
+    Kontenvorlage
+
+
+.. _account_tax_tax_account_template_account_field:
+
+:guilabel:`Konto`:
+    :Feldname: ``account``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account_template`
+
+    Konto
+
+
+.. _account_tax_tax_account_template_tax_field:
+
+:guilabel:`Steuer`:
+    :Feldname: ``tax``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_tax_template`
+
+    Steuer
+
+
+.. _account_tax_tax_account_template_type_field:
+
+:guilabel:`Typ`:
+    :Feldname: ``type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Typ
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Konto für Rechnung`:
+        Konto für Rechnung
+
+    :guilabel:`Konto für Gutschrift`:
+        Konto für Gutschrift
+
+
+
+
+.. _tax_account:
+
+Steuerkonto
+===========
+ :Modellname: ``tax.account``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Steuerkonto"* ...
+
+
+.. _tax_account_fields:
+
+Felder
+------
+
+
+.. _tax_account_fiscalyear_field:
+
+:guilabel:`Geschäftsjahr`:
+    :Feldname: ``fiscalyear``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_fiscalyear`
+
+    Geschäftsjahr
+
+
+.. _tax_account_account_field:
+
+:guilabel:`Konto`:
+    :Feldname: ``account``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_account`
+
+    Konto
+
+
+.. _tax_account_tax_field:
+
+:guilabel:`Steuer`:
+    :Feldname: ``tax``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_tax`
+
+    Steuer
+
+
+.. _tax_account_type_field:
+
+:guilabel:`Typ`:
+    :Feldname: ``type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Typ
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Konto für Rechnung`:
+        Konto für Rechnung
+
+    :guilabel:`Konto für Gutschrift`:
+        Konto für Gutschrift
+
+
+
+
+.. _account_tax_template_collection:
+
+Vorlagen Sammlung
+=================
+ :Modellname: ``account.tax.template.collection``
+ :Basismodul: :ref:`account_timeline_module`
+
+Das Modell *"Vorlagen Sammlung"* ...
+
+
+.. _account_tax_template_collection_fields:
+
+Felder
+------
+
+
+
+
+
+#:after:account/index:section:xxx#
+
+
+
+.. _account_account_type_fiscalyear_field:
+
+:guilabel:`Geschäftsjahr`:
+    :Feldname: ``fiscalyear``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_fiscalyear`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Geschäftsjahr
+
+
+#:after:account/index:section:xxx#
+
+
+
+.. _account_tax_code_template_valid_to_field:
+
+:guilabel:`Gültig bis`:
+    :Feldname: ``valid_to``
+    :Feldtyp: :ref:`field_type_date`
+    :Eigenschaft: :ref:`readonly`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Gültig bis
+
+
+.. _account_tax_code_template_valid_from_field:
+
+:guilabel:`Gültig von`:
+    :Feldname: ``valid_from``
+    :Feldtyp: :ref:`field_type_date`
+    :Eigenschaft: :ref:`readonly`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Gültig von
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Gültig bis`:
+    :Feldname: ``valid_to``
+    :Feldtyp: :ref:`field_type_date`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Gültig bis
+
+
+
+:guilabel:`Gültig von`:
+    :Feldname: ``valid_from``
+    :Feldtyp: :ref:`field_type_date`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Gültig von
+
+
+
+:guilabel:`Typ`:
+    :Feldname: ``type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Typ
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Bemessungsgrundlage Rechnung`:
+        Bemessungsgrundlage Rechnung
+
+    :guilabel:`Steuer Rechnung`:
+        Steuer Rechnung
+
+    :guilabel:`Bemessungsgrundlage Gutschrift`:
+        Bemessungsgrundlage Gutschrift
+
+    :guilabel:`Steuer Gutschrift`:
+        Steuer Gutschrift
+
+
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Konten`:
+    :Feldname: ``accounts``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Zielmodell: :ref:`account_account`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Konten
+
+
+
+:guilabel:`Kontenumfang`:
+    :Feldname: ``range_accounts``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Kontenumfang
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Alle Konten`:
+        Alle Konten
+
+    :guilabel:`Kontenauswahl`:
+        Kontenauswahl
+
+
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Abschlussbedingung`:
+    :Feldname: ``close_condition``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Abschlussbedingung
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Ausgeglichen`:
+        Ausgeglichen
+
+    :guilabel:`Keine`:
+        Keine
+
+
+
+
+
+:guilabel:`Buchungszeilen`:
+    :Feldname: ``move_lines``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Eigenschaft: :ref:`readonly`
+    :Zielmodell: :ref:`account_move_line`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Buchungszeilen
+
+
+
+:guilabel:`Geschäftsjahr`:
+    :Feldname: ``fiscalyear``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`account_fiscalyear`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Geschäftsjahr
+
+
+
+:guilabel:`Nachfolger`:
+    :Feldname: ``successor``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Nachfolger
+
+
+
+:guilabel:`Saldenvortragskonto`:
+    :Feldname: ``opening_balance_account``
+    :Feldtyp: :ref:`field_type_boolean`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Saldenvortragskonto
+
+
+
+:guilabel:`Startsaldo`:
+    :Feldname: ``starting_balance``
+    :Feldtyp: :ref:`field_type_numeric`
+    :Eigenschaft: :ref:`readonly`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Startsaldo
+
+
+
+:guilabel:`Vorgänger`:
+    :Feldname: ``predecessors``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Zielmodell: :ref:`account_account`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Vorgänger
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Standardkonto Forderungen`:
+    :Feldname: ``default_account_receivable``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Standardkonto Forderungen
+
+
+
+:guilabel:`Standardkonto Verbindlichkeiten`:
+    :Feldname: ``default_account_payable``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_account`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Standardkonto Verbindlichkeiten
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Buchungszeitraum`:
+    :Feldname: ``period``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`account_period`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Wählen Sie in diesem Feld einen Buchnungszeitraum aus, wenn Sie
+    einen Bericht für einen spezifischen Buchungszeitraum erstellen
+    wollen.
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Defaultkonten Journale`:
+    :Feldname: ``journal_accounts``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Zielmodell: :ref:`account_journal_account`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Defaultkonten Journale
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Vorlagen Kennziffern`:
+    :Feldname: ``template_codes``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Eigenschaft: :ref:`readonly`
+    :Zielmodell: :ref:`account_tax_tax_code_template`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Vorlagen Kennziffern
+
+
+
+:guilabel:`Vorlagen Konten`:
+    :Feldname: ``template_accounts``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Eigenschaft: :ref:`readonly`
+    :Zielmodell: :ref:`account_tax_tax_account_template`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Vorlagen Konten
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Abschlussbedingung`:
+    :Feldname: ``close_condition``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`, :ref:`readonly`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Abschlussbedingung
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Ausgeglichen`:
+        Ausgeglichen
+
+    :guilabel:`Keine`:
+        Keine
+
+
+
+
+
+:guilabel:`Nachfolger`:
+    :Feldname: ``successor``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`readonly`
+    :Zielmodell: :ref:`account_account_template`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Nachfolger
+
+
+
+:guilabel:`Vorgänger`:
+    :Feldname: ``predecessors``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Eigenschaft: :ref:`readonly`
+    :Zielmodell: :ref:`account_account_template`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Vorgänger
+
+
+#:after:account/index:section:xxx#
+
+
+
+
+:guilabel:`Search Key`:
+    :Feldname: ``search_key``
+    :Feldtyp: :ref:`field_type_char`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Can be used to define a custom key for the search.
+
+
+
+:guilabel:`Steuerkennziffern`:
+    :Feldname: ``codes``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Zielmodell: :ref:`tax_code`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Steuerkennziffern
+
+
+
+:guilabel:`Steuerkonten`:
+    :Feldname: ``accounts``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Zielmodell: :ref:`tax_account`
+    :Quellmodul: :ref:`account_timeline_module`
+
+    Steuerkonten

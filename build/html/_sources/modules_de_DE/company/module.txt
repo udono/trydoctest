@@ -1,0 +1,11 @@
+.. _company_module:
+
+=======
+Company
+=======
+:Module Name: trytond_company
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

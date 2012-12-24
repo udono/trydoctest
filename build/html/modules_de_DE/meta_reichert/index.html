@@ -1,0 +1,1018 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Artikel - Stückliste &mdash; Dokumentation v0.1.0</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="Dokumentation v0.1.0" href="../../index.html" />
+    <link rel="next" title="Adresse" href="../party/index.html" />
+    <link rel="prev" title="Aktion" href="../ir/index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="../party/index.html" title="Adresse"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="../ir/index.html" title="Aktion"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="artikel-stuckliste">
+<span id="product-product-production-bom"></span><h1>Artikel - Stückliste<a class="headerlink" href="#artikel-stuckliste" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product.product-production.bom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Artikel - Stückliste&#8221;</em> ...</p>
+<div class="section" id="felder">
+<span id="product-product-production-bom-fields"></span><h2>Felder<a class="headerlink" href="#felder" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="product-product-production-bom-product-field">
+<dt><em class="guilabel">Artikel</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-product"><em>Artikel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Artikel</p>
+</dd>
+</dl>
+<dl class="docutils" id="product-product-production-bom-sequence-field">
+<dt><em class="guilabel">Reihenfolge</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Ganzzahl</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Dieses Feld legt die Position der Sortierreihenfolge in Listen an.</p>
+</dd>
+</dl>
+<dl class="docutils" id="product-product-production-bom-bom-field">
+<dt><em class="guilabel">Stückliste</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">bom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#production-bom"><em>Stückliste</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Stückliste</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="production-bom-tree-open-init">
+<span id="id1"></span><h1>production.bom.tree.open.init<a class="headerlink" href="#production-bom-tree-open-init" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">production.bom.tree.open.init</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;production.bom.tree.open.init&#8221;</em> ...</p>
+<div class="section" id="production-bom-tree-open-init-fields">
+<span id="id2"></span><h2>Felder<a class="headerlink" href="#production-bom-tree-open-init-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="production-bom-tree-open-init-quantity-field">
+<dt><em class="guilabel">Anzahl</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quantity</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Fließkommazahl</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Anzahl</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-tree-open-init-uom-field">
+<dt><em class="guilabel">Stück</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">uom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-uom"><em>Maßeinheit</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Stück</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-tree-open-init-bom-field">
+<dt><em class="guilabel">Stückliste</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">bom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#product-product-production-bom"><em>Artikel - Stückliste</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Stückliste</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="production-bom-tree-open-tree">
+<span id="id3"></span><h1>production.bom.tree.open.tree<a class="headerlink" href="#production-bom-tree-open-tree" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">production.bom.tree.open.tree</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;production.bom.tree.open.tree&#8221;</em> ...</p>
+<div class="section" id="production-bom-tree-open-tree-fields">
+<span id="id4"></span><h2>Felder<a class="headerlink" href="#production-bom-tree-open-tree-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="production-bom-tree-open-tree-bom-tree-field">
+<dt><em class="guilabel">Stückliste Baum</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">bom_tree</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#production-bom-tree"><em>Stückliste Baum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Stückliste Baum</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="stuckliste">
+<span id="production-bom"></span><h1>Stückliste<a class="headerlink" href="#stuckliste" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">production.bom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menü:</th><td class="field-body"><em class="menuselection">Produktion ‣ Einstellungen ‣ Stücklisten</em></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Stückliste&#8221;</em> ...</p>
+<div class="section" id="production-bom-fields">
+<span id="id5"></span><h2>Felder<a class="headerlink" href="#production-bom-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="production-bom-active-field">
+<dt><em class="guilabel">Aktiv</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Ankreuzfeld</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Aktivieren oder Deaktivieren des Datensatzes für die weitere
+Verwendung. Siehe auch Abschnitt
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Aktiv Feld</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-inputs-field">
+<dt><em class="guilabel">Input</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">inputs</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#production-bom-input"><em>Stückliste Input</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Input</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-name-field">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Name</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-outputs-field">
+<dt><em class="guilabel">Output</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">outputs</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#production-bom-output"><em>Stückliste Output</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Output</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="zugriffsberechtigungen">
+<h2>Zugriffsberechtigungen<a class="headerlink" href="#zugriffsberechtigungen" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Die folgenden Zugriffsberechtigungen für Benutzer gelten für das Modell:</p>
+<div class="section" id="mitglieder-ohne-gruppe">
+<h3>Mitglieder <em>ohne</em> Gruppe<a class="headerlink" href="#mitglieder-ohne-gruppe" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">verboten</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="mitglieder-in-gruppe-produktion-administration">
+<h3>Mitglieder in Gruppe <em>Produktion Administration</em><a class="headerlink" href="#mitglieder-in-gruppe-produktion-administration" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">erlaubt</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="stuckliste-baum">
+<span id="production-bom-tree"></span><h1>Stückliste Baum<a class="headerlink" href="#stuckliste-baum" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">production.bom.tree</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Stückliste Baum&#8221;</em> ...</p>
+<div class="section" id="production-bom-tree-fields">
+<span id="id6"></span><h2>Felder<a class="headerlink" href="#production-bom-tree-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="production-bom-tree-quantity-field">
+<dt><em class="guilabel">Anzahl</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quantity</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Fließkommazahl</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Anzahl</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-tree-product-field">
+<dt><em class="guilabel">Artikel</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-product"><em>Artikel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Artikel</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-tree-uom-field">
+<dt><em class="guilabel">Einheit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">uom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-uom"><em>Maßeinheit</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Einheit</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-tree-childs-field">
+<dt><em class="guilabel">Untergeordnet</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">childs</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#production-bom-tree"><em>Stückliste Baum</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Die untergeordneten Datensätze in einer Baumstruktur. Siehe auch
+Abschnitt <a class="reference internal" href="../../general_concepts.html#general-concept-tree-model"><em>Baum</em></a>.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="stuckliste-input">
+<span id="production-bom-input"></span><h1>Stückliste Input<a class="headerlink" href="#stuckliste-input" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">production.bom.input</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Stückliste Input&#8221;</em> ...</p>
+<div class="section" id="production-bom-input-fields">
+<span id="id7"></span><h2>Felder<a class="headerlink" href="#production-bom-input-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="production-bom-input-quantity-field">
+<dt><em class="guilabel">Anzahl</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quantity</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Fließkommazahl</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Anzahl</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-input-product-field">
+<dt><em class="guilabel">Artikel</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-product"><em>Artikel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Artikel</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-input-uom-field">
+<dt><em class="guilabel">Einheit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">uom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-uom"><em>Maßeinheit</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Einheit</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-input-bom-field">
+<dt><em class="guilabel">Stückliste</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">bom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#production-bom"><em>Stückliste</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Stückliste</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id8">
+<h2>Zugriffsberechtigungen<a class="headerlink" href="#id8" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Die folgenden Zugriffsberechtigungen für Benutzer gelten für das Modell:</p>
+<div class="section" id="id9">
+<h3>Mitglieder <em>ohne</em> Gruppe<a class="headerlink" href="#id9" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">verboten</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="id10">
+<h3>Mitglieder in Gruppe <em>Produktion Administration</em><a class="headerlink" href="#id10" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">erlaubt</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="stuckliste-output">
+<span id="production-bom-output"></span><h1>Stückliste Output<a class="headerlink" href="#stuckliste-output" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">production.bom.output</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Stückliste Output&#8221;</em> ...</p>
+<div class="section" id="production-bom-output-fields">
+<span id="id11"></span><h2>Felder<a class="headerlink" href="#production-bom-output-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="production-bom-output-quantity-field">
+<dt><em class="guilabel">Anzahl</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quantity</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Fließkommazahl</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Anzahl</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-output-product-field">
+<dt><em class="guilabel">Artikel</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-product"><em>Artikel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Artikel</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-output-uom-field">
+<dt><em class="guilabel">Einheit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">uom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-uom"><em>Maßeinheit</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Einheit</p>
+</dd>
+</dl>
+<dl class="docutils" id="production-bom-output-bom-field">
+<dt><em class="guilabel">Stückliste</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">bom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#production-bom"><em>Stückliste</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Stückliste</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id12">
+<h2>Zugriffsberechtigungen<a class="headerlink" href="#id12" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Die folgenden Zugriffsberechtigungen für Benutzer gelten für das Modell:</p>
+<div class="section" id="id13">
+<h3>Mitglieder <em>ohne</em> Gruppe<a class="headerlink" href="#id13" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">verboten</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="id14">
+<h3>Mitglieder in Gruppe <em>Produktion Administration</em><a class="headerlink" href="#id14" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">erlaubt</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>#:after:product/index:section:xxx#</p>
+<dl class="docutils" id="product-product-picture-name-field">
+<dt><em class="guilabel">File or Attachment Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">picture_name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">File or Attachment Name</p>
+</dd>
+</dl>
+<dl class="docutils" id="product-product-picture-data-field">
+<dt><em class="guilabel">Picture Data</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">picture_data</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-binary"><em>Binärfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Picture Data</p>
+</dd>
+</dl>
+<dl class="docutils" id="product-product-boms-field">
+<dt><em class="guilabel">Stücklisten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">boms</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#product-product-production-bom"><em>Artikel - Stückliste</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Stücklisten</p>
+</dd>
+</dl>
+<p>#:after:sale/index:section:xxx#</p>
+<dl class="docutils" id="sale-sale-quotation-date-field">
+<dt><em class="guilabel">Angebotsdatum</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quotation_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Das Datum des Angebots.</p>
+</dd>
+</dl>
+<p>#:after:sale/index:section:xxx#</p>
+<dl class="docutils" id="sale-line-group-invoice-mode-field">
+<dt><em class="guilabel">Abrechnungsmodus</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">group_invoice_mode</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Abrechnungsmodus
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Gruppe abrechnen</em>:</dt>
+<dd>Gruppe abrechnen</dd>
+<dt><em class="guilabel">Komponenten abrechnen</em>:</dt>
+<dd>Komponenten abrechnen</dd>
+</dl>
+</dd>
+</dl>
+<dl class="docutils" id="sale-line-group-field">
+<dt><em class="guilabel">Gruppe</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">group</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../sale/index.html#sale-line"><em>Verkauf Position</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Gruppe</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-line-parts-field">
+<dt><em class="guilabel">Komponenten</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">parts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../sale/index.html#sale-line"><em>Verkauf Position</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Komponenten</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-line-group-shipping-mode-field">
+<dt><em class="guilabel">Liefermodus</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">group_shipping_mode</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Auswahlfeld</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Liefermodus
+Die folgenden Optionen stehen zur Auswahl:</p>
+<dl class="last docutils">
+<dt><em class="guilabel">Einzelteile Liefern</em>:</dt>
+<dd>Einzelteile Liefern</dd>
+</dl>
+</dd>
+</dl>
+<dl class="docutils" id="sale-line-title-field">
+<dt><em class="guilabel">Titel</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">title</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Titel</p>
+</dd>
+</dl>
+<p>#:after:purchase/index:section:xxx#</p>
+<dl class="docutils" id="purchase-purchase-request-date-field">
+<dt><em class="guilabel">Anfragedatum</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">request_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Datum</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#meta-reichert-module"><em>Meta-Modul für Reichert GmbH</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Das Datum der Angebotsanfrage beim Lieferanten.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Artikel - Stückliste</a><ul>
+<li><a class="reference internal" href="#felder">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#production-bom-tree-open-init">production.bom.tree.open.init</a><ul>
+<li><a class="reference internal" href="#production-bom-tree-open-init-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#production-bom-tree-open-tree">production.bom.tree.open.tree</a><ul>
+<li><a class="reference internal" href="#production-bom-tree-open-tree-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#stuckliste">Stückliste</a><ul>
+<li><a class="reference internal" href="#production-bom-fields">Felder</a></li>
+<li><a class="reference internal" href="#zugriffsberechtigungen">Zugriffsberechtigungen</a><ul>
+<li><a class="reference internal" href="#mitglieder-ohne-gruppe">Mitglieder <em>ohne</em> Gruppe</a></li>
+<li><a class="reference internal" href="#mitglieder-in-gruppe-produktion-administration">Mitglieder in Gruppe <em>Produktion Administration</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#stuckliste-baum">Stückliste Baum</a><ul>
+<li><a class="reference internal" href="#production-bom-tree-fields">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#stuckliste-input">Stückliste Input</a><ul>
+<li><a class="reference internal" href="#production-bom-input-fields">Felder</a></li>
+<li><a class="reference internal" href="#id8">Zugriffsberechtigungen</a><ul>
+<li><a class="reference internal" href="#id9">Mitglieder <em>ohne</em> Gruppe</a></li>
+<li><a class="reference internal" href="#id10">Mitglieder in Gruppe <em>Produktion Administration</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#stuckliste-output">Stückliste Output</a><ul>
+<li><a class="reference internal" href="#production-bom-output-fields">Felder</a></li>
+<li><a class="reference internal" href="#id12">Zugriffsberechtigungen</a><ul>
+<li><a class="reference internal" href="#id13">Mitglieder <em>ohne</em> Gruppe</a></li>
+<li><a class="reference internal" href="#id14">Mitglieder in Gruppe <em>Produktion Administration</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="../ir/index.html"
+                        title="vorheriges Kapitel">Aktion</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="../party/index.html"
+                        title="nächstes Kapitel">Adresse</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/meta_reichert/index.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="../party/index.html" title="Adresse"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="../ir/index.html" title="Aktion"
+             >zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
+    </div>
+  </body>
+</html>

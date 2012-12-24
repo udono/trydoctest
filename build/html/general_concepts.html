@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>General Conceptions &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="index.html" />
+    <link rel="next" title="Account" href="modules/account/module.html" />
+    <link rel="prev" title="Modules" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modules/account/module.html" title="Account"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Modules"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="general-conceptions">
+<span id="general-concepts"></span><h1>General Conceptions<a class="headerlink" href="#general-conceptions" title="Permalink to this headline">¶</a></h1>
+<p>To simplify usage and programming of Tryton we are using recurring and reusable
+conceptions.</p>
+<div class="section" id="view-types">
+<span id="general-concept-view-types"></span><h2>View Types<a class="headerlink" href="#view-types" title="Permalink to this headline">¶</a></h2>
+<p>Tryton provides the following view types:</p>
+<blockquote>
+<div><ul class="simple">
+<li>List<ul>
+<li>Table</li>
+<li>Tree</li>
+</ul>
+</li>
+<li>Form</li>
+<li>Graph</li>
+<li>Board</li>
+</ul>
+</div></blockquote>
+<div class="section" id="list">
+<span id="general-concept-list-view"></span><h3>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h3>
+<p>A list view is for showing and editing many records.
+A list view can be represeted like a flat table or like a nested tree
+structure.</p>
+<div class="section" id="sequence">
+<span id="general-concept-list-view-sequence"></span><h4>Sequence<a class="headerlink" href="#sequence" title="Permalink to this headline">¶</a></h4>
+<p>A sequence represents the position of the record in a list as an integer
+number.</p>
+</div>
+<div class="section" id="editable">
+<h4>Editable<a class="headerlink" href="#editable" title="Permalink to this headline">¶</a></h4>
+<p>An editable list is like a spreadsheet table which shows data and allows to
+edit data.</p>
+</div>
+<div class="section" id="drag-n-drop">
+<span id="dragndrop"></span><h4>Drag&#8217;n Drop<a class="headerlink" href="#drag-n-drop" title="Permalink to this headline">¶</a></h4>
+<p>Drag&#8217;n Drop is done by selecting one ore more records, click and hold mouse1
+while droping the selection into another field...</p>
+</div>
+<div class="section" id="tree">
+<span id="general-concept-tree"></span><h4>Tree<a class="headerlink" href="#tree" title="Permalink to this headline">¶</a></h4>
+<p><em>Trees</em> are hierarchical data structures composed of linked nodes.
+A node <em>can</em> have one and only one <em>parent</em>.
+Nodes without a <em>parent</em> are called <em>root</em> nodes.
+A node <em>can</em> have many <em>children</em>.
+Nodes without <em>children</em> are called <em>leafs</em>.</p>
+<p>Nodes which are not <em>leafs</em>, can be expanded by click or right-arrow-key and
+showing their <em>children</em> nodes.</p>
+<p>A tree is build up by node entries.
+The parent and children fields can be set manual or with <a class="reference internal" href="#dragndrop"><em>Drag&#8217;n Drop</em></a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="form">
+<h2>Form<a class="headerlink" href="#form" title="Permalink to this headline">¶</a></h2>
+<p>The form view is for data entry of a single record.</p>
+</div>
+<div class="section" id="graph">
+<h2>Graph<a class="headerlink" href="#graph" title="Permalink to this headline">¶</a></h2>
+<p>The graph view is for showing many records in a pie or line chart...</p>
+</div>
+<div class="section" id="board">
+<h2>Board<a class="headerlink" href="#board" title="Permalink to this headline">¶</a></h2>
+<p>The board view allows to combine tree, form and graph views in a single view.</p>
+</div>
+<div class="section" id="special-fields">
+<span id="general-concept-special-fields"></span><h2>Special Fields<a class="headerlink" href="#special-fields" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="active">
+<span id="general-concept-active-field"></span><h2>Active<a class="headerlink" href="#active" title="Permalink to this headline">¶</a></h2>
+<p>The <em class="guilabel">Active</em> field implements the conception of <em>soft deletion</em>.
+In contrary to default <em>deletion</em>, a record is not deleted in the database,
+but is no longer available for future use.</p>
+<p>Deactiveation is used in <a class="reference internal" href="modules/ir/index.html#ir-model"><em>Model</em></a>s which would forbid the deletion of
+a record once it is referenced in another model.</p>
+<p>Deaktivated records of a model can be searched with the search bar entry:
+<cite>Active:False</cite>.</p>
+<p>The default for <em class="guilabel">Active</em> fields is <tt class="docutils literal"><span class="pre">True</span></tt>.</p>
+</div>
+<div class="section" id="field-types">
+<h2>Field Types<a class="headerlink" href="#field-types" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="selection">
+<span id="field-type-selection"></span><h3>Selection<a class="headerlink" href="#selection" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="boolean">
+<span id="field-type-boolean"></span><h3>Boolean<a class="headerlink" href="#boolean" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="single-line-text">
+<span id="field-type-char"></span><h3>Single Line Text<a class="headerlink" href="#single-line-text" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="multi-line-text">
+<span id="field-type-text"></span><h3>Multi Line Text<a class="headerlink" href="#multi-line-text" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="encrypted-single-line-text">
+<span id="field-type-sha"></span><h3>Encrypted Single Line Text<a class="headerlink" href="#encrypted-single-line-text" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="point-in-time">
+<span id="field-type-datetime"></span><h3>Point in Time<a class="headerlink" href="#point-in-time" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="date">
+<span id="field-type-date"></span><h3>Date<a class="headerlink" href="#date" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="integer-number">
+<span id="field-type-integer"></span><h3>Integer Number<a class="headerlink" href="#integer-number" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="float-number">
+<span id="field-type-float"></span><h3>Float Number<a class="headerlink" href="#float-number" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="numeric-number">
+<span id="field-type-numeric"></span><h3>Numeric Number<a class="headerlink" href="#numeric-number" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="many-to-many">
+<span id="field-type-many2many"></span><h3>Many-To-Many<a class="headerlink" href="#many-to-many" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="one-to-many">
+<span id="field-type-one2many"></span><h3>One-To-Many<a class="headerlink" href="#one-to-many" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="many-to-one">
+<span id="field-type-many2one"></span><h3>Many-To-One<a class="headerlink" href="#many-to-one" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="one-to-one">
+<span id="field-type-one2one"></span><h3>One-To-One<a class="headerlink" href="#one-to-one" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="binary">
+<span id="field-type-binary"></span><h3>Binary<a class="headerlink" href="#binary" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="reference">
+<span id="field-type-reference"></span><h3>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="fieldattributes">
+<h2>Fieldattributes<a class="headerlink" href="#fieldattributes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="required">
+<span id="id1"></span><h3>Required<a class="headerlink" href="#required" title="Permalink to this headline">¶</a></h3>
+<p>It is mandatory to fill content into a field with this attribute, to
+successfull save the corresponding record into the database.</p>
+</div>
+<div class="section" id="read-only">
+<span id="readonly"></span><h3>Read Only<a class="headerlink" href="#read-only" title="Permalink to this headline">¶</a></h3>
+<p>The edition of a field with this attribute is disabled. A read only field can
+not be changed directly by the user.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">General Conceptions</a><ul>
+<li><a class="reference internal" href="#view-types">View Types</a><ul>
+<li><a class="reference internal" href="#list">List</a><ul>
+<li><a class="reference internal" href="#sequence">Sequence</a></li>
+<li><a class="reference internal" href="#editable">Editable</a></li>
+<li><a class="reference internal" href="#drag-n-drop">Drag&#8217;n Drop</a></li>
+<li><a class="reference internal" href="#tree">Tree</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#form">Form</a></li>
+<li><a class="reference internal" href="#graph">Graph</a></li>
+<li><a class="reference internal" href="#board">Board</a></li>
+<li><a class="reference internal" href="#special-fields">Special Fields</a></li>
+<li><a class="reference internal" href="#active">Active</a></li>
+<li><a class="reference internal" href="#field-types">Field Types</a><ul>
+<li><a class="reference internal" href="#selection">Selection</a></li>
+<li><a class="reference internal" href="#boolean">Boolean</a></li>
+<li><a class="reference internal" href="#single-line-text">Single Line Text</a></li>
+<li><a class="reference internal" href="#multi-line-text">Multi Line Text</a></li>
+<li><a class="reference internal" href="#encrypted-single-line-text">Encrypted Single Line Text</a></li>
+<li><a class="reference internal" href="#point-in-time">Point in Time</a></li>
+<li><a class="reference internal" href="#date">Date</a></li>
+<li><a class="reference internal" href="#integer-number">Integer Number</a></li>
+<li><a class="reference internal" href="#float-number">Float Number</a></li>
+<li><a class="reference internal" href="#numeric-number">Numeric Number</a></li>
+<li><a class="reference internal" href="#many-to-many">Many-To-Many</a></li>
+<li><a class="reference internal" href="#one-to-many">One-To-Many</a></li>
+<li><a class="reference internal" href="#many-to-one">Many-To-One</a></li>
+<li><a class="reference internal" href="#one-to-one">One-To-One</a></li>
+<li><a class="reference internal" href="#binary">Binary</a></li>
+<li><a class="reference internal" href="#reference">Reference</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fieldattributes">Fieldattributes</a><ul>
+<li><a class="reference internal" href="#required">Required</a></li>
+<li><a class="reference internal" href="#read-only">Read Only</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Modules</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="modules/account/module.html"
+                        title="next chapter">Account</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/general_concepts.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modules/account/module.html" title="Account"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Modules"
+             >previous</a> |</li>
+        <li><a href="index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

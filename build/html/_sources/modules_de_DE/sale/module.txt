@@ -1,0 +1,11 @@
+.. _sale_module:
+
+====
+Sale
+====
+:Module Name: trytond_sale
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

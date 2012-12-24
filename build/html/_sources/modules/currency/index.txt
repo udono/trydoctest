@@ -1,0 +1,307 @@
+:tocdepth: 1
+
+
+
+.. _currency_currency:
+
+Currency
+========
+:Model Name: ``currency.currency``
+:Base Module: :ref:`currency_module`
+
+:Menu:
+    :menuselection:`Currency --> Currencies`
+
+The *Currency*-model introduces the conception of ...
+
+.. _currency_currency_fields:
+
+Fields
+------
+
+
+.. _currency_currency_currency_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _currency_currency_currency_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_rate:
+
+:guilabel:`Current rate`:
+    :Internal Name: ``rate``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+
+    The *Current rate*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_mon_decimal_point:
+
+:guilabel:`Decimal Separator`:
+    :Internal Name: ``mon_decimal_point``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Decimal Separator*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_digits:
+
+:guilabel:`Display Digits`:
+    :Internal Name: ``digits``
+    :Type: :ref:`field_type_integer`
+
+    The *Display Digits*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_mon_grouping:
+
+:guilabel:`Grouping`:
+    :Internal Name: ``mon_grouping``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Grouping*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_n_cs_precedes:
+
+:guilabel:`Negative Currency Symbol Precedes`:
+    :Internal Name: ``n_cs_precedes``
+    :Type: :ref:`field_type_boolean`
+
+    The *Negative Currency Symbol Precedes*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_n_sep_by_space:
+
+:guilabel:`Negative Separate by Space`:
+    :Internal Name: ``n_sep_by_space``
+    :Type: :ref:`field_type_boolean`
+
+    The *Negative Separate by Space*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_negative_sign:
+
+:guilabel:`Negative Sign`:
+    :Internal Name: ``negative_sign``
+    :Type: :ref:`field_type_char`
+
+    The *Negative Sign*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_n_sign_posn:
+
+:guilabel:`Negative Sign Position`:
+    :Internal Name: ``n_sign_posn``
+    :Type: :ref:`field_type_integer`
+
+    The *Negative Sign Position*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_numeric_code:
+
+:guilabel:`Numeric Code`:
+    :Internal Name: ``numeric_code``
+    :Type: :ref:`field_type_char`
+
+    The *Numeric Code*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_p_cs_precedes:
+
+:guilabel:`Positive Currency Symbol Precedes`:
+    :Internal Name: ``p_cs_precedes``
+    :Type: :ref:`field_type_boolean`
+
+    The *Positive Currency Symbol Precedes*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_p_sep_by_space:
+
+:guilabel:`Positive Separate by Space`:
+    :Internal Name: ``p_sep_by_space``
+    :Type: :ref:`field_type_boolean`
+
+    The *Positive Separate by Space*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_positive_sign:
+
+:guilabel:`Positive Sign`:
+    :Internal Name: ``positive_sign``
+    :Type: :ref:`field_type_char`
+
+    The *Positive Sign*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_p_sign_posn:
+
+:guilabel:`Positive Sign Position`:
+    :Internal Name: ``p_sign_posn``
+    :Type: :ref:`field_type_integer`
+
+    The *Positive Sign Position*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_rates:
+
+:guilabel:`Rates`:
+    :Internal Name: ``rates``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`currency_currency_rate`
+
+    The *Rates*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_rounding:
+
+:guilabel:`Rounding factor`:
+    :Internal Name: ``rounding``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_numeric`
+
+    The *Rounding factor*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_symbol:
+
+:guilabel:`Symbol`:
+    :Internal Name: ``symbol``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Symbol*-field is used to store ...
+
+
+
+
+.. _currency_currency_currency_mon_thousands_sep:
+
+:guilabel:`Thousands Separator`:
+    :Internal Name: ``mon_thousands_sep``
+    :Type: :ref:`field_type_char`
+
+    The *Thousands Separator*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Currency Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _currency_currency_rate:
+
+Rate
+====
+:Model Name: ``currency.currency.rate``
+:Base Module: :ref:`currency_module`
+
+The *Rate*-model introduces the conception of ...
+
+.. _currency_currency_rate_fields:
+
+Fields
+------
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Currency Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+

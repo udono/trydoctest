@@ -1,0 +1,27 @@
+#:after:party/party_base:section:felder_name_der_name_der_partei_code#
+
+.. _party_party_parent_org_field:
+
+:guilabel:`Übergeordnet (Organisation)`:
+    :Feldname: ``parent_org``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`party_party`
+    :Quellmodul: :ref:`party_rollup_organization_module`
+
+    Die der aktuellen Partei übergeordnete Partei vom Typ *Organisation*.
+    (Nur verfügbar, wenn der :guilabel:`Typ Partei` der aktuellen Partei
+    *Organisation* ist.)
+
+
+.. _party_party_child_orgs_field:
+
+:guilabel:`Untergeordnet (Organisationen)`:
+    :Feldname: ``child_orgs``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Eigenschaft: :ref:`readonly`
+    :Zielmodell: :ref:`party_party`
+    :Quellmodul: :ref:`party_rollup_organization_module`
+
+    Die der aktuellen Partei untergeordneten Parteien vom Typ *Organisation*.
+    (Nur verfügbar, wenn der :guilabel:`Typ Partei` der aktuellen Partei
+    *Organisation* ist.)

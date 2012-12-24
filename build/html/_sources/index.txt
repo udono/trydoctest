@@ -1,0 +1,186 @@
+.. toctree::
+   :hidden:
+
+   general_concepts
+
+
+Modules
+-------
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   modules/*/module
+
+
+Menu
+----
+| :ref:`Administration ‣ Countries <country_country>`
+| :ref:`Administration ‣ LDAP ‣ Connection <ldap_connection>`
+| :ref:`Administration ‣ Localization ‣ Languages <ir_lang>`
+| :ref:`Administration ‣ Localization ‣ Translations <ir_translation>`
+| :ref:`Administration ‣ Models ‣ Attachments <ir_attachment>`
+| :ref:`Administration ‣ Models ‣ Default Properties <ir_property>`
+| :ref:`Administration ‣ Models ‣ Exports <ir_export>`
+| :ref:`Administration ‣ Models ‣ Fields <ir_model_field>`
+| :ref:`Administration ‣ Models ‣ Models <ir_model>`
+| :ref:`Administration ‣ Models ‣ Models Access <ir_model_access>`
+| :ref:`Administration ‣ Models ‣ Models Access ‣ Fields Access <ir_model_field_access>`
+| :ref:`Administration ‣ Models ‣ Properties <ir_property>`
+| :ref:`Administration ‣ Models ‣ Record Rules <ir_rule_group>`
+| :ref:`Administration ‣ Models ‣ Triggers <ir_trigger>`
+| :ref:`Administration ‣ Modules ‣ Config Wizard Items <ir_module_module_config_wizard_item>`
+| :ref:`Administration ‣ Modules ‣ Modules <ir_module_module>`
+| :ref:`Administration ‣ Scheduler ‣ Scheduled Actions <ir_cron>`
+| :ref:`Administration ‣ Sequences ‣ Sequence Types <ir_sequence_type>`
+| :ref:`Administration ‣ Sequences ‣ Sequences <ir_sequence>`
+| :ref:`Administration ‣ Sequences ‣ Sequences Strict <ir_sequence_strict>`
+| :ref:`Administration ‣ User Interface ‣ Actions ‣ Actions <ir_action>`
+| :ref:`Administration ‣ User Interface ‣ Actions ‣ Reports <ir_action_report>`
+| :ref:`Administration ‣ User Interface ‣ Actions ‣ URLs <ir_action_url>`
+| :ref:`Administration ‣ User Interface ‣ Actions ‣ Window Actions <ir_action_act_window>`
+| :ref:`Administration ‣ User Interface ‣ Actions ‣ Wizards <ir_action_wizard>`
+| :ref:`Administration ‣ User Interface ‣ Icons <ir_ui_icon>`
+| :ref:`Administration ‣ User Interface ‣ Menu <ir_ui_menu>`
+| :ref:`Administration ‣ User Interface ‣ Tree Expanded State <ir_ui_view_tree_expanded_state>`
+| :ref:`Administration ‣ User Interface ‣ View Shortcuts <ir_ui_view_sc>`
+| :ref:`Administration ‣ User Interface ‣ View Tree Width <ir_ui_view_tree_width>`
+| :ref:`Administration ‣ User Interface ‣ Views <ir_ui_view>`
+| :ref:`Administration ‣ Users ‣ Groups <res_group>`
+| :ref:`Administration ‣ Users ‣ Request Links <res_request_link>`
+| :ref:`Administration ‣ Users ‣ Requests <res_request>`
+| :ref:`Administration ‣ Users ‣ Users <res_user>`
+| :ref:`Administration ‣ WebDAV ‣ Collections <webdav_collection>`
+| :ref:`Administration ‣ WebDAV ‣ Collections ‣ Collections <webdav_collection>`
+| :ref:`Administration ‣ Workflow ‣ Activities <workflow_activity>`
+| :ref:`Administration ‣ Workflow ‣ Instances <workflow_instance>`
+| :ref:`Administration ‣ Workflow ‣ Transitions <workflow_transition>`
+| :ref:`Administration ‣ Workflow ‣ Workflows <workflow>`
+| :ref:`Administration ‣ Workflow ‣ Workitems <workflow_workitem>`
+| :ref:`Carrier Management ‣ Carriers <carrier>`
+| :ref:`Carrier Management ‣ Carriers ‣ New Carrier <carrier>`
+| :ref:`Currency ‣ Currencies <currency_currency>`
+| :ref:`Financial ‣ Configuration ‣ Analytic Account ‣ Analytic Accounts <analytic_account_account>`
+| :ref:`Financial ‣ Configuration ‣ Analytic Account ‣ Analytic Accounts ‣ Analytic Accounts <analytic_account_account>`
+| :ref:`Financial ‣ Configuration ‣ Fiscal Years ‣ Fiscal Years <account_fiscalyear>`
+| :ref:`Financial ‣ Configuration ‣ Fiscal Years ‣ Fiscal Years ‣ Periods <account_period>`
+| :ref:`Financial ‣ Configuration ‣ General Account ‣ Account Templates <account_account_template>`
+| :ref:`Financial ‣ Configuration ‣ General Account ‣ Account Type Templates <account_account_type_template>`
+| :ref:`Financial ‣ Configuration ‣ General Account ‣ Account Types <account_account_type>`
+| :ref:`Financial ‣ Configuration ‣ General Account ‣ Account Types ‣ Account Types <account_account_type>`
+| :ref:`Financial ‣ Configuration ‣ General Account ‣ Accounts <account_account>`
+| :ref:`Financial ‣ Configuration ‣ General Account ‣ Accounts ‣ Accounts <account_account>`
+| :ref:`Financial ‣ Configuration ‣ Journals ‣ Journal Types <account_journal_type>`
+| :ref:`Financial ‣ Configuration ‣ Journals ‣ Journal Views <account_journal_view>`
+| :ref:`Financial ‣ Configuration ‣ Journals ‣ Journals <account_journal>`
+| :ref:`Financial ‣ Configuration ‣ Payment Terms ‣ Payment Terms <account_invoice_payment_term>`
+| :ref:`Financial ‣ Configuration ‣ Statements ‣ Statement Journals <account_statement_journal>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Tax Codes <account_tax_code>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Tax Codes Templates <account_tax_code_template>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Tax Codes ‣ Tax Codes <account_tax_code>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Tax Groups <account_tax_group>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Tax Rule Templates <account_tax_rule_template>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Tax Rules <account_tax_rule>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Taxes <account_tax>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Taxes Templates <account_tax_template>`
+| :ref:`Financial ‣ Configuration ‣ Taxes ‣ Taxes ‣ Taxes <account_tax>`
+| :ref:`Financial ‣ Entries ‣ Account Moves <account_move>`
+| :ref:`Financial ‣ Entries ‣ Journals - Periods <account_journal_period>`
+| :ref:`Financial ‣ Invoices ‣ All Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Credit Notes <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Credit Notes ‣ Credit Note Lines <account_invoice_line>`
+| :ref:`Financial ‣ Invoices ‣ Credit Notes ‣ Draft Credit Notes <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Credit Notes ‣ Opened Credit Notes <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Credit Notes ‣ Pro Forma Credit Notes <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Invoices ‣ Draft Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Invoices ‣ Invoice Lines <account_invoice_line>`
+| :ref:`Financial ‣ Invoices ‣ Invoices ‣ Opened Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Invoices ‣ Pro Forma Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Credit Notes <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Credit Notes ‣ Draft Supplier Credit Notes <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Credit Notes ‣ Opened Supplier Credit Notes <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Credit Notes ‣ Pro Forma Supplier Credit Notes <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Credit Notes ‣ Supplier Credit Note Lines <account_invoice_line>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Invoices ‣ Draft Supplier Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Invoices ‣ Opened Supplier Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Invoices ‣ Pro Forma Supplier Invoices <account_invoice>`
+| :ref:`Financial ‣ Invoices ‣ Supplier Invoices ‣ Supplier Invoice Lines <account_invoice_line>`
+| :ref:`Financial ‣ Processing ‣ Close Journals - Periods <account_journal_period>`
+| :ref:`Financial ‣ Processing ‣ Close Periods <account_period>`
+| :ref:`Financial ‣ Reporting ‣ Journals - Periods <account_journal_period>`
+| :ref:`Financial ‣ Statements ‣ All Statement <account_statement>`
+| :ref:`Financial ‣ Statements ‣ Draft Statements <account_statement>`
+| :ref:`Financial ‣ Statements ‣ Posted Statements <account_statement>`
+| :ref:`Financial ‣ Statements ‣ Validated Statement <account_statement>`
+| :ref:`Inventory & Stock ‣ Configuration ‣ Locations <stock_location>`
+| :ref:`Inventory & Stock ‣ Configuration ‣ Periods <stock_period>`
+| :ref:`Inventory & Stock ‣ Configuration ‣ Stock Configuration <stock_configuration>`
+| :ref:`Inventory & Stock ‣ Customer Shipments <stock_shipment_out>`
+| :ref:`Inventory & Stock ‣ Customer Shipments ‣ Assigned Customer Shipments <stock_shipment_out>`
+| :ref:`Inventory & Stock ‣ Customer Shipments ‣ Customer Return Shipments <stock_shipment_out_return>`
+| :ref:`Inventory & Stock ‣ Customer Shipments ‣ Customer Shipments Ready for Shipping <stock_shipment_out>`
+| :ref:`Inventory & Stock ‣ Customer Shipments ‣ Customer Shipments Waiting Assignation <stock_shipment_out>`
+| :ref:`Inventory & Stock ‣ Forecasts <stock_forecast>`
+| :ref:`Inventory & Stock ‣ Forecasts ‣ Draft Forecasts <stock_forecast>`
+| :ref:`Inventory & Stock ‣ Internal Shipments <stock_shipment_internal>`
+| :ref:`Inventory & Stock ‣ Internal Shipments ‣ Assigned Internal Shipments <stock_shipment_internal>`
+| :ref:`Inventory & Stock ‣ Internal Shipments ‣ Draft Internal Shipments <stock_shipment_internal>`
+| :ref:`Inventory & Stock ‣ Internal Shipments ‣ Internal Shipments Waiting Assignation <stock_shipment_internal>`
+| :ref:`Inventory & Stock ‣ Inventories <stock_inventory>`
+| :ref:`Inventory & Stock ‣ Inventories ‣ Draft Inventories <stock_inventory>`
+| :ref:`Inventory & Stock ‣ Locations <stock_location>`
+| :ref:`Inventory & Stock ‣ Moves <stock_move>`
+| :ref:`Inventory & Stock ‣ Moves ‣ Moves from Suppliers <stock_move>`
+| :ref:`Inventory & Stock ‣ Moves ‣ Moves from Suppliers ‣ Moves from Suppliers Waiting Arrival <stock_move>`
+| :ref:`Inventory & Stock ‣ Moves ‣ Moves to Customers <stock_move>`
+| :ref:`Inventory & Stock ‣ Order Points <stock_order_point>`
+| :ref:`Inventory & Stock ‣ Supplier Shipments <stock_shipment_in>`
+| :ref:`Inventory & Stock ‣ Supplier Shipments ‣ Draft Supplier Shipment <stock_shipment_in>`
+| :ref:`Inventory & Stock ‣ Supplier Shipments ‣ Received Supplier shipments <stock_shipment_in>`
+| :ref:`Inventory & Stock ‣ Supplier Shipments ‣ Supplier Return Shipments <stock_shipment_in_return>`
+| :ref:`Party ‣ Addresses <party_address>`
+| :ref:`Party ‣ Categories <party_category>`
+| :ref:`Party ‣ Categories ‣ Categories <party_category>`
+| :ref:`Party ‣ Configuration ‣ Companies <company_company>`
+| :ref:`Party ‣ Configuration ‣ Companies ‣ Companies <company_company>`
+| :ref:`Party ‣ Configuration ‣ Employees <company_employee>`
+| :ref:`Party ‣ Configuration ‣ Party Configuration <party_configuration>`
+| :ref:`Party ‣ Parties <party_party>`
+| :ref:`Product ‣ Categories <product_category>`
+| :ref:`Product ‣ Categories ‣ Categories <product_category>`
+| :ref:`Product ‣ Price Lists <product_price_list>`
+| :ref:`Product ‣ Products <product_product>`
+| :ref:`Product ‣ Units of Measure <product_uom>`
+| :ref:`Product ‣ Units of Measure ‣ Categories <product_uom_category>`
+| :ref:`Project ‣ Configuration ‣ Works Efforts <project_work>`
+| :ref:`Project ‣ Configuration ‣ Works Efforts ‣ Works Efforts <project_work>`
+| :ref:`Project ‣ Projects <project_work>`
+| :ref:`Project ‣ Projects ‣ Projects <project_work>`
+| :ref:`Project ‣ Projects ‣ Tasks <project_work>`
+| :ref:`Purchase ‣ Configuration ‣ Purchase Configuration <purchase_configuration>`
+| :ref:`Purchase ‣ Purchase Requests <purchase_request>`
+| :ref:`Purchase ‣ Purchase Requests ‣ Draft Purchase Requests <purchase_request>`
+| :ref:`Purchase ‣ Purchases <purchase_purchase>`
+| :ref:`Purchase ‣ Purchases ‣ Confirmed Purchases <purchase_purchase>`
+| :ref:`Purchase ‣ Purchases ‣ Draft Purchases <purchase_purchase>`
+| :ref:`Purchase ‣ Purchases ‣ Purchases in Quotation <purchase_purchase>`
+| :ref:`Sales ‣ Configuration ‣ Sales Configuration <sale_configuration>`
+| :ref:`Sales ‣ Leads and Opportunities <sale_opportunity>`
+| :ref:`Sales ‣ Leads and Opportunities ‣ Cancelled Leads and Opportunities <sale_opportunity>`
+| :ref:`Sales ‣ Leads and Opportunities ‣ Converted Opportunities <sale_opportunity>`
+| :ref:`Sales ‣ Leads and Opportunities ‣ Lost Leads and Opportunities <sale_opportunity>`
+| :ref:`Sales ‣ Leads and Opportunities ‣ Opened Leads <sale_opportunity>`
+| :ref:`Sales ‣ Leads and Opportunities ‣ Opportunities <sale_opportunity>`
+| :ref:`Sales ‣ Reporting ‣ Opportunities per Employee per Month <sale_opportunity_employee_monthly>`
+| :ref:`Sales ‣ Reporting ‣ Opportunities per Month <sale_opportunity_monthly>`
+| :ref:`Sales ‣ Sales <sale_sale>`
+| :ref:`Sales ‣ Sales ‣ Confirmed Sales <sale_sale>`
+| :ref:`Sales ‣ Sales ‣ Draft Sales <sale_sale>`
+| :ref:`Sales ‣ Sales ‣ Quotation Sales <sale_sale>`
+| :ref:`Timesheet ‣ Configuration ‣ Works <timesheet_work>`
+| :ref:`Timesheet ‣ Configuration ‣ Works ‣ Works <timesheet_work>`
+| :ref:`Timesheet ‣ Reporting ‣ Hours per Employee per Month <timesheet_hours_employee_monthly>`
+| :ref:`Timesheet ‣ Reporting ‣ Hours per Employee per Week <timesheet_hours_employee_weekly>`
+| :ref:`Timesheet ‣ Timesheet Lines <timesheet_line>`

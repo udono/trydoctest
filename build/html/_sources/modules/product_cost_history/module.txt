@@ -1,0 +1,11 @@
+.. _product_cost_history_module:
+
+====================
+Product Cost History
+====================
+:Module Name: trytond_product_cost_history
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

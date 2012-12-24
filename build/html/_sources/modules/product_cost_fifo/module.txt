@@ -1,0 +1,6 @@
+.. _product_cost_fifo_module:
+
+=================
+Product Cost FIFO
+=================
+:Module Name: trytond_product_cost_fifo

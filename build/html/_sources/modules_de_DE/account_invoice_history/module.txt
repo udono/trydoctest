@@ -1,0 +1,6 @@
+.. _account_invoice_history_module:
+
+=======================
+Account Invoice History
+=======================
+:Module Name: trytond_account_invoice_history

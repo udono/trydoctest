@@ -1,0 +1,52 @@
+#:after:party/party_base:section:felder_name_der_name_der_partei_code#
+
+.. _party_party_gender_field:
+
+:guilabel:`Geschlecht`:
+    :Feldname: ``gender``
+    :Feldtyp: :ref:`field_type_selection`
+    :Quellmodul: :ref:`party_type_module`
+
+    Das Geschlecht der Partei vom Typ *Person*.
+    (Nur verfügbar, wenn der :guilabel:`Typ Partei` der aktuellen Partei
+    *Person* ist.)
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Männlich`:
+        Männlich
+
+    :guilabel:`Weiblich`:
+        Weiblich
+
+    :guilabel:`<leer>`:
+            Keine Auswahl treffen.
+
+
+.. _party_party_party_type_field:
+
+:guilabel:`Typ Partei`:
+    :Feldname: ``party_type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Quellmodul: :ref:`party_type_module`
+
+    Der Parteityp präzisiert die aktuelle Partei als *Person* oder
+    *Orgenisation*.
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Organisation`:
+        Organisation
+
+    :guilabel:`Person`:
+        Person
+
+
+.. _party_party_first_name_field:
+
+:guilabel:`Vorname`:
+    :Feldname: ``first_name``
+    :Feldtyp: :ref:`field_type_char`
+    :Quellmodul: :ref:`party_type_module`
+
+    Der Vorname der Partei vom Typ *Person*.
+    (Nur verfügbar, wenn der :guilabel:`Typ Partei` der aktuellen Partei
+    *Person* ist.)

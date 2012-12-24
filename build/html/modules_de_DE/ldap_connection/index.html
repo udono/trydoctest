@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>LDAP Connection &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="up" title="LDAP Connection" href="module.html" />
+    <link rel="next" title="Party" href="../party/module.html" />
+    <link rel="prev" title="LDAP Connection" href="module.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../party/module.html" title="Party"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="LDAP Connection"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" accesskey="U">LDAP Connection</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="ldap-connection">
+<span id="id1"></span><h1>LDAP Connection<a class="headerlink" href="#ldap-connection" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">ldap.connection</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#ldap-connection-module"><em>LDAP Connection</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><em class="menuselection">Administration ‣ LDAP ‣ Connection</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>LDAP Connection</em>-model introduces the conception of ...</p>
+<div class="section" id="fields">
+<span id="ldap-connection-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="ldap-connection-ldap-connection-active-directory">
+<dt><em class="guilabel">Active Directory</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active_directory</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Active Directory</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-auth-base-dn">
+<dt><em class="guilabel">Base DN</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">auth_base_dn</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../ldap_authentication/module.html#ldap-authentication-module"><em>LDAP Authentication</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Base DN for authentication</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-bind-dn">
+<dt><em class="guilabel">Bind DN</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">bind_dn</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">LDAP DN used to bind</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-bind-pass">
+<dt><em class="guilabel">Bind Pass</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">bind_pass</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">LDAP password used to bind</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-auth-create-user">
+<dt><em class="guilabel">Create User</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">auth_create_user</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../ldap_authentication/module.html#ldap-authentication-module"><em>LDAP Authentication</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Create user if not in database</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-port">
+<dt><em class="guilabel">Port</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">port</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">LDAP server port</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-auth-require-filter">
+<dt><em class="guilabel">Require Filter</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">auth_require_filter</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../ldap_authentication/module.html#ldap-authentication-module"><em>LDAP Authentication</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Require Filter</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-auth-scope">
+<dt><em class="guilabel">Scope</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">auth_scope</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../ldap_authentication/module.html#ldap-authentication-module"><em>LDAP Authentication</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Base</em></li>
+<li><em class="guilabel">OneLevel</em></li>
+<li><em class="guilabel">Subtree</em></li>
+</ul>
+<p class="last">The <em>Scope</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-secure">
+<dt><em class="guilabel">Secure</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">secure</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Never</em></li>
+<li><em class="guilabel">SSL</em></li>
+<li><em class="guilabel">TLS</em></li>
+</ul>
+<p class="last">LDAP secure connection</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-server">
+<dt><em class="guilabel">Server</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">server</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">LDAP server name</p>
+</dd>
+</dl>
+<dl class="docutils" id="ldap-connection-ldap-connection-auth-uid">
+<dt><em class="guilabel">UID</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">auth_uid</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../ldap_authentication/module.html#ldap-authentication-module"><em>LDAP Authentication</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">UID Attribute for authentication</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="wizards">
+<h2>Wizards<a class="headerlink" href="#wizards" title="Permalink to this headline">¶</a></h2>
+<p><em class="guilabel">Test LDAP Connection</em>:</p>
+</div>
+<div class="section" id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Administration&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="test-connection-init">
+<span id="ldap-test-connection-init"></span><h1>Test Connection - Init<a class="headerlink" href="#test-connection-init" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">ldap.test_connection.init</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#ldap-connection-module"><em>LDAP Connection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Test Connection - Init</em>-model introduces the conception of ...</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">LDAP Connection</a></li>
+<li><a class="reference internal" href="#test-connection-init">Test Connection - Init</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="module.html"
+                        title="previous chapter">LDAP Connection</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../party/module.html"
+                        title="next chapter">Party</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/ldap_connection/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../party/module.html" title="Party"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="LDAP Connection"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" >LDAP Connection</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

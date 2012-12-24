@@ -1,0 +1,6 @@
+.. _account_timeline_module:
+
+===============================
+Buchhaltung Gültigkeitszeitraum
+===============================
+:Modul Name: trytond_account_timeline

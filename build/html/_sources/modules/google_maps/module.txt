@@ -1,0 +1,6 @@
+.. _google_maps_module:
+
+===========
+Google Maps
+===========
+:Module Name: trytond_google_maps

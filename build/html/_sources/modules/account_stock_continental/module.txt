@@ -1,0 +1,6 @@
+.. _account_stock_continental_module:
+
+=========================
+Account Stock Continental
+=========================
+:Module Name: trytond_account_stock_continental

@@ -1,0 +1,11 @@
+.. _ldap_connection_module:
+
+===============
+LDAP Connection
+===============
+:Module Name: trytond_ldap_connection
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

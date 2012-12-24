@@ -1,0 +1,6 @@
+.. _account_timeline_invoice_module:
+
+=========================================
+Buchhaltung Gültigkeitsdauer Fakturierung
+=========================================
+:Modul Name: trytond_account_timeline_invoice

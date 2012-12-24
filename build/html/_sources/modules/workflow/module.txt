@@ -1,0 +1,11 @@
+.. _workflow_module:
+
+========
+Workflow
+========
+:Module Name: trytond_workflow
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

@@ -1,0 +1,11 @@
+.. _party_module:
+
+=====
+Party
+=====
+:Module Name: trytond_party
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

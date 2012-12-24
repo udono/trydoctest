@@ -1,0 +1,6 @@
+.. _account_party_open_items_module:
+
+========================================
+Buchhaltung Parteien Offene-Posten-Liste
+========================================
+:Modul Name: trytond_account_party_open_items

@@ -1,0 +1,53 @@
+:tocdepth: 1
+
+
+
+.. _purchase_product_supplier_day:
+
+Product Supplier Day
+====================
+:Model Name: ``purchase.product_supplier.day``
+:Base Module: :ref:`stock_supply_day_module`
+
+The *Product Supplier Day*-model introduces the conception of ...
+
+.. _purchase_product_supplier_day_fields:
+
+Fields
+------
+
+
+.. _stock_supply_day_purchase_product_supplier_day_product_supplier:
+
+:guilabel:`Supplier`:
+    :Internal Name: ``product_supplier``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`purchase_product_supplier`
+
+    The *Supplier*-field is used to store ...
+
+
+
+
+.. _stock_supply_day_purchase_product_supplier_day_weekday:
+
+:guilabel:`Week Day`:
+    :Internal Name: ``weekday``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Monday`
+    * :guilabel:`Tuesday`
+    * :guilabel:`Wednesday`
+    * :guilabel:`Thursday`
+    * :guilabel:`Friday`
+    * :guilabel:`Saturday`
+    * :guilabel:`Sunday`
+
+    The *Week Day*-field is used to store ...
+
+

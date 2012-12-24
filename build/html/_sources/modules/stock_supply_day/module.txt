@@ -1,0 +1,11 @@
+.. _stock_supply_day_module:
+
+===========================
+Stock Supply with Week Days
+===========================
+:Module Name: trytond_stock_supply_day
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

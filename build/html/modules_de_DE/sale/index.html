@@ -1,0 +1,1201 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Invoice Exception Ask &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Sale" href="module.html" />
+    <link rel="next" title="Sales Leads and Opportunities" href="../sale_opportunity/module.html" />
+    <link rel="prev" title="Sale" href="module.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../sale_opportunity/module.html" title="Sales Leads and Opportunities"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Sale"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" accesskey="U">Sale</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="invoice-exception-ask">
+<span id="sale-handle-invoice-exception-ask"></span><h1>Invoice Exception Ask<a class="headerlink" href="#invoice-exception-ask" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale.handle.invoice.exception.ask</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#sale-module"><em>Sale</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Invoice Exception Ask</em>-model introduces the conception of ...</p>
+<div class="section" id="fields">
+<span id="sale-handle-invoice-exception-ask-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="sale-sale-handle-invoice-exception-ask-recreate-invoices">
+<dt><em class="guilabel">Recreate Invoices</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">recreate_invoices</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#sale-handle-invoice-exception-ask"><em>Invoice Exception Ask</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The selected invoices will be recreated. The other ones will be
+ignored.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="sale">
+<span id="sale-sale"></span><h1>Sale<a class="headerlink" href="#sale" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><p class="first"><tt class="docutils literal"><span class="pre">sale.sale</span></tt></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><p class="first"><a class="reference internal" href="module.html#sale-module"><em>Sale</em></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><p class="first"><em class="menuselection">Sales ‣ Sales</em></p>
+<p><em class="menuselection">Sales ‣ Sales ‣ Confirmed Sales</em></p>
+<p><em class="menuselection">Sales ‣ Sales ‣ Draft Sales</em></p>
+<p class="last"><em class="menuselection">Sales ‣ Sales ‣ Quotation Sales</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Sale</em>-model introduces the conception of ...</p>
+<div class="section" id="sale-sale-fields">
+<span id="id1"></span><h2>Fields<a class="headerlink" href="#sale-sale-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="sale-sale-sale-carrier">
+<dt><em class="guilabel">Carrier</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">carrier</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../carrier/index.html#carrier"><em>carrier</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../sale_shipment_cost/module.html#sale-shipment-cost-module"><em>Sale Shipment Cost</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Carrier</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-comment">
+<dt><em class="guilabel">Comment</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">comment</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Comment</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-company">
+<dt><em class="guilabel">Company</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Company</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Company</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-currency">
+<dt><em class="guilabel">Currency</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../currency/index.html#currency-currency"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-currency-digits">
+<dt><em class="guilabel">Currency Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency_digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-description">
+<dt><em class="guilabel">Description</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Description</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-invoice-address">
+<dt><em class="guilabel">Invoice Address</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice_address</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-address"><em>Address</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoice Address</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-invoice-method">
+<dt><em class="guilabel">Invoice Method</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice_method</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Manual</em></li>
+<li><em class="guilabel">On Order Confirmed</em></li>
+<li><em class="guilabel">On Shipment Sent</em></li>
+</ul>
+<p class="last">The <em>Invoice Method</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-invoices">
+<dt><em class="guilabel">Invoices</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoices</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account_invoice/index.html#account-invoice"><em>Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoices</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-invoice-state">
+<dt><em class="guilabel">Invoice State</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice_state</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a>, <a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">None</em></li>
+<li><em class="guilabel">Waiting</em></li>
+<li><em class="guilabel">Paid</em></li>
+<li><em class="guilabel">Exception</em></li>
+</ul>
+<p class="last">The <em>Invoice State</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-lines">
+<dt><em class="guilabel">Lines</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#sale-line"><em>Sale Line</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Lines</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-moves">
+<dt><em class="guilabel">Moves</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">moves</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-move"><em>Stock Move</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Moves</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-party">
+<dt><em class="guilabel">Party</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-party"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-party-lang">
+<dt><em class="guilabel">Party Language</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party_lang</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party Language</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-payment-term">
+<dt><em class="guilabel">Payment Term</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">payment_term</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account_invoice/index.html#account-invoice-payment-term"><em>Payment Term</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payment Term</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-price-list">
+<dt><em class="guilabel">Price List</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">price_list</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product_price_list/index.html#product-price-list"><em>Price List</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../sale_price_list/module.html#sale-price-list-module"><em>Sale Pricelist</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Price List</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-reference">
+<dt><em class="guilabel">Reference</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">reference</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Reference</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-sale-date">
+<dt><em class="guilabel">Sale Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Sale Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-shipment-address">
+<dt><em class="guilabel">Shipment Address</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">shipment_address</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-address"><em>Address</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Shipment Address</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-shipment-cost-method">
+<dt><em class="guilabel">Shipment Cost Method</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">shipment_cost_method</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../sale_shipment_cost/module.html#sale-shipment-cost-module"><em>Sale Shipment Cost</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">On Order</em></li>
+<li><em class="guilabel">On Shipment</em></li>
+</ul>
+<p class="last">The <em>Shipment Cost Method</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-shipment-method">
+<dt><em class="guilabel">Shipment Method</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">shipment_method</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Manual</em></li>
+<li><em class="guilabel">On Order Confirmed</em></li>
+<li><em class="guilabel">On Invoice Paid</em></li>
+</ul>
+<p class="last">The <em>Shipment Method</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-shipments">
+<dt><em class="guilabel">Shipments</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">shipments</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-shipment-out"><em>Customer Shipment</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Shipments</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-shipment-state">
+<dt><em class="guilabel">Shipment State</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">shipment_state</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a>, <a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">None</em></li>
+<li><em class="guilabel">Waiting</em></li>
+<li><em class="guilabel">Sent</em></li>
+<li><em class="guilabel">Exception</em></li>
+</ul>
+<p class="last">The <em>Shipment State</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-state">
+<dt><em class="guilabel">State</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">state</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a>, <a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Draft</em></li>
+<li><em class="guilabel">Quotation</em></li>
+<li><em class="guilabel">Confirmed</em></li>
+<li><em class="guilabel">Done</em></li>
+<li><em class="guilabel">Canceled</em></li>
+</ul>
+<p class="last">The <em>State</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-tax-amount">
+<dt><em class="guilabel">Tax</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax_amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Tax</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-total-amount">
+<dt><em class="guilabel">Total</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">total_amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Total</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-untaxed-amount">
+<dt><em class="guilabel">Untaxed</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">untaxed_amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Untaxed</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-sale-warehouse">
+<dt><em class="guilabel">Warehouse</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">warehouse</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-location"><em>Stock Location</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Warehouse</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="reports">
+<h2>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><em class="guilabel">Sale</em>:</dt>
+<dd>Sale
+The <em>Sale</em>-Report is based on style <tt class="docutils literal"><span class="pre">company/header_A4.odt</span></tt>.</dd>
+</dl>
+</div>
+<div class="section" id="wizards">
+<h2>Wizards<a class="headerlink" href="#wizards" title="Permalink to this headline">¶</a></h2>
+<p><em class="guilabel">Handle Invoice Exception</em>:</p>
+<p><em class="guilabel">Handle Shipment Exception</em>:</p>
+</div>
+<div class="section" id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Sales&#8221; have the following
+access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="sale-configuration">
+<span id="id2"></span><h1>Sale Configuration<a class="headerlink" href="#sale-configuration" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale.configuration</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#sale-module"><em>Sale</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><em class="menuselection">Sales ‣ Configuration ‣ Sales Configuration</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Sale Configuration</em>-model introduces the conception of ...</p>
+<div class="section" id="sale-configuration-fields">
+<span id="id3"></span><h2>Fields<a class="headerlink" href="#sale-configuration-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="sale-sale-configuration-sale-carrier">
+<dt><em class="guilabel">Carrier</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale_carrier</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../carrier/index.html#carrier"><em>carrier</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../sale_shipment_cost/module.html#sale-shipment-cost-module"><em>Sale Shipment Cost</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Carrier</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-configuration-sale-invoice-method">
+<dt><em class="guilabel">Sale Invoice Method</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale_invoice_method</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Manual</em></li>
+<li><em class="guilabel">On Order Confirmed</em></li>
+<li><em class="guilabel">On Shipment Sent</em></li>
+</ul>
+<p class="last">The <em>Sale Invoice Method</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-configuration-sale-sequence">
+<dt><em class="guilabel">Sale Reference Sequence</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale_sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../ir/index.html#ir-sequence"><em>Sequence</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Sale Reference Sequence</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-configuration-sale-shipment-cost-method">
+<dt><em class="guilabel">Sale Shipment Cost Method</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale_shipment_cost_method</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../sale_shipment_cost/module.html#sale-shipment-cost-module"><em>Sale Shipment Cost</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">On Order</em></li>
+<li><em class="guilabel">On Shipment</em></li>
+</ul>
+<p class="last">The <em>Sale Shipment Cost Method</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-configuration-sale-shipment-method">
+<dt><em class="guilabel">Sale Shipment Method</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale_shipment_method</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Manual</em></li>
+<li><em class="guilabel">On Order Confirmed</em></li>
+<li><em class="guilabel">On Invoice Paid</em></li>
+</ul>
+<p class="last">The <em>Sale Shipment Method</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="sale-line">
+<span id="id4"></span><h1>Sale Line<a class="headerlink" href="#sale-line" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale.line</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#sale-module"><em>Sale</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Sale Line</em>-model introduces the conception of ...</p>
+<div class="section" id="sale-line-fields">
+<span id="id5"></span><h2>Fields<a class="headerlink" href="#sale-line-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="sale-sale-line-amount">
+<dt><em class="guilabel">Amount</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Amount</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-analytic-accounts">
+<dt><em class="guilabel">Analytic Accounts</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">analytic_accounts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../analytic_account/index.html#analytic-account-account-selection"><em>Analytic Account Selection</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../analytic_sale/module.html#analytic-sale-module"><em>Analytic Sale</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Analytic Accounts</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-description">
+<dt><em class="guilabel">Description</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Description</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-note">
+<dt><em class="guilabel">Note</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">note</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Note</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-product">
+<dt><em class="guilabel">Product</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-product"><em>Product</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Product</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-quantity">
+<dt><em class="guilabel">Quantity</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quantity</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Float Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Quantity</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-sale">
+<dt><em class="guilabel">Sale</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#sale-sale"><em>Sale</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Sale</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-sequence">
+<dt><em class="guilabel">Sequence</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The position of the record order in a list.</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-taxes">
+<dt><em class="guilabel">Taxes</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">taxes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax"><em>Account Tax</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Taxes</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-type">
+<dt><em class="guilabel">Type</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Line</em></li>
+<li><em class="guilabel">Subtotal</em></li>
+<li><em class="guilabel">Title</em></li>
+<li><em class="guilabel">Comment</em></li>
+</ul>
+<p class="last">The <em>Type</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-unit">
+<dt><em class="guilabel">Unit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">unit</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-uom"><em>Unit of measure</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Unit</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-unit-digits">
+<dt><em class="guilabel">Unit Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">unit_digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Unit Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="sale-sale-line-unit-price">
+<dt><em class="guilabel">Unit Price</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">unit_price</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Unit Price</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id6">
+<h2>Access<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Sales&#8221; have the following
+access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="shipment-exception-ask">
+<span id="sale-handle-shipment-exception-ask"></span><h1>Shipment Exception Ask<a class="headerlink" href="#shipment-exception-ask" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sale.handle.shipment.exception.ask</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#sale-module"><em>Sale</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Shipment Exception Ask</em>-model introduces the conception of ...</p>
+<div class="section" id="sale-handle-shipment-exception-ask-fields">
+<span id="id7"></span><h2>Fields<a class="headerlink" href="#sale-handle-shipment-exception-ask-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="sale-sale-handle-shipment-exception-ask-recreate-moves">
+<dt><em class="guilabel">Recreate Moves</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">recreate_moves</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#sale-handle-shipment-exception-ask"><em>Shipment Exception Ask</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Recreate Moves</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Invoice Exception Ask</a></li>
+<li><a class="reference internal" href="#sale">Sale</a></li>
+<li><a class="reference internal" href="#sale-configuration">Sale Configuration</a></li>
+<li><a class="reference internal" href="#sale-line">Sale Line</a></li>
+<li><a class="reference internal" href="#shipment-exception-ask">Shipment Exception Ask</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="module.html"
+                        title="previous chapter">Sale</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../sale_opportunity/module.html"
+                        title="next chapter">Sales Leads and Opportunities</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/sale/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../sale_opportunity/module.html" title="Sales Leads and Opportunities"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Sale"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" >Sale</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

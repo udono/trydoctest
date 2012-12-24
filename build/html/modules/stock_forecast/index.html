@@ -1,0 +1,604 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Forecast Complete Ask &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Stock Forecast" href="module.html" />
+    <link rel="next" title="Stock Inventory for many locations" href="../stock_inventory_location/module.html" />
+    <link rel="prev" title="Stock Forecast" href="module.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../stock_inventory_location/module.html" title="Stock Inventory for many locations"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Stock Forecast"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" accesskey="U">Stock Forecast</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="forecast-complete-ask">
+<span id="stock-forecast-complete-ask"></span><h1>Forecast Complete Ask<a class="headerlink" href="#forecast-complete-ask" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">stock.forecast.complete.ask</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#stock-forecast-module"><em>Stock Forecast</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Forecast Complete Ask</em>-model introduces the conception of ...</p>
+<div class="section" id="fields">
+<span id="stock-forecast-complete-ask-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="stock-forecast-stock-forecast-complete-ask-from-date">
+<dt><em class="guilabel">From Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">from_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>From Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-complete-ask-to-date">
+<dt><em class="guilabel">To Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">to_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>To Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="forecast-complete-choose">
+<span id="stock-forecast-complete-choose"></span><h1>Forecast Complete Choose<a class="headerlink" href="#forecast-complete-choose" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">stock.forecast.complete.choose</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#stock-forecast-module"><em>Stock Forecast</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Forecast Complete Choose</em>-model introduces the conception of ...</p>
+<div class="section" id="stock-forecast-complete-choose-fields">
+<span id="id1"></span><h2>Fields<a class="headerlink" href="#stock-forecast-complete-choose-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="stock-forecast-stock-forecast-complete-choose-products">
+<dt><em class="guilabel">Products</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">products</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#stock-forecast-complete-choose"><em>Forecast Complete Choose</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Products</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="stock-forecast">
+<span id="id2"></span><h1>Stock Forecast<a class="headerlink" href="#stock-forecast" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><p class="first"><tt class="docutils literal"><span class="pre">stock.forecast</span></tt></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><p class="first"><a class="reference internal" href="module.html#stock-forecast-module"><em>Stock Forecast</em></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><p class="first"><em class="menuselection">Inventory &amp; Stock ‣ Forecasts</em></p>
+<p class="last"><em class="menuselection">Inventory &amp; Stock ‣ Forecasts ‣ Draft Forecasts</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Stock Forecast</em>-model introduces the conception of ...</p>
+<div class="section" id="stock-forecast-fields">
+<span id="id3"></span><h2>Fields<a class="headerlink" href="#stock-forecast-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="stock-forecast-stock-forecast-company">
+<dt><em class="guilabel">Company</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Company</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Company</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-destination">
+<dt><em class="guilabel">Destination</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">destination</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-location"><em>Stock Location</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Destination</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-from-date">
+<dt><em class="guilabel">From Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">from_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>From Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-lines">
+<dt><em class="guilabel">Lines</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#stock-forecast-line"><em>Stock Forecast Line</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Lines</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-warehouse">
+<dt><em class="guilabel">Location</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">warehouse</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-location"><em>Stock Location</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Location</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-state">
+<dt><em class="guilabel">State</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">state</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Draft</em></li>
+<li><em class="guilabel">Done</em></li>
+<li><em class="guilabel">Cancel</em></li>
+</ul>
+<p class="last">The <em>State</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-to-date">
+<dt><em class="guilabel">To Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">to_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>To Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="wizards">
+<h2>Wizards<a class="headerlink" href="#wizards" title="Permalink to this headline">¶</a></h2>
+<p><em class="guilabel">Complete Forecast</em>:</p>
+</div>
+<div class="section" id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Stock Forecast&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="stock-forecast-line">
+<span id="id4"></span><h1>Stock Forecast Line<a class="headerlink" href="#stock-forecast-line" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">stock.forecast.line</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#stock-forecast-module"><em>Stock Forecast</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Stock Forecast Line</em>-model introduces the conception of ...</p>
+<div class="section" id="stock-forecast-line-fields">
+<span id="id5"></span><h2>Fields<a class="headerlink" href="#stock-forecast-line-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="stock-forecast-stock-forecast-line-forecast">
+<dt><em class="guilabel">Forecast</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">forecast</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#stock-forecast"><em>Stock Forecast</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Forecast</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-line-minimal-quantity">
+<dt><em class="guilabel">Minimal Qty</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">minimal_quantity</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Float Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Minimal Qty</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-line-moves">
+<dt><em class="guilabel">Moves</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">moves</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../stock/index.html#stock-move"><em>Stock Move</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Moves</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-line-product">
+<dt><em class="guilabel">Product</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-product"><em>Product</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Product</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-line-quantity">
+<dt><em class="guilabel">Quantity</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quantity</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Float Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Quantity</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-line-quantity-executed">
+<dt><em class="guilabel">Quantity Executed</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quantity_executed</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Float Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Quantity Executed</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-line-unit-digits">
+<dt><em class="guilabel">Unit Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">unit_digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Unit Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="stock-forecast-stock-forecast-line-uom">
+<dt><em class="guilabel">UOM</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">uom</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-uom"><em>Unit of measure</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>UOM</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id6">
+<h2>Access<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Stock Forecast&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Forecast Complete Ask</a></li>
+<li><a class="reference internal" href="#forecast-complete-choose">Forecast Complete Choose</a></li>
+<li><a class="reference internal" href="#stock-forecast">Stock Forecast</a></li>
+<li><a class="reference internal" href="#stock-forecast-line">Stock Forecast Line</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="module.html"
+                        title="previous chapter">Stock Forecast</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../stock_inventory_location/module.html"
+                        title="next chapter">Stock Inventory for many locations</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules/stock_forecast/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../stock_inventory_location/module.html" title="Stock Inventory for many locations"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Stock Forecast"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" >Stock Forecast</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

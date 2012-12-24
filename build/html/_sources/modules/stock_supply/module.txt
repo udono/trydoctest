@@ -1,0 +1,11 @@
+.. _stock_supply_module:
+
+=======================
+Stock Supply Management
+=======================
+:Module Name: trytond_stock_supply
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

@@ -1,0 +1,6 @@
+.. _account_timeline_product_rule_module:
+
+==========================================
+Buchhaltung Gültigkeitsdauer Artikel Regel
+==========================================
+:Modul Name: trytond_account_timeline_product_rule

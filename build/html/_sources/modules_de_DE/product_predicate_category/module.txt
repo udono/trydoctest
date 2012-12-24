@@ -1,0 +1,9 @@
+.. _product_predicate_category_module:
+
+=============================
+Produkt Eigenschaftskategorie
+=============================
+:Modul Name: trytond_product_predicate_category
+
+Das *Artikel-Eigenschaftskategorie-Modul* stellt kategorisierbare Eigenschaften
+für Artikel zur Verfügung.

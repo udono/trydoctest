@@ -1,0 +1,2142 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Credit Invoice Init &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Account Invoice" href="module.html" />
+    <link rel="next" title="Account Invoice History" href="../account_invoice_history/module.html" />
+    <link rel="prev" title="Account Invoice" href="module.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../account_invoice_history/module.html" title="Account Invoice History"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Account Invoice"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" accesskey="U">Account Invoice</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="credit-invoice-init">
+<span id="account-invoice-credit-invoice-init"></span><h1>Credit Invoice Init<a class="headerlink" href="#credit-invoice-init" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.credit_invoice.init</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Credit Invoice Init</em>-model introduces the conception of ...</p>
+<div class="section" id="fields">
+<span id="account-invoice-credit-invoice-init-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="account-invoice-account-invoice-credit-invoice-init-with-refund">
+<dt><em class="guilabel">With Refund</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">with_refund</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">If true, the current invoice(s) will be paid.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="invoice">
+<span id="account-invoice"></span><h1>Invoice<a class="headerlink" href="#invoice" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><p class="first"><tt class="docutils literal"><span class="pre">account.invoice</span></tt></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><p class="first"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><p class="first"><em class="menuselection">Financial ‣ Invoices ‣ All Invoices</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Credit Notes</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Credit Notes ‣ Draft Credit
+Notes</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Credit Notes ‣ Opened Credit
+Notes</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Credit Notes ‣ Pro Forma
+Credit Notes</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Invoices</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Invoices ‣ Draft Invoices</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Invoices ‣ Opened Invoices</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Invoices ‣ Pro Forma
+Invoices</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Supplier Credit Notes</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Supplier Credit Notes ‣ Draft
+Supplier Credit Notes</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Supplier Credit Notes ‣
+Opened Supplier Credit Notes</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Supplier Credit Notes ‣ Pro
+Forma Supplier Credit Notes</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Supplier Invoices</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Supplier Invoices ‣ Draft
+Supplier Invoices</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Supplier Invoices ‣ Opened
+Supplier Invoices</em></p>
+<p class="last"><em class="menuselection">Financial ‣ Invoices ‣ Supplier Invoices ‣ Pro Forma
+Supplier Invoices</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Invoice</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-fields">
+<span id="id1"></span><h2>Fields<a class="headerlink" href="#account-invoice-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="account-invoice-account-invoice-account">
+<dt><em class="guilabel">Account</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Account</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-accounting-date">
+<dt><em class="guilabel">Accounting Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">accounting_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Accounting Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-amount-to-pay">
+<dt><em class="guilabel">Amount to Pay</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">amount_to_pay</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Amount to Pay</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-amount-to-pay-today">
+<dt><em class="guilabel">Amount to Pay Today</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">amount_to_pay_today</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Amount to Pay Today</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-comment">
+<dt><em class="guilabel">Comment</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">comment</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Comment</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-company">
+<dt><em class="guilabel">Company</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Company</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Company</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-currency">
+<dt><em class="guilabel">Currency</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../currency/index.html#currency-currency"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-currency-digits">
+<dt><em class="guilabel">Currency Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency_digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-description">
+<dt><em class="guilabel">Description</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Description</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-invoice-address">
+<dt><em class="guilabel">Invoice Address</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice_address</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-address"><em>Address</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoice Address</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-invoice-date">
+<dt><em class="guilabel">Invoice Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoice Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-journal">
+<dt><em class="guilabel">Journal</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">journal</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-journal"><em>Journal</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Journal</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-lines">
+<dt><em class="guilabel">Lines</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice-line"><em>Invoice Line</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Lines</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-move">
+<dt><em class="guilabel">Move</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">move</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-move"><em>Account Move</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Move</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-number">
+<dt><em class="guilabel">Number</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">number</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Number</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-party">
+<dt><em class="guilabel">Party</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-party"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-party-lang">
+<dt><em class="guilabel">Party Language</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party_lang</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party Language</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-payment-lines">
+<dt><em class="guilabel">Payment Lines</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">payment_lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-move-line"><em>Account Move Line</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payment Lines</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-payment-term">
+<dt><em class="guilabel">Payment Term</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">payment_term</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice-payment-term"><em>Payment Term</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payment Term</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-reconciled">
+<dt><em class="guilabel">Reconciled</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">reconciled</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Reconciled</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-reference">
+<dt><em class="guilabel">Reference</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">reference</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Reference</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-state">
+<dt><em class="guilabel">State</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">state</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Draft</em></li>
+<li><em class="guilabel">Pro forma</em></li>
+<li><em class="guilabel">Opened</em></li>
+<li><em class="guilabel">Paid</em></li>
+<li><em class="guilabel">Canceled</em></li>
+</ul>
+<p class="last">The <em>State</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-amount">
+<dt><em class="guilabel">Tax</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax_amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Tax</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-taxes">
+<dt><em class="guilabel">Tax Lines</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">taxes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice-tax"><em>Invoice Tax</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Tax Lines</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-total-amount">
+<dt><em class="guilabel">Total</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">total_amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Total</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-type">
+<dt><em class="guilabel">Type</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Invoice</em></li>
+<li><em class="guilabel">Supplier Invoice</em></li>
+<li><em class="guilabel">Credit Note</em></li>
+<li><em class="guilabel">Supplier Credit Note</em></li>
+</ul>
+<p class="last">The <em>Type</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-untaxed-amount">
+<dt><em class="guilabel">Untaxed</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">untaxed_amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Untaxed</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="reports">
+<h2>Reports<a class="headerlink" href="#reports" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><em class="guilabel">Invoice</em>:</dt>
+<dd>Invoice
+The <em>Invoice</em>-Report is based on style <tt class="docutils literal"><span class="pre">company/header_A4.odt</span></tt>.</dd>
+</dl>
+</div>
+<div class="section" id="wizards">
+<h2>Wizards<a class="headerlink" href="#wizards" title="Permalink to this headline">¶</a></h2>
+<p><em class="guilabel">Credit</em>:</p>
+<p><em class="guilabel">Invoice</em>:</p>
+<p><em class="guilabel">Pay Invoice</em>:</p>
+</div>
+<div class="section" id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Account&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Purchase&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Sales&#8221; have the following
+access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="invoice-line">
+<span id="account-invoice-line"></span><h1>Invoice Line<a class="headerlink" href="#invoice-line" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><p class="first"><tt class="docutils literal"><span class="pre">account.invoice.line</span></tt></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><p class="first"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><p class="first"><em class="menuselection">Financial ‣ Invoices ‣ Credit Notes ‣ Credit Note
+Lines</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Invoices ‣ Invoice Lines</em></p>
+<p><em class="menuselection">Financial ‣ Invoices ‣ Supplier Credit Notes ‣
+Supplier Credit Note Lines</em></p>
+<p class="last"><em class="menuselection">Financial ‣ Invoices ‣ Supplier Invoices ‣ Supplier
+Invoice Lines</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Invoice Line</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-line-fields">
+<span id="id2"></span><h2>Fields<a class="headerlink" href="#account-invoice-line-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="account-invoice-account-invoice-line-account">
+<dt><em class="guilabel">Account</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Account</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-amount">
+<dt><em class="guilabel">Amount</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Amount</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-analytic-accounts">
+<dt><em class="guilabel">Analytic Accounts</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">analytic_accounts</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../analytic_account/index.html#analytic-account-account-selection"><em>Analytic Account Selection</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="../analytic_invoice/module.html#analytic-invoice-module"><em>Analytic Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Analytic Accounts</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-company">
+<dt><em class="guilabel">Company</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Company</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Company</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-currency">
+<dt><em class="guilabel">Currency</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../currency/index.html#currency-currency"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-currency-digits">
+<dt><em class="guilabel">Currency Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency_digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-description">
+<dt><em class="guilabel">Description</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Description</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-invoice">
+<dt><em class="guilabel">Invoice</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice"><em>Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoice</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-invoice-type">
+<dt><em class="guilabel">Invoice Type</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice_type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Invoice</em></li>
+<li><em class="guilabel">Supplier Invoice</em></li>
+<li><em class="guilabel">Credit Note</em></li>
+<li><em class="guilabel">Supplier Credit Note</em></li>
+</ul>
+<p class="last">The <em>Invoice Type</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-note">
+<dt><em class="guilabel">Note</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">note</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Note</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-party">
+<dt><em class="guilabel">Party</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-party"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-party-lang">
+<dt><em class="guilabel">Party Language</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party_lang</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party Language</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-product">
+<dt><em class="guilabel">Product</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">product</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-product"><em>Product</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Product</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-quantity">
+<dt><em class="guilabel">Quantity</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">quantity</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-float"><em>Float Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Quantity</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-sequence">
+<dt><em class="guilabel">Sequence</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The position of the record order in a list.</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-taxes">
+<dt><em class="guilabel">Taxes</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">taxes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax"><em>Account Tax</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Taxes</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-type">
+<dt><em class="guilabel">Type</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Line</em></li>
+<li><em class="guilabel">Subtotal</em></li>
+<li><em class="guilabel">Title</em></li>
+<li><em class="guilabel">Comment</em></li>
+</ul>
+<p class="last">The <em>Type</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-unit">
+<dt><em class="guilabel">Unit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">unit</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../product/index.html#product-uom"><em>Unit of measure</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Unit</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-unit-digits">
+<dt><em class="guilabel">Unit Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">unit_digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Unit Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-line-unit-price">
+<dt><em class="guilabel">Unit Price</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">unit_price</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Unit Price</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id3">
+<h2>Access<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Account&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Purchase&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Sales&#8221; have the following
+access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="invoice-tax">
+<span id="account-invoice-tax"></span><h1>Invoice Tax<a class="headerlink" href="#invoice-tax" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.tax</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Invoice Tax</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-tax-fields">
+<span id="id4"></span><h2>Fields<a class="headerlink" href="#account-invoice-tax-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="account-invoice-account-invoice-tax-account">
+<dt><em class="guilabel">Account</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Account</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="id5">
+<dt><em class="guilabel">Amount</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Amount</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-base">
+<dt><em class="guilabel">Base</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">base</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Base</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-base-code">
+<dt><em class="guilabel">Base Code</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">base_code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax-code"><em>Tax Code</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Base Code</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-base-sign">
+<dt><em class="guilabel">Base Sign</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">base_sign</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Base Sign</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-description">
+<dt><em class="guilabel">Description</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Description</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-invoice">
+<dt><em class="guilabel">Invoice</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice"><em>Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoice</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-manual">
+<dt><em class="guilabel">Manual</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">manual</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Manual</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-sequence">
+<dt><em class="guilabel">Sequence</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The position of the record order in a list.</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-tax">
+<dt><em class="guilabel">Tax</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax"><em>Account Tax</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Tax</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-tax-code">
+<dt><em class="guilabel">Tax Code</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax_code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax-code"><em>Tax Code</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Tax Code</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-tax-tax-sign">
+<dt><em class="guilabel">Tax Sign</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">tax_sign</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Tax Sign</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id6">
+<h2>Access<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Account&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="pay-invoice-ask">
+<span id="account-invoice-pay-invoice-ask"></span><h1>Pay Invoice Ask<a class="headerlink" href="#pay-invoice-ask" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.pay_invoice.ask</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Pay Invoice Ask</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-pay-invoice-ask-fields">
+<span id="id7"></span><h2>Fields<a class="headerlink" href="#account-invoice-pay-invoice-ask-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-company">
+<dt><em class="guilabel">Company</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Company</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Company</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-date">
+<dt><em class="guilabel">Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-description">
+<dt><em class="guilabel">Description</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Description</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-invoice">
+<dt><em class="guilabel">Invoice</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">invoice</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice"><em>Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Invoice</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-journal">
+<dt><em class="guilabel">Journal</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">journal</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-journal"><em>Journal</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Journal</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-lines">
+<dt><em class="guilabel">Lines</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice-pay-invoice-ask"><em>Pay Invoice Ask</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Lines</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-amount">
+<dt><em class="guilabel">Payment Amount</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payment Amount</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-currency">
+<dt><em class="guilabel">Payment Currency</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../currency/index.html#currency-currency"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payment Currency</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-currency-digits">
+<dt><em class="guilabel">Payment Currency Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency_digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payment Currency Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-payment-lines">
+<dt><em class="guilabel">Payment Lines</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">payment_lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>Many-To-Many</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice-pay-invoice-ask"><em>Pay Invoice Ask</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payment Lines</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-type">
+<dt><em class="guilabel">Type</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Write-Off</em></li>
+<li><em class="guilabel">Partial Payment</em></li>
+</ul>
+<p class="last">The <em>Type</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-account-writeoff">
+<dt><em class="guilabel">Write-Off Account</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_writeoff</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Write-Off Account</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-amount-writeoff">
+<dt><em class="guilabel">Write-Off Amount</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">amount_writeoff</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Write-Off Amount</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-currency-writeoff">
+<dt><em class="guilabel">Write-Off Currency</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency_writeoff</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../currency/index.html#currency-currency"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Write-Off Currency</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-ask-journal-writeoff">
+<dt><em class="guilabel">Write-Off Journal</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">journal_writeoff</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-journal"><em>Journal</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Write-Off Journal</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="pay-invoice-init">
+<span id="account-invoice-pay-invoice-init"></span><h1>Pay Invoice Init<a class="headerlink" href="#pay-invoice-init" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.pay_invoice.init</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Pay Invoice Init</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-pay-invoice-init-fields">
+<span id="id8"></span><h2>Fields<a class="headerlink" href="#account-invoice-pay-invoice-init-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-init-amount">
+<dt><em class="guilabel">Amount</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">amount</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Amount</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-init-currency">
+<dt><em class="guilabel">Currency</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../currency/index.html#currency-currency"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-init-currency-digits">
+<dt><em class="guilabel">Currency Digits</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency_digits</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Integer Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency Digits</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-init-date">
+<dt><em class="guilabel">Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-init-description">
+<dt><em class="guilabel">Description</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Description</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-pay-invoice-init-journal">
+<dt><em class="guilabel">Journal</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">journal</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-journal"><em>Journal</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Journal</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="payment-term">
+<span id="account-invoice-payment-term"></span><h1>Payment Term<a class="headerlink" href="#payment-term" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.payment_term</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><em class="menuselection">Financial ‣ Configuration ‣ Payment Terms ‣ Payment
+Terms</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Payment Term</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-payment-term-fields">
+<span id="id9"></span><h2>Fields<a class="headerlink" href="#account-invoice-payment-term-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="account-invoice-account-invoice-payment-term-active">
+<dt><em class="guilabel">Active</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">When not ticked the record is deactivated for future use. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Active</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-payment-term-description">
+<dt><em class="guilabel">Description</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">description</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Description</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-payment-term-lines">
+<dt><em class="guilabel">Lines</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#account-invoice-payment-term-line"><em>Payment Term Line</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Lines</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-invoice-account-invoice-payment-term-name">
+<dt><em class="guilabel">Payment Term</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Payment Term</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id10">
+<h2>Access<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Account Administration&#8221;
+have the following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="payment-term-line">
+<span id="account-invoice-payment-term-line"></span><h1>Payment Term Line<a class="headerlink" href="#payment-term-line" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.payment_term.line</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Payment Term Line</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-payment-term-line-fields">
+<span id="id11"></span><h2>Fields<a class="headerlink" href="#account-invoice-payment-term-line-fields" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id12">
+<h2>Access<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Account Administration&#8221;
+have the following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="payment-term-line-delay">
+<span id="account-invoice-payment-term-line-delay"></span><h1>Payment Term Line Delay<a class="headerlink" href="#payment-term-line-delay" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.payment_term.line.delay</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Payment Term Line Delay</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-payment-term-line-delay-fields">
+<span id="id13"></span><h2>Fields<a class="headerlink" href="#account-invoice-payment-term-line-delay-fields" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="payment-term-line-type">
+<span id="account-invoice-payment-term-line-type"></span><h1>Payment Term Line Type<a class="headerlink" href="#payment-term-line-type" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.payment_term.line.type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Payment Term Line Type</em>-model introduces the conception of ...</p>
+<div class="section" id="account-invoice-payment-term-line-type-fields">
+<span id="id14"></span><h2>Fields<a class="headerlink" href="#account-invoice-payment-term-line-type-fields" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id15">
+<h2>Access<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="print-invoice-report-warning">
+<span id="account-invoice-print-invoice-report-warning"></span><h1>Print Invoice Report Warning<a class="headerlink" href="#print-invoice-report-warning" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.invoice.print_invoice_report.warning</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#account-invoice-module"><em>Account Invoice</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Print Invoice Report Warning</em>-model introduces the conception of ...</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Credit Invoice Init</a></li>
+<li><a class="reference internal" href="#invoice">Invoice</a></li>
+<li><a class="reference internal" href="#invoice-line">Invoice Line</a></li>
+<li><a class="reference internal" href="#invoice-tax">Invoice Tax</a></li>
+<li><a class="reference internal" href="#pay-invoice-ask">Pay Invoice Ask</a></li>
+<li><a class="reference internal" href="#pay-invoice-init">Pay Invoice Init</a></li>
+<li><a class="reference internal" href="#payment-term">Payment Term</a></li>
+<li><a class="reference internal" href="#payment-term-line">Payment Term Line</a></li>
+<li><a class="reference internal" href="#payment-term-line-delay">Payment Term Line Delay</a></li>
+<li><a class="reference internal" href="#payment-term-line-type">Payment Term Line Type</a></li>
+<li><a class="reference internal" href="#print-invoice-report-warning">Print Invoice Report Warning</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="module.html"
+                        title="previous chapter">Account Invoice</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../account_invoice_history/module.html"
+                        title="next chapter">Account Invoice History</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules/account_invoice/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../account_invoice_history/module.html" title="Account Invoice History"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Account Invoice"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" >Account Invoice</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

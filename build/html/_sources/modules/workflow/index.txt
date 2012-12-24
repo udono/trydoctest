@@ -1,0 +1,553 @@
+:tocdepth: 1
+
+
+
+.. _workflow:
+
+Workflow
+========
+:Model Name: ``workflow``
+:Base Module: :ref:`workflow_module`
+
+:Menu:
+    :menuselection:`Administration --> Workflow --> Workflows`
+
+The *Workflow*-model introduces the conception of ...
+
+.. _workflow_fields:
+
+Fields
+------
+
+
+.. _workflow_workflow_activities:
+
+:guilabel:`Activities`:
+    :Internal Name: ``activities``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`workflow_activity`
+
+    The *Activities*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_on_create:
+
+:guilabel:`On Create`:
+    :Internal Name: ``on_create``
+    :Type: :ref:`field_type_boolean`
+
+    The *On Create*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_model:
+
+:guilabel:`Resource Model`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Resource Model*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _workflow_activity:
+
+Workflow activity
+=================
+:Model Name: ``workflow.activity``
+:Base Module: :ref:`workflow_module`
+
+:Menu:
+    :menuselection:`Administration --> Workflow --> Activities`
+
+The *Workflow activity*-model introduces the conception of ...
+
+.. _workflow_activity_fields:
+
+Fields
+------
+
+
+.. _workflow_workflow_activity_flow_start:
+
+:guilabel:`Flow Start`:
+    :Internal Name: ``flow_start``
+    :Type: :ref:`field_type_boolean`
+
+    The *Flow Start*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_flow_stop:
+
+:guilabel:`Flow Stop`:
+    :Internal Name: ``flow_stop``
+    :Type: :ref:`field_type_boolean`
+
+    The *Flow Stop*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_in_transitions:
+
+:guilabel:`Incoming transitions`:
+    :Internal Name: ``in_transitions``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`workflow_transition`
+
+    The *Incoming transitions*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_join_mode:
+
+:guilabel:`Join Mode`:
+    :Internal Name: ``join_mode``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Xor`
+    * :guilabel:`And`
+
+    The *Join Mode*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_method:
+
+:guilabel:`Method`:
+    :Internal Name: ``method``
+    :Type: :ref:`field_type_char`
+
+    The *Method*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_out_transitions:
+
+:guilabel:`Outgoing transitions`:
+    :Internal Name: ``out_transitions``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`workflow_transition`
+
+    The *Outgoing transitions*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_signal_send:
+
+:guilabel:`Signal (subflow.*)`:
+    :Internal Name: ``signal_send``
+    :Type: :ref:`field_type_char`
+
+    The *Signal (subflow.*)*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_split_mode:
+
+:guilabel:`Split Mode`:
+    :Internal Name: ``split_mode``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Xor`
+    * :guilabel:`Or`
+    * :guilabel:`And`
+
+    The *Split Mode*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_subflow:
+
+:guilabel:`Subflow`:
+    :Internal Name: ``subflow``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`workflow`
+
+    The *Subflow*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_activity_workflow:
+
+:guilabel:`Workflow`:
+    :Internal Name: ``workflow``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`workflow`
+
+    The *Workflow*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _workflow_instance:
+
+Workflow instance
+=================
+:Model Name: ``workflow.instance``
+:Base Module: :ref:`workflow_module`
+
+:Menu:
+    :menuselection:`Administration --> Workflow --> Instances`
+
+The *Workflow instance*-model introduces the conception of ...
+
+.. _workflow_instance_fields:
+
+Fields
+------
+
+
+.. _workflow_workflow_instance_res_id:
+
+:guilabel:`Resource ID`:
+    :Internal Name: ``res_id``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_integer`
+
+    The *Resource ID*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_instance_res_type:
+
+:guilabel:`Resource Model`:
+    :Internal Name: ``res_type``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Resource Model*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_instance_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_instance_uid:
+
+:guilabel:`User ID`:
+    :Internal Name: ``uid``
+    :Type: :ref:`field_type_integer`
+
+    The *User ID*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_instance_workflow:
+
+:guilabel:`Workflow`:
+    :Internal Name: ``workflow``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`workflow`
+
+    The *Workflow*-field is used to store ...
+
+
+
+
+.. _workflow_transition:
+
+Workflow transition
+===================
+:Model Name: ``workflow.transition``
+:Base Module: :ref:`workflow_module`
+
+:Menu:
+    :menuselection:`Administration --> Workflow --> Transitions`
+
+The *Workflow transition*-model introduces the conception of ...
+
+.. _workflow_transition_fields:
+
+Fields
+------
+
+
+.. _workflow_workflow_transition_condition:
+
+:guilabel:`Condition`:
+    :Internal Name: ``condition``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Condition*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_transition_act_to:
+
+:guilabel:`Destination Activity`:
+    :Internal Name: ``act_to``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`workflow_activity`
+
+    The *Destination Activity*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_transition_group:
+
+:guilabel:`Group Required`:
+    :Internal Name: ``group``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_group`
+
+    The *Group Required*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_transition_signal:
+
+:guilabel:`Signal (button Name)`:
+    :Internal Name: ``signal``
+    :Type: :ref:`field_type_char`
+
+    The *Signal (button Name)*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_transition_act_from:
+
+:guilabel:`Source Activity`:
+    :Internal Name: ``act_from``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`workflow_activity`
+
+    The *Source Activity*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_transition_trigger_ids:
+
+:guilabel:`Trigger Expr ID`:
+    :Internal Name: ``trigger_ids``
+    :Type: :ref:`field_type_char`
+
+    The *Trigger Expr ID*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_transition_trigger_model:
+
+:guilabel:`Trigger Type`:
+    :Internal Name: ``trigger_model``
+    :Type: :ref:`field_type_char`
+
+    The *Trigger Type*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _workflow_trigger:
+
+Workflow trigger
+================
+:Model Name: ``workflow.trigger``
+:Base Module: :ref:`workflow_module`
+
+The *Workflow trigger*-model introduces the conception of ...
+
+.. _workflow_trigger_fields:
+
+Fields
+------
+
+
+.. _workflow_workitem:
+
+Workflow workitem
+=================
+:Model Name: ``workflow.workitem``
+:Base Module: :ref:`workflow_module`
+
+:Menu:
+    :menuselection:`Administration --> Workflow --> Workitems`
+
+The *Workflow workitem*-model introduces the conception of ...
+
+.. _workflow_workitem_fields:
+
+Fields
+------
+
+
+.. _workflow_workflow_workitem_activity:
+
+:guilabel:`Activity`:
+    :Internal Name: ``activity``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`workflow_activity`
+
+    The *Activity*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_workitem_instance:
+
+:guilabel:`Instance`:
+    :Internal Name: ``instance``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`workflow_instance`
+
+    The *Instance*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_workitem_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Type: :ref:`field_type_char`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _workflow_workflow_workitem_subflow:
+
+:guilabel:`Subflow`:
+    :Internal Name: ``subflow``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`workflow_instance`
+
+    The *Subflow*-field is used to store ...
+
+

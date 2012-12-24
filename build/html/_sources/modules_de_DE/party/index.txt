@@ -1,0 +1,883 @@
+:tocdepth: 1
+
+
+
+.. _party_address:
+
+Address
+=======
+:Model Name: ``party.address``
+:Base Module: :ref:`party_module`
+
+:Menu:
+    :menuselection:`Party --> Addresses`
+
+The *Address*-model introduces the conception of ...
+
+.. _party_address_fields:
+
+Fields
+------
+
+
+.. _party_party_address_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _party_party_address_city:
+
+:guilabel:`City`:
+    :Internal Name: ``city``
+    :Type: :ref:`field_type_char`
+
+    The *City*-field is used to store ...
+
+
+
+
+.. _party_party_address_country:
+
+:guilabel:`Country`:
+    :Internal Name: ``country``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`country_country`
+
+    The *Country*-field is used to store ...
+
+
+
+
+.. _party_party_address_delivery:
+
+:guilabel:`Delivery`:
+    :Internal Name: ``delivery``
+    :Type: :ref:`field_type_boolean`
+    :Base Module: :ref:`stock_module`
+
+    The *Delivery*-field is used to store ...
+
+
+
+
+.. _party_party_address_google_maps_url:
+
+:guilabel:`Google Maps`:
+    :Internal Name: ``google_maps_url``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+    :Base Module: :ref:`google_maps_module`
+
+    The *Google Maps*-field is used to store ...
+
+
+
+
+.. _party_party_address_invoice:
+
+:guilabel:`Invoice`:
+    :Internal Name: ``invoice``
+    :Type: :ref:`field_type_boolean`
+    :Base Module: :ref:`account_invoice_module`
+
+    The *Invoice*-field is used to store ...
+
+
+
+
+.. _party_party_address_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _party_party_address_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+
+
+
+.. _party_party_address_siret:
+
+:guilabel:`SIRET`:
+    :Internal Name: ``siret``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+    :Base Module: :ref:`party_siret_module`
+
+    The *SIRET*-field is used to store ...
+
+
+
+
+.. _party_party_address_siret_nic:
+
+:guilabel:`SIRET NIC`:
+    :Internal Name: ``siret_nic``
+    :Type: :ref:`field_type_char`
+    :Base Module: :ref:`party_siret_module`
+
+    The *SIRET NIC*-field is used to store ...
+
+
+
+
+.. _party_party_address_street:
+
+:guilabel:`Street`:
+    :Internal Name: ``street``
+    :Type: :ref:`field_type_char`
+
+    The *Street*-field is used to store ...
+
+
+
+
+.. _party_party_address_streetbis:
+
+:guilabel:`Street (bis)`:
+    :Internal Name: ``streetbis``
+    :Type: :ref:`field_type_char`
+
+    The *Street (bis)*-field is used to store ...
+
+
+
+
+.. _party_party_address_subdivision:
+
+:guilabel:`Subdivision`:
+    :Internal Name: ``subdivision``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`country_subdivision`
+
+    The *Subdivision*-field is used to store ...
+
+
+
+
+.. _party_party_address_zip:
+
+:guilabel:`Zip`:
+    :Internal Name: ``zip``
+    :Type: :ref:`field_type_char`
+
+    The *Zip*-field is used to store ...
+
+
+
+
+.. _party_category:
+
+Category
+========
+:Model Name: ``party.category``
+:Base Module: :ref:`party_module`
+
+:Menu:
+    :menuselection:`Party --> Categories`
+
+    :menuselection:`Party --> Categories --> Categories`
+
+The *Category*-model introduces the conception of ...
+
+.. _party_category_fields:
+
+Fields
+------
+
+
+.. _party_party_category_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _party_party_category_childs:
+
+:guilabel:`Children`:
+    :Internal Name: ``childs``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`party_category`
+
+    The children records in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _party_party_category_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _party_party_category_parent:
+
+:guilabel:`Parent`:
+    :Internal Name: ``parent``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_category`
+
+    The parent record in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Party Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _party_check_vies_check:
+
+Check VIES - Check
+==================
+:Model Name: ``party.check_vies.check``
+:Base Module: :ref:`party_module`
+
+The *Check VIES - Check*-model introduces the conception of ...
+
+.. _party_check_vies_check_fields:
+
+Fields
+------
+
+
+.. _party_party_check_vies_check_parties_failed:
+
+:guilabel:`Parties Failed`:
+    :Internal Name: ``parties_failed``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`party_check_vies_check`
+
+    The *Parties Failed*-field is used to store ...
+
+
+
+
+.. _party_party_check_vies_check_parties_succeed:
+
+:guilabel:`Parties Succeed`:
+    :Internal Name: ``parties_succeed``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`party_check_vies_check`
+
+    The *Parties Succeed*-field is used to store ...
+
+
+
+
+.. _party_check_vies_no_check:
+
+Check VIES - No Check
+=====================
+:Model Name: ``party.check_vies.no_check``
+:Base Module: :ref:`party_module`
+
+The *Check VIES - No Check*-model introduces the conception of ...
+
+
+
+.. _party_contact_mechanism:
+
+Contact Mechanism
+=================
+:Model Name: ``party.contact_mechanism``
+:Base Module: :ref:`party_module`
+
+The *Contact Mechanism*-model introduces the conception of ...
+
+.. _party_contact_mechanism_fields:
+
+Fields
+------
+
+
+.. _party_party_contact_mechanism_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _party_party_contact_mechanism_comment:
+
+:guilabel:`Comment`:
+    :Internal Name: ``comment``
+    :Type: :ref:`field_type_text`
+
+    The *Comment*-field is used to store ...
+
+
+
+
+.. _party_party_contact_mechanism_email:
+
+:guilabel:`E-Mail`:
+    :Internal Name: ``email``
+    :Type: :ref:`field_type_char`
+
+    The *E-Mail*-field is used to store ...
+
+
+
+
+.. _party_party_contact_mechanism_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+
+
+
+.. _party_party_contact_mechanism_sip:
+
+:guilabel:`SIP`:
+    :Internal Name: ``sip``
+    :Type: :ref:`field_type_char`
+
+    The *SIP*-field is used to store ...
+
+
+
+
+.. _party_party_contact_mechanism_skype:
+
+:guilabel:`Skype`:
+    :Internal Name: ``skype``
+    :Type: :ref:`field_type_char`
+
+    The *Skype*-field is used to store ...
+
+
+
+
+.. _party_party_contact_mechanism_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Phone`
+    * :guilabel:`Mobile`
+    * :guilabel:`Fax`
+    * :guilabel:`E-Mail`
+    * :guilabel:`Website`
+    * :guilabel:`Skype`
+    * :guilabel:`SIP`
+    * :guilabel:`IRC`
+    * :guilabel:`Jabber`
+    * :guilabel:`Other`
+
+    The *Type*-field is used to store ...
+
+
+
+
+.. _party_party_contact_mechanism_other_value:
+
+:guilabel:`Value`:
+    :Internal Name: ``other_value``
+    :Type: :ref:`field_type_char`
+
+    The *Value*-field is used to store ...
+
+
+
+
+.. _party_party_contact_mechanism_value:
+
+:guilabel:`Value`:
+    :Internal Name: ``value``
+    :Type: :ref:`field_type_char`
+
+    The *Value*-field is used to store ...
+
+
+
+
+.. _party_party_contact_mechanism_website:
+
+:guilabel:`Website`:
+    :Internal Name: ``website``
+    :Type: :ref:`field_type_char`
+
+    The *Website*-field is used to store ...
+
+
+
+
+.. _party_party:
+
+Party
+=====
+:Model Name: ``party.party``
+:Base Module: :ref:`party_module`
+
+:Menu:
+    :menuselection:`Party --> Parties`
+
+The *Party*-model introduces the conception of ...
+
+.. _party_party_fields:
+
+Fields
+------
+
+
+.. _party_party_party_account_payable:
+
+:guilabel:`Account Payable`:
+    :Internal Name: ``account_payable``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_module`
+
+    The *Account Payable*-field is used to store ...
+
+
+
+
+.. _party_party_party_account_receivable:
+
+:guilabel:`Account Receivable`:
+    :Internal Name: ``account_receivable``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_module`
+
+    The *Account Receivable*-field is used to store ...
+
+
+
+
+.. _party_party_party_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _party_party_party_addresses:
+
+:guilabel:`Addresses`:
+    :Internal Name: ``addresses``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`party_address`
+
+    The *Addresses*-field is used to store ...
+
+
+
+
+.. _party_party_party_categories:
+
+:guilabel:`Categories`:
+    :Internal Name: ``categories``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`party_category`
+
+    The *Categories*-field is used to store ...
+
+
+
+
+.. _party_party_party_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _party_party_party_contact_mechanisms:
+
+:guilabel:`Contact Mechanisms`:
+    :Internal Name: ``contact_mechanisms``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`party_contact_mechanism`
+
+    The *Contact Mechanisms*-field is used to store ...
+
+
+
+
+.. _party_party_party_customer_location:
+
+:guilabel:`Customer Location`:
+    :Internal Name: ``customer_location``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+    :Base Module: :ref:`stock_module`
+
+    The default destination location when sending products to the party.
+
+
+
+
+.. _party_party_party_customer_tax_rule:
+
+:guilabel:`Customer Tax Rule`:
+    :Internal Name: ``customer_tax_rule``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_tax_rule`
+    :Base Module: :ref:`account_module`
+
+    Apply this rule on taxes when party is customer.
+
+
+
+
+.. _party_party_party_payment_term:
+
+:guilabel:`Invoice Payment Term`:
+    :Internal Name: ``payment_term``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_invoice_payment_term`
+    :Base Module: :ref:`account_invoice_module`
+
+    The *Invoice Payment Term*-field is used to store ...
+
+
+
+
+.. _party_party_party_lang:
+
+:guilabel:`Language`:
+    :Internal Name: ``lang``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_lang`
+
+    The *Language*-field is used to store ...
+
+
+
+
+.. _party_party_party_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _party_party_party_payable:
+
+:guilabel:`Payable`:
+    :Internal Name: ``payable``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`account_module`
+
+    The *Payable*-field is used to store ...
+
+
+
+
+.. _party_party_party_payable_today:
+
+:guilabel:`Payable Today`:
+    :Internal Name: ``payable_today``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`account_module`
+
+    The *Payable Today*-field is used to store ...
+
+
+
+
+.. _party_party_party_receivable:
+
+:guilabel:`Receivable`:
+    :Internal Name: ``receivable``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`account_module`
+
+    The *Receivable*-field is used to store ...
+
+
+
+
+.. _party_party_party_receivable_today:
+
+:guilabel:`Receivable Today`:
+    :Internal Name: ``receivable_today``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`account_module`
+
+    The *Receivable Today*-field is used to store ...
+
+
+
+
+.. _party_party_party_sale_price_list:
+
+:guilabel:`Sale Price List`:
+    :Internal Name: ``sale_price_list``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_price_list`
+    :Base Module: :ref:`sale_price_list_module`
+
+    The *Sale Price List*-field is used to store ...
+
+
+
+
+.. _party_party_party_siren:
+
+:guilabel:`SIREN`:
+    :Internal Name: ``siren``
+    :Type: :ref:`field_type_char`
+    :Base Module: :ref:`party_siret_module`
+
+    The *SIREN*-field is used to store ...
+
+
+
+
+.. _party_party_party_supplier_location:
+
+:guilabel:`Supplier Location`:
+    :Internal Name: ``supplier_location``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+    :Base Module: :ref:`stock_module`
+
+    The default source location when receiving products from the party.
+
+
+
+
+.. _party_party_party_supplier_payment_term:
+
+:guilabel:`Supplier Payment Term`:
+    :Internal Name: ``supplier_payment_term``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_invoice_payment_term`
+    :Base Module: :ref:`account_invoice_module`
+
+    The *Supplier Payment Term*-field is used to store ...
+
+
+
+
+.. _party_party_party_supplier_tax_rule:
+
+:guilabel:`Supplier Tax Rule`:
+    :Internal Name: ``supplier_tax_rule``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_tax_rule`
+    :Base Module: :ref:`account_module`
+
+    Apply this rule on taxes when party is supplier.
+
+
+
+
+.. _party_party_party_vat_code:
+
+:guilabel:`VAT Code`:
+    :Internal Name: ``vat_code``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *VAT Code*-field is used to store ...
+
+
+
+
+.. _party_party_party_vat_country:
+
+:guilabel:`VAT Country`:
+    :Internal Name: ``vat_country``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`<no selection>`
+    * :guilabel:`AL`
+    * :guilabel:`AT`
+    * :guilabel:`BE`
+    * :guilabel:`BG`
+    * :guilabel:`CL`
+    * :guilabel:`CO`
+    * :guilabel:`CY`
+    * :guilabel:`CZ`
+    * :guilabel:`DE`
+    * :guilabel:`DK`
+    * :guilabel:`EE`
+    * :guilabel:`EL`
+    * :guilabel:`ES`
+    * :guilabel:`FI`
+    * :guilabel:`FR`
+    * :guilabel:`GB`
+    * :guilabel:`GR`
+    * :guilabel:`HR`
+    * :guilabel:`HU`
+    * :guilabel:`IE`
+    * :guilabel:`IT`
+    * :guilabel:`LT`
+    * :guilabel:`LU`
+    * :guilabel:`LV`
+    * :guilabel:`MT`
+    * :guilabel:`NL`
+    * :guilabel:`PL`
+    * :guilabel:`PT`
+    * :guilabel:`RO`
+    * :guilabel:`RU`
+    * :guilabel:`SE`
+    * :guilabel:`SI`
+    * :guilabel:`SK`
+    * :guilabel:`SM`
+    * :guilabel:`UA`
+    * :guilabel:`UK`
+
+    Setting VAT country will enable validation of the VAT number.
+
+
+
+
+.. _party_party_party_vat_number:
+
+:guilabel:`VAT Number`:
+    :Internal Name: ``vat_number``
+    :Type: :ref:`field_type_char`
+
+    Value Added Tax number
+
+
+
+
+Reports
+--------
+:guilabel:`Labels`:
+    Labels
+:guilabel:`Letter`:
+    Letter
+    The *Letter*-Report is based on style ``company/header_A4.odt``.
+
+
+Wizards
+-------
+:guilabel:`Check VIES`:
+    
+
+
+.. _party_configuration:
+
+Party Configuration
+===================
+:Model Name: ``party.configuration``
+:Base Module: :ref:`party_module`
+
+:Menu:
+    :menuselection:`Party --> Configuration --> Party Configuration`
+
+The *Party Configuration*-model introduces the conception of ...
+
+.. _party_configuration_fields:
+
+Fields
+------
+
+
+.. _party_party_configuration_party_lang:
+
+:guilabel:`Party Language`:
+    :Internal Name: ``party_lang``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_lang`
+
+    The value set on this field will preset the language on new parties
+
+
+
+
+.. _party_party_configuration_party_sequence:
+
+:guilabel:`Party Sequence`:
+    :Internal Name: ``party_sequence``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_sequence`
+
+    The *Party Sequence*-field is used to store ...
+
+

@@ -1,0 +1,784 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Analytic Account &mdash; Tryton Project Documentation 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Tryton Project Documentation 0.1.0 documentation" href="../../index.html" />
+    <link rel="up" title="Analytic Account" href="module.html" />
+    <link rel="next" title="Analytic Invoice" href="../analytic_invoice/module.html" />
+    <link rel="prev" title="Analytic Account" href="module.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../analytic_invoice/module.html" title="Analytic Invoice"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Analytic Account"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" accesskey="U">Analytic Account</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="analytic-account">
+<span id="analytic-account-account"></span><h1>Analytic Account<a class="headerlink" href="#analytic-account" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><p class="first"><tt class="docutils literal"><span class="pre">analytic_account.account</span></tt></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><p class="first"><a class="reference internal" href="module.html#analytic-account-module"><em>Analytic Account</em></a></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><p class="first"><em class="menuselection">Financial ‣ Configuration ‣ Analytic Account ‣
+Analytic Accounts</em></p>
+<p class="last"><em class="menuselection">Financial ‣ Configuration ‣ Analytic Account ‣
+Analytic Accounts ‣ Analytic Accounts</em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Analytic Account</em>-model introduces the conception of ...</p>
+<div class="section" id="fields">
+<span id="analytic-account-account-fields"></span><h2>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="analytic-account-analytic-account-account-active">
+<dt><em class="guilabel">Active</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">When not ticked the record is deactivated for future use. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Active</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-balance">
+<dt><em class="guilabel">Balance</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">balance</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Balance</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-childs">
+<dt><em class="guilabel">Children</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">childs</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>One-To-Many</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#analytic-account-account"><em>Analytic Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The children records in a tree-structure. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-tree"><em>Tree</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-code">
+<dt><em class="guilabel">Code</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">code</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Code</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-company">
+<dt><em class="guilabel">Company</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Company</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Company</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-credit">
+<dt><em class="guilabel">Credit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">credit</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Credit</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-currency">
+<dt><em class="guilabel">Currency</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../currency/index.html#currency-currency"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-debit">
+<dt><em class="guilabel">Debit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">debit</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Debit</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-display-balance">
+<dt><em class="guilabel">Display Balance</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">display_balance</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Debit - Credit</em></li>
+<li><em class="guilabel">Credit - Debit</em></li>
+</ul>
+<p class="last">The <em>Display Balance</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-mandatory">
+<dt><em class="guilabel">Mandatory</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">mandatory</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Mandatory</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-name">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Name</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-note">
+<dt><em class="guilabel">Note</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">note</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-text"><em>Multi Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Note</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-parent">
+<dt><em class="guilabel">Parent</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">parent</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#analytic-account-account"><em>Analytic Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The parent record in a tree-structure. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-tree"><em>Tree</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-root">
+<dt><em class="guilabel">Root</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">root</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#analytic-account-account"><em>Analytic Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Root</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-state">
+<dt><em class="guilabel">State</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">state</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Draft</em></li>
+<li><em class="guilabel">Opened</em></li>
+<li><em class="guilabel">Closed</em></li>
+</ul>
+<p class="last">The <em>State</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-type">
+<dt><em class="guilabel">Type</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">type</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-selection"><em>Selection</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The following options are available:</p>
+<ul class="simple">
+<li><em class="guilabel">Root</em></li>
+<li><em class="guilabel">View</em></li>
+<li><em class="guilabel">Normal</em></li>
+</ul>
+<p class="last">The <em>Type</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="wizards">
+<h2>Wizards<a class="headerlink" href="#wizards" title="Permalink to this headline">¶</a></h2>
+<p><em class="guilabel">Open Account</em>:</p>
+</div>
+<div class="section" id="access">
+<h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Analytic Administration&#8221;
+have the following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="analytic-account-selection">
+<span id="analytic-account-account-selection"></span><h1>Analytic Account Selection<a class="headerlink" href="#analytic-account-selection" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">analytic_account.account.selection</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#analytic-account-module"><em>Analytic Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Analytic Account Selection</em>-model introduces the conception of ...</p>
+<div class="section" id="analytic-account-account-selection-fields">
+<span id="id1"></span><h2>Fields<a class="headerlink" href="#analytic-account-account-selection-fields" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="analytic-line">
+<span id="analytic-account-line"></span><h1>Analytic Line<a class="headerlink" href="#analytic-line" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">analytic_account.line</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#analytic-account-module"><em>Analytic Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Analytic Line</em>-model introduces the conception of ...</p>
+<div class="section" id="analytic-account-line-fields">
+<span id="id2"></span><h2>Fields<a class="headerlink" href="#analytic-account-line-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="analytic-account-analytic-account-line-account">
+<dt><em class="guilabel">Account</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="#analytic-account-account"><em>Analytic Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Account</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-move-line">
+<dt><em class="guilabel">Account Move Line</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">move_line</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-move-line"><em>Account Move Line</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Account Move Line</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-active">
+<dt><em class="guilabel">Active</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">active</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-boolean"><em>Boolean</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">When not ticked the record is deactivated for future use. See section
+<a class="reference internal" href="../../general_concepts.html#general-concept-active-field"><em>Active</em></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-credit">
+<dt><em class="guilabel">Credit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">credit</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Credit</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-currency">
+<dt><em class="guilabel">Currency</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">currency</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#readonly"><em>Read Only</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../currency/index.html#currency-currency"><em>Currency</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Currency</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-date">
+<dt><em class="guilabel">Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-debit">
+<dt><em class="guilabel">Debit</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">debit</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-numeric"><em>Numeric Number</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Debit</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-journal">
+<dt><em class="guilabel">Journal</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">journal</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-journal"><em>Journal</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Journal</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-name">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>Required</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Name</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-party">
+<dt><em class="guilabel">Party</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">party</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>Many-To-One</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Relation Model:</th><td class="field-body"><a class="reference internal" href="../party/index.html#party-party"><em>Party</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Party</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-line-reference">
+<dt><em class="guilabel">Reference</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">reference</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Single Line Text</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Reference</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id3">
+<h2>Access<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>The manipulation of records in this model is controlled by
+<a class="reference internal" href="../ir/index.html#ir-model-access"><em>Model access</em></a> entries.
+<a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s being member of <a class="reference internal" href="../res/index.html#res-group"><em>Group</em></a> &#8220;Account&#8221; have the
+following access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">allowed</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">allowed</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>All other <a class="reference internal" href="../res/index.html#res-user"><em>User</em></a>s have these access permissions:</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Read:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Write:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Create:</th><td class="field-body">forbidden</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Delete:</th><td class="field-body">forbidden</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="open-chart-account-init">
+<span id="analytic-account-account-open-chart-account-init"></span><h1>Open Chart Account Init<a class="headerlink" href="#open-chart-account-init" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Model Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">analytic_account.account.open_chart_account.init</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Base Module:</th><td class="field-body"><a class="reference internal" href="module.html#analytic-account-module"><em>Analytic Account</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>The <em>Open Chart Account Init</em>-model introduces the conception of ...</p>
+<div class="section" id="analytic-account-account-open-chart-account-init-fields">
+<span id="id4"></span><h2>Fields<a class="headerlink" href="#analytic-account-account-open-chart-account-init-fields" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="analytic-account-analytic-account-account-open-chart-account-init-end-date">
+<dt><em class="guilabel">End Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">end_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>End Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+<dl class="docutils" id="analytic-account-analytic-account-account-open-chart-account-init-start-date">
+<dt><em class="guilabel">Start Date</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Internal Name:</th><td class="field-body"><tt class="docutils literal"><span class="pre">start_date</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-date"><em>Date</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">The <em>Start Date</em>-field is used to store ...</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Analytic Account</a></li>
+<li><a class="reference internal" href="#analytic-account-selection">Analytic Account Selection</a></li>
+<li><a class="reference internal" href="#analytic-line">Analytic Line</a></li>
+<li><a class="reference internal" href="#open-chart-account-init">Open Chart Account Init</a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="module.html"
+                        title="previous chapter">Analytic Account</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../analytic_invoice/module.html"
+                        title="next chapter">Analytic Invoice</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules/analytic_account/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../analytic_invoice/module.html" title="Analytic Invoice"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="module.html" title="Analytic Account"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Tryton Project Documentation 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="module.html" >Analytic Account</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

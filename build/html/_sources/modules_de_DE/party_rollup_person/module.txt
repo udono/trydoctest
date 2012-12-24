@@ -1,0 +1,10 @@
+.. _party_rollup_person_module:
+
+==========================
+Parteien Struktur Personen
+==========================
+:Modul Name: trytond_party_rollup_person
+
+Das *Partei-Struktur-Person-Modul* führt das Konzept zur Strukturierung
+von Parteien des Typs *Person* als *Mitglieder* von Parteien des Typs
+*Organisation* ein.

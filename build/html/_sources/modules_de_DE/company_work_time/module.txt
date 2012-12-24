@@ -1,0 +1,6 @@
+.. _company_work_time_module:
+
+=================
+Company Work Time
+=================
+:Module Name: trytond_company_work_time

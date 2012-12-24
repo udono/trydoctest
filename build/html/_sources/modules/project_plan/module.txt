@@ -1,0 +1,11 @@
+.. _project_plan_module:
+
+============
+Project Plan
+============
+:Module Name: trytond_project_plan
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

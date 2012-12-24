@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>WebDAV Beispiele &mdash; Dokumentation v0.1.0</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="Dokumentation v0.1.0" href="../../index.html" />
+    <link rel="next" title="Abschluss Geschäftsjahr" href="../account/index.html" />
+    <link rel="prev" title="Generelle Konzepte" href="../../general_concepts.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="../account/index.html" title="Abschluss Geschäftsjahr"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="../../general_concepts.html" title="Generelle Konzepte"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="webdav-beispiele">
+<h1>WebDAV Beispiele<a class="headerlink" href="#webdav-beispiele" title="Permalink zu dieser Überschrift">¶</a></h1>
+<p>Die folgenden Beispiele können mit <tt class="docutils literal"><span class="pre">cadaver</span></tt><a class="footnote-reference" href="#id2" id="id1">[1]</a> nachvollzogen werden,
+einem Kommandozeilen Client für WebDAV.
+Alle Beispiele lassen sich auch mit graphischen Dateimanagern reproduzieren.
+Bis auf Beispiel 5 lassen sich die Beispiele mit einem Internet-Browser
+repoduzieren.</p>
+<p>Ein laufender Tryton-Server ist folgendermaßen konfiguriert:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">In der Datei <tt class="docutils literal"><span class="pre">trytond.conf</span></tt> sind folgende Einstellungen gesetzt:</p>
+<p><tt class="docutils literal"><span class="pre">webdav</span> <span class="pre">=</span> <span class="pre">localhost:8000</span></tt></p>
+<p><tt class="docutils literal"><span class="pre">ssl_webdav</span> <span class="pre">=</span> <span class="pre">False</span></tt></p>
+</li>
+<li><p class="first">Es existiert eine Datenbank mit dem Namen &#8216;firma&#8217;.</p>
+</li>
+<li><p class="first">Das <a class="reference internal" href="../party/module.html#party-module"><em>Parteien</em></a> Modul ist installiert.</p>
+</li>
+<li><p class="first">Das Parteien Modell ist als WebDAV Sammlung unter dem Namen <em>Parteien</em>
+angelegt (siehe auch <a class="reference internal" href="index.html#webdav-collection"><em>Sammlung</em></a>).</p>
+</li>
+<li><p class="first">Es existiert eine lokale Bilddatei namens <cite>Foto.jpg</cite>.</p>
+</li>
+<li><p class="first">Es wird der <em>admin</em> <a class="reference internal" href="../res/index.html#res-user"><em>Benutzer</em></a> verwendet.</p>
+</li>
+</ul>
+</div></blockquote>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://www.webdav.org/cadaver/">http://www.webdav.org/cadaver/</a></td></tr>
+</tbody>
+</table>
+<div class="section" id="beispiel-1">
+<h2>Beispiel 1<a class="headerlink" href="#beispiel-1" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Verbindung zu einem WebDAV-Service mit <tt class="docutils literal"><span class="pre">cadaver</span></tt>:</p>
+<div class="highlight-python"><pre>$ cadaver http://localhost:8080/
+Authentication required for PyWebDAV on server `localhost':
+Username: admin
+Password:
+dav:/&gt;</pre>
+</div>
+</div>
+<div class="section" id="beispiel-2">
+<h2>Beispiel 2<a class="headerlink" href="#beispiel-2" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Verfügbare Komandos von <tt class="docutils literal"><span class="pre">cadaver</span></tt>:</p>
+<div class="highlight-python"><pre>dav:/&gt; help
+Available commands:
+ls       cd       pwd        put      get    mget       mput
+edit     less     mkcol      cat      delete rmcol      copy
+move     lock     unlock     discover steal  showlocks  version
+checkin  checkout uncheckout history  label  propnames  chexec
+propget  propdel  propset    search   set    open       close
+echo     quit     unset      lcd      lls    lpwd       logout
+help     describe about
+Aliases: rm=delete, mkdir=mkcol, mv=move, cp=copy, more=less,
+quit=exit=bye</pre>
+</div>
+</div>
+<div class="section" id="beispiel-3">
+<h2>Beispiel 3<a class="headerlink" href="#beispiel-3" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Entfernte Sammlung/Verzeichnis (Collection) listen (Verzeichnisansicht):</p>
+<div class="highlight-python"><pre>dav:/&gt; ls
+Listing collection `/': succeeded.
+Coll:   firma                                  0  Mär  2 00:25</pre>
+</div>
+<p>Lokales Verzeichnis listen (Verzeichnisansicht):</p>
+<div class="highlight-python"><pre>dav:/&gt; lls
+Foto.jpg</pre>
+</div>
+</div>
+<div class="section" id="beispiel-4">
+<h2>Beispiel 4<a class="headerlink" href="#beispiel-4" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>In eine Sammlung/Verzeichnis wechseln:</p>
+<div class="highlight-python"><pre>dav:/&gt; cd firma
+dav:/firma/&gt; ls
+Listing collection `/firma/': succeeded.
+Coll:   Parteien                               0  Mär  2 00:25
+
+dav:/firma/&gt; cd Parteien
+dav:/firma/Parteien/&gt; ls
+Listing collection `/firma/Parteien/': succeeded.
+Coll:   Kuni Gunde-6                           0  Mär  2 00:25
+Coll:   Farnsworth-7                           0  Mär  2 00:25
+Coll:   Telekom-5                              0  Mär  2 00:25
+Coll:   Preisler, Korbinian-4                  0  Mär  2 00:25
+Coll:   Firma-1                                0  Mär  2 00:25
+Coll:   Spallek, Udo-3                         0  Mär  2 00:25
+Coll:   virtual things-2                       0  Mär  2 00:25
+
+dav:/firma/Parteien/&gt; cd Spallek, Udo-3
+The `cd' command takes at most 1 argument:
+  cd path : Change to specified collection
+
+dav:/firma/Parteien/&gt; cd Spallek,\ Udo-3
+dav:/firma/Parteien/Spallek, Udo-3/&gt; ls
+Listing collection `/firma/Parteien/Spallek%2c%20Udo-3/': succeeded.
+        Brief-255.odt                          0  Mär  2 00:25
+        Labels-68.odt                          0  Mär  2 00:25</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">In <tt class="docutils literal"><span class="pre">cadaver</span></tt> müssen Leerzeichen mit einem Blackslash <tt class="docutils literal"><span class="pre">\</span></tt>
+maskiert werden.</p>
+</div>
+<p>Berichte aus Tryton stehen mit den aktuellen Systemdaten als Sammlung
+zum Download bereit. Diese automatisch erzeugten WebDAV-Sammlungen können
+nicht gelöscht werden und stehen grundsätzlich allen Benutzern zur
+Verfügung.</p>
+</div>
+<div class="section" id="beispiel-5">
+<h2>Beispiel 5<a class="headerlink" href="#beispiel-5" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Hinzufügen eines Fotos von einem lokalen Verzeichnis zur Sammlung:</p>
+<div class="highlight-python"><pre>dav:/firma/Parteien/Spallek, Udo-3/&gt; put Foto.jpg
+Uploading Foto.jpg to
+`/firma/Parteien/Spallek%2c%20Udo-3/Foto.jpg':
+Progress: [==========================&gt;] 100,0% of 8696 bytes succeeded.
+dav:/firma/Parteien/Spallek, Udo-3/&gt; ls
+Listing collection `/firma/Parteien/Spallek%2c%20Udo-3/': succeeded.
+        Brief-255.odt                          0  Mär  2 00:25
+        Foto.jpg                            8696  Mär  1 00:26
+        Labels-68.odt                          0  Mär  2 00:25</pre>
+</div>
+<p>Das hochgeladene Bild wird in Tryton der Partei <tt class="docutils literal"><span class="pre">Spallek,</span> <span class="pre">Udo</span></tt> automatisch
+als Anhang zur Verfügung gestellt.</p>
+</div>
+<div class="section" id="beispiel-6">
+<h2>Beispiel 6<a class="headerlink" href="#beispiel-6" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Eine WebDAV-Sammlung lokal herunterladen:</p>
+<div class="highlight-python"><pre>dav:/firma/Parteien/Spallek, Udo-3/&gt; mget Labels-68.odt
+Downloading `/firma/Parteien/Spallek%2c%20Udo-3/Labels-68.odt'
+to Labels-68.odt':
+Progress: [========================&gt;] 100,0% of 25394 bytes succeeded.
+
+dav:/firma/Parteien/Spallek, Udo-3/&gt; lls
+Foto.jpg    Labels-68.odt</pre>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">WebDAV Beispiele</a><ul>
+<li><a class="reference internal" href="#beispiel-1">Beispiel 1</a></li>
+<li><a class="reference internal" href="#beispiel-2">Beispiel 2</a></li>
+<li><a class="reference internal" href="#beispiel-3">Beispiel 3</a></li>
+<li><a class="reference internal" href="#beispiel-4">Beispiel 4</a></li>
+<li><a class="reference internal" href="#beispiel-5">Beispiel 5</a></li>
+<li><a class="reference internal" href="#beispiel-6">Beispiel 6</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="../../general_concepts.html"
+                        title="vorheriges Kapitel">Generelle Konzepte</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="../account/index.html"
+                        title="nächstes Kapitel">Abschluss Geschäftsjahr</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/webdav/topic.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="../account/index.html" title="Abschluss Geschäftsjahr"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="../../general_concepts.html" title="Generelle Konzepte"
+             >zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
+    </div>
+  </body>
+</html>

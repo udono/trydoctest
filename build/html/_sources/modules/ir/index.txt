@@ -1,0 +1,3794 @@
+:tocdepth: 1
+
+
+
+.. _ir_action:
+
+Action
+======
+:Model Name: ``ir.action``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Actions --> Actions`
+
+The *Action*-model introduces the conception of ...
+
+.. _ir_action_fields:
+
+Fields
+------
+
+
+.. _ir_ir_action_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _ir_ir_action_groups:
+
+:guilabel:`Groups`:
+    :Internal Name: ``groups``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`res_group`
+
+    The *Groups*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_icon:
+
+:guilabel:`Icon`:
+    :Internal Name: ``icon``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_ui_icon`
+
+    The *Icon*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_keywords:
+
+:guilabel:`Keywords`:
+    :Internal Name: ``keywords``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`ir_action_keyword`
+
+    The *Keywords*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Type*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_usage:
+
+:guilabel:`Usage`:
+    :Internal Name: ``usage``
+    :Type: :ref:`field_type_char`
+
+    The *Usage*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_action_act_window:
+
+Action act window
+=================
+:Model Name: ``ir.action.act_window``
+:Inherits from: :ref:`ir_action`
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Actions --> Window
+    Actions`
+
+The *Action act window*-model introduces the conception of ...
+
+.. _ir_action_act_window_fields:
+
+Fields
+------
+
+
+.. _ir_ir_action_act_window_auto_refresh:
+
+:guilabel:`Auto-Refresh`:
+    :Internal Name: ``auto_refresh``
+    :Type: :ref:`field_type_integer`
+
+    Add an auto-refresh on the view
+
+
+
+
+.. _ir_ir_action_act_window_context:
+
+:guilabel:`Context Value`:
+    :Internal Name: ``context``
+    :Type: :ref:`field_type_char`
+
+    The *Context Value*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_act_window_domain:
+
+:guilabel:`Domain Value`:
+    :Internal Name: ``domain``
+    :Type: :ref:`field_type_char`
+
+    The *Domain Value*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_act_window_limit:
+
+:guilabel:`Limit`:
+    :Internal Name: ``limit``
+    :Type: :ref:`field_type_integer`
+
+    Default limit for the list view
+
+
+
+
+.. _ir_ir_action_act_window_res_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``res_model``
+    :Type: :ref:`field_type_char`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_act_window_search_value:
+
+:guilabel:`Search Criteria`:
+    :Internal Name: ``search_value``
+    :Type: :ref:`field_type_char`
+
+    Default search criteria for the list view
+
+
+
+
+.. _ir_ir_action_act_window_act_window_views:
+
+:guilabel:`Views`:
+    :Internal Name: ``act_window_views``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`ir_action_act_window_view`
+
+    The *Views*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_act_window_window_name:
+
+:guilabel:`Window Name`:
+    :Internal Name: ``window_name``
+    :Type: :ref:`field_type_boolean`
+
+    Use the action name as window name
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_action_act_window_view:
+
+Action act window view
+======================
+:Model Name: ``ir.action.act_window.view``
+:Base Module: :ref:`ir_module`
+
+The *Action act window view*-model introduces the conception of ...
+
+.. _ir_action_act_window_view_fields:
+
+Fields
+------
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_action_keyword:
+
+Action keyword
+==============
+:Model Name: ``ir.action.keyword``
+:Base Module: :ref:`ir_module`
+
+The *Action keyword*-model introduces the conception of ...
+
+.. _ir_action_keyword_fields:
+
+Fields
+------
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_action_report:
+
+Action report
+=============
+:Model Name: ``ir.action.report``
+:Inherits from: :ref:`ir_action`
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Actions --> Reports`
+
+The *Action report*-model introduces the conception of ...
+
+.. _ir_action_report_fields:
+
+Fields
+------
+
+
+.. _ir_ir_action_report_report_content:
+
+:guilabel:`Content`:
+    :Internal Name: ``report_content``
+    :Type: :ref:`field_type_binary`
+
+    The *Content*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_report_direct_print:
+
+:guilabel:`Direct Print`:
+    :Internal Name: ``direct_print``
+    :Type: :ref:`field_type_boolean`
+
+    The *Direct Print*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_report_email:
+
+:guilabel:`Email`:
+    :Internal Name: ``email``
+    :Type: :ref:`field_type_char`
+
+    The *Email*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_report_extension:
+
+:guilabel:`Extension`:
+    :Internal Name: ``extension``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`<no selection>`
+    * :guilabel:`BibTex`
+    * :guilabel:`Windows Bitmap`
+    * :guilabel:`Text CSV`
+    * :guilabel:`dBase`
+    * :guilabel:`Data Interchange Format`
+    * :guilabel:`Microsoft Word 97/2000/XP`
+    * :guilabel:`Microsoft Word 6.0`
+    * :guilabel:`Microsoft Word 95`
+    * :guilabel:`DocBook`
+    * :guilabel:`Enhanced Metafile`
+    * :guilabel:`Encapsulated PostScript`
+    * :guilabel:`Graphics Interchange Format`
+    * :guilabel:`HTML Document`
+    * :guilabel:`Joint Photographic Experts Group`
+    * :guilabel:`OS/2 Metafile`
+    * :guilabel:`Microsoft Office Open XML`
+    * :guilabel:`Portable Bitmap`
+    * :guilabel:`Mac Pict`
+    * :guilabel:`AportisDoc (Palm)`
+    * :guilabel:`Portable Document Format`
+    * :guilabel:`Portable Graymap`
+    * :guilabel:`Portable Network Graphic`
+    * :guilabel:`Portable Pixelmap`
+    * :guilabel:`Microsoft PowerPoint 97/2000/XP`
+    * :guilabel:`Pocket Word`
+    * :guilabel:`PlaceWare`
+    * :guilabel:`Pocket Excel`
+    * :guilabel:`Sun Raster Image`
+    * :guilabel:`Rich Text Format`
+    * :guilabel:`LaTeX 2e`
+    * :guilabel:`StarDraw 5.0 (OpenOffice.org Impress)`
+    * :guilabel:`StarCalc 5.0`
+    * :guilabel:`StarCalc 4.0`
+    * :guilabel:`StarCalc 3.0`
+    * :guilabel:`StarImpress 5.0`
+    * :guilabel:`StarDraw 3.0 (OpenOffice.org Impress)`
+    * :guilabel:`StarImpress 4.0`
+    * :guilabel:`StarWriter 5.0`
+    * :guilabel:`StarWriter 4.0`
+    * :guilabel:`StarWriter 3.0`
+    * :guilabel:`SYLK`
+    * :guilabel:`Scalable Vector Graphics`
+    * :guilabel:`StarView Metafile`
+    * :guilabel:`Macromedia Flash (SWF)`
+    * :guilabel:`OpenOffice.org 1.0 Spreadsheet`
+    * :guilabel:`OpenOffice.org 1.0 Presentation`
+    * :guilabel:`OpenOffice.org 1.0 Drawing`
+    * :guilabel:`StarDraw 3.0`
+    * :guilabel:`StarDraw 5.0`
+    * :guilabel:`Open Office.org 1.0 Text Document`
+    * :guilabel:`Text Encoded`
+    * :guilabel:`Tagged Image File Format`
+    * :guilabel:`Plain Text`
+    * :guilabel:`Windows Metafile`
+    * :guilabel:`XHTML Document`
+    * :guilabel:`Microsoft Excel 97/2000/XP`
+    * :guilabel:`Microsoft Excel 5.0`
+    * :guilabel:`Microsoft Excel 95`
+    * :guilabel:`X PixMap`
+
+    Leave empty for the same as template, see unoconv documentation for
+    compatible format
+
+
+
+
+.. _ir_ir_action_report_report_name:
+
+:guilabel:`Internal Name`:
+    :Internal Name: ``report_name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Internal Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_report_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Type: :ref:`field_type_char`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_report_report:
+
+:guilabel:`Path`:
+    :Internal Name: ``report``
+    :Type: :ref:`field_type_char`
+
+    The *Path*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_report_style:
+
+:guilabel:`Style`:
+    :Internal Name: ``style``
+    :Type: :ref:`field_type_char`
+
+    Define the style to apply on the report.
+
+
+
+
+.. _ir_ir_action_report_template_extension:
+
+:guilabel:`Template Extension`:
+    :Internal Name: ``template_extension``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`OpenDocument Text`
+    * :guilabel:`OpenDocument Presentation`
+    * :guilabel:`OpenDocument Spreadsheet`
+    * :guilabel:`OpenDocument Graphics`
+
+    The *Template Extension*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_action_url:
+
+Action URL
+==========
+:Model Name: ``ir.action.url``
+:Inherits from: :ref:`ir_action`
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Actions --> URLs`
+
+The *Action URL*-model introduces the conception of ...
+
+.. _ir_action_url_fields:
+
+Fields
+------
+
+
+.. _ir_ir_action_url_url:
+
+:guilabel:`Action Url`:
+    :Internal Name: ``url``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Action Url*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_action_wizard:
+
+Action wizard
+=============
+:Model Name: ``ir.action.wizard``
+:Inherits from: :ref:`ir_action`
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Actions --> Wizards`
+
+The *Action wizard*-model introduces the conception of ...
+
+.. _ir_action_wizard_fields:
+
+Fields
+------
+
+
+.. _ir_ir_action_wizard_email:
+
+:guilabel:`Email`:
+    :Internal Name: ``email``
+    :Type: :ref:`field_type_char`
+
+    The *Email*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_wizard_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Type: :ref:`field_type_char`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_action_wizard_window:
+
+:guilabel:`Window`:
+    :Internal Name: ``window``
+    :Type: :ref:`field_type_boolean`
+
+    Run wizard in a new window
+
+
+
+
+.. _ir_ir_action_wizard_wiz_name:
+
+:guilabel:`Wizard name`:
+    :Internal Name: ``wiz_name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Wizard name*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_attachment:
+
+Attachment
+==========
+:Model Name: ``ir.attachment``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Attachments`
+
+The *Attachment*-model introduces the conception of ...
+
+.. _ir_attachment_fields:
+
+Fields
+------
+
+
+.. _ir_ir_attachment_data:
+
+:guilabel:`Data`:
+    :Internal Name: ``data``
+    :Type: :ref:`field_type_binary`
+
+    The *Data*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_data_size:
+
+:guilabel:`Data size`:
+    :Internal Name: ``data_size``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_integer`
+
+    The *Data size*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Type: :ref:`field_type_text`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_last_modification:
+
+:guilabel:`Last Modification`:
+    :Internal Name: ``last_modification``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_datetime`
+
+    The *Last Modification*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_last_user:
+
+:guilabel:`Last User`:
+    :Internal Name: ``last_user``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Last User*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_link:
+
+:guilabel:`Link`:
+    :Internal Name: ``link``
+    :Type: :ref:`field_type_char`
+
+    The *Link*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_resource:
+
+:guilabel:`Resource`:
+    :Internal Name: ``resource``
+    :Type: :ref:`field_type_reference`
+
+    The *Resource*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_summary:
+
+:guilabel:`Summary`:
+    :Internal Name: ``summary``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Summary*-field is used to store ...
+
+
+
+
+.. _ir_ir_attachment_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Data`
+    * :guilabel:`Link`
+
+    The *Type*-field is used to store ...
+
+
+
+
+.. _ir_cache:
+
+Cache
+=====
+:Model Name: ``ir.cache``
+:Base Module: :ref:`ir_module`
+
+The *Cache*-model introduces the conception of ...
+
+.. _ir_cache_fields:
+
+Fields
+------
+
+
+.. _ir_translation_clean_init:
+
+Clean translation init
+======================
+:Model Name: ``ir.translation.clean.init``
+:Base Module: :ref:`ir_module`
+
+The *Clean translation init*-model introduces the conception of ...
+
+
+
+.. _ir_translation_clean_start:
+
+Clean translation start
+=======================
+:Model Name: ``ir.translation.clean.start``
+:Base Module: :ref:`ir_module`
+
+The *Clean translation start*-model introduces the conception of ...
+
+
+
+.. _ir_module_module_config_wizard_item:
+
+Config wizard to run after installing module
+============================================
+:Model Name: ``ir.module.module.config_wizard.item``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Modules --> Config Wizard Items`
+
+The *Config wizard to run after installing module*-model introduces the
+conception of ...
+
+.. _ir_module_module_config_wizard_item_fields:
+
+Fields
+------
+
+
+.. _ir_ir_module_module_config_wizard_item_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_module_module_config_wizard_item_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+
+    The position of the record order in a list.
+
+
+
+.. _ir_ir_module_module_config_wizard_item_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Open`
+    * :guilabel:`Done`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _ir_cron:
+
+Cron
+====
+:Model Name: ``ir.cron``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Scheduler --> Scheduled Actions`
+
+The *Cron*-model introduces the conception of ...
+
+.. _ir_cron_fields:
+
+Fields
+------
+
+
+.. _ir_ir_cron_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _ir_ir_cron_args:
+
+:guilabel:`Arguments`:
+    :Internal Name: ``args``
+    :Type: :ref:`field_type_text`
+
+    The *Arguments*-field is used to store ...
+
+
+
+
+.. _ir_ir_cron_companies:
+
+:guilabel:`Companies`:
+    :Internal Name: ``companies``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`company_company`
+    :Base Module: :ref:`company_module`
+
+    Companies registered for this cron
+
+
+
+
+.. _ir_ir_cron_user:
+
+:guilabel:`Execution User`:
+    :Internal Name: ``user``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_user`
+
+    The user used to execute this action
+
+
+
+
+.. _ir_ir_cron_function:
+
+:guilabel:`Function`:
+    :Internal Name: ``function``
+    :Type: :ref:`field_type_char`
+
+    The *Function*-field is used to store ...
+
+
+
+
+.. _ir_ir_cron_interval_number:
+
+:guilabel:`Interval Number`:
+    :Internal Name: ``interval_number``
+    :Type: :ref:`field_type_integer`
+
+    The *Interval Number*-field is used to store ...
+
+
+
+
+.. _ir_ir_cron_interval_type:
+
+:guilabel:`Interval Unit`:
+    :Internal Name: ``interval_type``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Minutes`
+    * :guilabel:`Hours`
+    * :guilabel:`Days`
+    * :guilabel:`Weeks`
+    * :guilabel:`Months`
+
+    The *Interval Unit*-field is used to store ...
+
+
+
+
+.. _ir_ir_cron_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Type: :ref:`field_type_char`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_cron_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_cron_next_call:
+
+:guilabel:`Next Call`:
+    :Internal Name: ``next_call``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_datetime`
+
+    The *Next Call*-field is used to store ...
+
+
+
+
+.. _ir_ir_cron_number_calls:
+
+:guilabel:`Number of Calls`:
+    :Internal Name: ``number_calls``
+    :Type: :ref:`field_type_integer`
+
+    Number of times the function is called, a negative number indicates
+    that the function will always be called
+
+
+
+
+.. _ir_ir_cron_repeat_missed:
+
+:guilabel:`Repeat Missed`:
+    :Internal Name: ``repeat_missed``
+    :Type: :ref:`field_type_boolean`
+
+    The *Repeat Missed*-field is used to store ...
+
+
+
+
+.. _ir_ir_cron_request_user:
+
+:guilabel:`Request User`:
+    :Internal Name: ``request_user``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_user`
+
+    The user who will receive requests in case of failure
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_date:
+
+Date
+====
+:Model Name: ``ir.date``
+:Base Module: :ref:`ir_module`
+
+The *Date*-model introduces the conception of ...
+
+
+
+.. _ir_export:
+
+Export
+======
+:Model Name: ``ir.export``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Exports`
+
+The *Export*-model introduces the conception of ...
+
+.. _ir_export_fields:
+
+Fields
+------
+
+
+.. _ir_ir_export_export_fields:
+
+:guilabel:`Fields`:
+    :Internal Name: ``export_fields``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`ir_export_line`
+
+    The *Fields*-field is used to store ...
+
+
+
+
+.. _ir_ir_export_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_export_resource:
+
+:guilabel:`Resource`:
+    :Internal Name: ``resource``
+    :Type: :ref:`field_type_char`
+
+    The *Resource*-field is used to store ...
+
+
+
+
+.. _ir_export_line:
+
+Export line
+===========
+:Model Name: ``ir.export.line``
+:Base Module: :ref:`ir_module`
+
+The *Export line*-model introduces the conception of ...
+
+.. _ir_export_line_fields:
+
+Fields
+------
+
+
+.. _ir_translation_export_start:
+
+Export translation - file
+=========================
+:Model Name: ``ir.translation.export.start``
+:Base Module: :ref:`ir_module`
+
+The *Export translation - file*-model introduces the conception of ...
+
+.. _ir_translation_export_start_fields:
+
+Fields
+------
+
+
+.. _ir_ir_translation_export_start_file:
+
+:guilabel:`File`:
+    :Internal Name: ``file``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_binary`
+
+    The *File*-field is used to store ...
+
+
+
+
+.. _ir_translation_export_init:
+
+Export translation - language and module
+========================================
+:Model Name: ``ir.translation.export.init``
+:Base Module: :ref:`ir_module`
+
+The *Export translation - language and module*-model introduces the conception
+of ...
+
+.. _ir_translation_export_init_fields:
+
+Fields
+------
+
+
+.. _ir_ir_translation_export_init_lang:
+
+:guilabel:`Language`:
+    :Internal Name: ``lang``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+    The *Language*-field is used to store ...
+
+
+
+
+.. _ir_ir_translation_export_init_module:
+
+:guilabel:`Module`:
+    :Internal Name: ``module``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+    The *Module*-field is used to store ...
+
+
+
+
+.. _ir_ui_icon:
+
+Icon
+====
+:Model Name: ``ir.ui.icon``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Icons`
+
+The *Icon*-model introduces the conception of ...
+
+.. _ir_ui_icon_fields:
+
+Fields
+------
+
+
+.. _ir_ir_ui_icon_module:
+
+:guilabel:`Module`:
+    :Internal Name: ``module``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Module*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_icon_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_icon_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+
+    The position of the record order in a list.
+
+
+
+.. _ir_ir_ui_icon_path:
+
+:guilabel:`SVG Path`:
+    :Internal Name: ``path``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *SVG Path*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_ui_view_show_init:
+
+ir.ui.view.show.init
+====================
+:Model Name: ``ir.ui.view.show.init``
+:Base Module: :ref:`ir_module`
+
+The *ir.ui.view.show.init*-model introduces the conception of ...
+
+
+
+.. _ir_ui_view_tree_expanded_state:
+
+ir.ui.view_tree_expanded_state
+==============================
+:Model Name: ``ir.ui.view_tree_expanded_state``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Tree Expanded State`
+
+The *ir.ui.view_tree_expanded_state*-model introduces the conception of ...
+
+.. _ir_ui_view_tree_expanded_state_fields:
+
+Fields
+------
+
+
+.. _ir_ir_ui_view_tree_expanded_state_child_name:
+
+:guilabel:`Child Name`:
+    :Internal Name: ``child_name``
+    :Type: :ref:`field_type_char`
+
+    The *Child Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_tree_expanded_state_domain:
+
+:guilabel:`Domain`:
+    :Internal Name: ``domain``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Domain*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_tree_expanded_state_nodes:
+
+:guilabel:`Expanded Nodes`:
+    :Internal Name: ``nodes``
+    :Type: :ref:`field_type_text`
+
+    The *Expanded Nodes*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_tree_expanded_state_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_tree_expanded_state_user:
+
+:guilabel:`User`:
+    :Internal Name: ``user``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_user`
+
+    The *User*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_lang:
+
+Language
+========
+:Model Name: ``ir.lang``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Localization --> Languages`
+
+The *Language*-model introduces the conception of ...
+
+.. _ir_lang_fields:
+
+Fields
+------
+
+
+.. _ir_ir_lang_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _ir_ir_lang_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    RFC 4646 tag: http://tools.ietf.org/html/rfc4646
+
+
+
+
+.. _ir_ir_lang_date:
+
+:guilabel:`Date`:
+    :Internal Name: ``date``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Date*-field is used to store ...
+
+
+
+
+.. _ir_ir_lang_decimal_point:
+
+:guilabel:`Decimal Separator`:
+    :Internal Name: ``decimal_point``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Decimal Separator*-field is used to store ...
+
+
+
+
+.. _ir_ir_lang_direction:
+
+:guilabel:`Direction`:
+    :Internal Name: ``direction``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Left-to-right`
+    * :guilabel:`Right-to-left`
+
+    The *Direction*-field is used to store ...
+
+
+
+
+.. _ir_ir_lang_grouping:
+
+:guilabel:`Grouping`:
+    :Internal Name: ``grouping``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Grouping*-field is used to store ...
+
+
+
+
+.. _ir_ir_lang_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_lang_thousands_sep:
+
+:guilabel:`Thousands Separator`:
+    :Internal Name: ``thousands_sep``
+    :Type: :ref:`field_type_char`
+
+    The *Thousands Separator*-field is used to store ...
+
+
+
+
+.. _ir_ir_lang_translatable:
+
+:guilabel:`Translatable`:
+    :Internal Name: ``translatable``
+    :Type: :ref:`field_type_boolean`
+
+    The *Translatable*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_model:
+
+Model
+=====
+:Model Name: ``ir.model``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Models`
+
+The *Model*-model introduces the conception of ...
+
+.. _ir_model_fields:
+
+Fields
+------
+
+
+.. _ir_ir_model_fields:
+
+:guilabel:`Fields`:
+    :Internal Name: ``fields``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`ir_model_field`
+
+    The *Fields*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_info:
+
+:guilabel:`Information`:
+    :Internal Name: ``info``
+    :Type: :ref:`field_type_text`
+
+    The *Information*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_name:
+
+:guilabel:`Model Description`:
+    :Internal Name: ``name``
+    :Type: :ref:`field_type_char`
+
+    The *Model Description*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_model:
+
+:guilabel:`Model Name`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Model Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_module:
+
+:guilabel:`Module`:
+    :Internal Name: ``module``
+    :Type: :ref:`field_type_char`
+
+    Module in which this model is defined
+
+
+
+
+Reports
+--------
+:guilabel:`Graph`:
+    Graph
+
+
+Wizards
+-------
+:guilabel:`Graph`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_model_access:
+
+Model access
+============
+:Model Name: ``ir.model.access``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Models Access`
+
+The *Model access*-model introduces the conception of ...
+
+.. _ir_model_access_fields:
+
+Fields
+------
+
+
+.. _ir_ir_model_access_perm_create:
+
+:guilabel:`Create Access`:
+    :Internal Name: ``perm_create``
+    :Type: :ref:`field_type_boolean`
+
+    The *Create Access*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_access_perm_delete:
+
+:guilabel:`Delete Access`:
+    :Internal Name: ``perm_delete``
+    :Type: :ref:`field_type_boolean`
+
+    The *Delete Access*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_access_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Type: :ref:`field_type_text`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_access_group:
+
+:guilabel:`Group`:
+    :Internal Name: ``group``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_group`
+
+    The *Group*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_access_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_access_perm_read:
+
+:guilabel:`Read Access`:
+    :Internal Name: ``perm_read``
+    :Type: :ref:`field_type_boolean`
+
+    The *Read Access*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_access_perm_write:
+
+:guilabel:`Write Access`:
+    :Internal Name: ``perm_write``
+    :Type: :ref:`field_type_boolean`
+
+    The *Write Access*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_model_data:
+
+Model data
+==========
+:Model Name: ``ir.model.data``
+:Base Module: :ref:`ir_module`
+
+The *Model data*-model introduces the conception of ...
+
+.. _ir_model_data_fields:
+
+Fields
+------
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_model_field:
+
+Model field
+===========
+:Model Name: ``ir.model.field``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Fields`
+
+The *Model field*-model introduces the conception of ...
+
+.. _ir_model_field_fields:
+
+Fields
+------
+
+
+.. _ir_ir_model_field_field_description:
+
+:guilabel:`Field Description`:
+    :Internal Name: ``field_description``
+    :Type: :ref:`field_type_char`
+
+    The *Field Description*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_ttype:
+
+:guilabel:`Field Type`:
+    :Internal Name: ``ttype``
+    :Type: :ref:`field_type_char`
+
+    The *Field Type*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_help:
+
+:guilabel:`Help`:
+    :Internal Name: ``help``
+    :Type: :ref:`field_type_text`
+
+    The *Help*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_relation:
+
+:guilabel:`Model Relation`:
+    :Internal Name: ``relation``
+    :Type: :ref:`field_type_char`
+
+    The *Model Relation*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_module:
+
+:guilabel:`Module`:
+    :Internal Name: ``module``
+    :Type: :ref:`field_type_char`
+
+    Module in which this field is defined
+
+
+
+
+.. _ir_ir_model_field_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_model_field_access:
+
+Model Field Access
+==================
+:Model Name: ``ir.model.field.access``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Models Access --> Fields
+    Access`
+
+The *Model Field Access*-model introduces the conception of ...
+
+.. _ir_model_field_access_fields:
+
+Fields
+------
+
+
+.. _ir_ir_model_field_access_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Type: :ref:`field_type_text`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_access_field:
+
+:guilabel:`Field`:
+    :Internal Name: ``field``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model_field`
+
+    The *Field*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_access_group:
+
+:guilabel:`Group`:
+    :Internal Name: ``group``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_group`
+
+    The *Group*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_access_perm_read:
+
+:guilabel:`Read Access`:
+    :Internal Name: ``perm_read``
+    :Type: :ref:`field_type_boolean`
+
+    The *Read Access*-field is used to store ...
+
+
+
+
+.. _ir_ir_model_field_access_perm_write:
+
+:guilabel:`Write Access`:
+    :Internal Name: ``perm_write``
+    :Type: :ref:`field_type_boolean`
+
+    The *Write Access*-field is used to store ...
+
+
+
+
+.. _ir_module_module:
+
+Module
+======
+:Model Name: ``ir.module.module``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Modules --> Modules`
+
+The *Module*-model introduces the conception of ...
+
+.. _ir_module_module_fields:
+
+Fields
+------
+
+
+.. _ir_ir_module_module_author:
+
+:guilabel:`Author`:
+    :Internal Name: ``author``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Author*-field is used to store ...
+
+
+
+
+.. _ir_ir_module_module_dependencies:
+
+:guilabel:`Dependencies`:
+    :Internal Name: ``dependencies``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`ir_module_module_dependency`
+
+    The *Dependencies*-field is used to store ...
+
+
+
+
+.. _ir_ir_module_module_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_text`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _ir_ir_module_module_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_module_module_shortdesc:
+
+:guilabel:`Short description`:
+    :Internal Name: ``shortdesc``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Short description*-field is used to store ...
+
+
+
+
+.. _ir_ir_module_module_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Not Installed`
+    * :guilabel:`Installed`
+    * :guilabel:`To be upgraded`
+    * :guilabel:`To be removed`
+    * :guilabel:`To be installed`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _ir_ir_module_module_version:
+
+:guilabel:`Version`:
+    :Internal Name: ``version``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Version*-field is used to store ...
+
+
+
+
+.. _ir_ir_module_module_website:
+
+:guilabel:`Website`:
+    :Internal Name: ``website``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Website*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_module_module_config_wizard_first:
+
+Module Config Wizard First
+==========================
+:Model Name: ``ir.module.module.config_wizard.first``
+:Base Module: :ref:`ir_module`
+
+The *Module Config Wizard First*-model introduces the conception of ...
+
+
+
+.. _ir_module_module_dependency:
+
+Module dependency
+=================
+:Model Name: ``ir.module.module.dependency``
+:Base Module: :ref:`ir_module`
+
+The *Module dependency*-model introduces the conception of ...
+
+.. _ir_module_module_dependency_fields:
+
+Fields
+------
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_module_module_install_upgrade_init:
+
+Module Install Upgrade Init
+===========================
+:Model Name: ``ir.module.module.install_upgrade.init``
+:Base Module: :ref:`ir_module`
+
+The *Module Install Upgrade Init*-model introduces the conception of ...
+
+.. _ir_module_module_install_upgrade_init_fields:
+
+Fields
+------
+
+
+.. _ir_ir_module_module_install_upgrade_init_module_info:
+
+:guilabel:`Modules to update`:
+    :Internal Name: ``module_info``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_text`
+
+    The *Modules to update*-field is used to store ...
+
+
+
+
+.. _ir_module_module_install_upgrade_start:
+
+Module Install Upgrade Start
+============================
+:Model Name: ``ir.module.module.install_upgrade.start``
+:Base Module: :ref:`ir_module`
+
+The *Module Install Upgrade Start*-model introduces the conception of ...
+
+
+
+.. _ir_model_print_model_graph_init:
+
+Print Model Graph Init
+======================
+:Model Name: ``ir.model.print_model_graph.init``
+:Base Module: :ref:`ir_module`
+
+The *Print Model Graph Init*-model introduces the conception of ...
+
+.. _ir_model_print_model_graph_init_fields:
+
+Fields
+------
+
+
+.. _ir_ir_model_print_model_graph_init_filter:
+
+:guilabel:`Filter`:
+    :Internal Name: ``filter``
+    :Type: :ref:`field_type_text`
+
+    Entering a Python Regular Expression will exclude matching models from
+    the graph.
+
+
+
+
+.. _ir_ir_model_print_model_graph_init_level:
+
+:guilabel:`Level`:
+    :Internal Name: ``level``
+    :Type: :ref:`field_type_integer`
+
+    The *Level*-field is used to store ...
+
+
+
+
+.. _ir_property:
+
+Property
+========
+:Model Name: ``ir.property``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Default Properties`
+
+    :menuselection:`Administration --> Models --> Properties`
+
+The *Property*-model introduces the conception of ...
+
+.. _ir_property_fields:
+
+Fields
+------
+
+
+.. _ir_ir_property_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+    :Base Module: :ref:`company_module`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _ir_ir_property_field:
+
+:guilabel:`Field`:
+    :Internal Name: ``field``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model_field`
+
+    The *Field*-field is used to store ...
+
+
+
+
+.. _ir_ir_property_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_property_res:
+
+:guilabel:`Resource`:
+    :Internal Name: ``res``
+    :Type: :ref:`field_type_reference`
+
+    The *Resource*-field is used to store ...
+
+
+
+
+.. _ir_ir_property_value:
+
+:guilabel:`Value`:
+    :Internal Name: ``value``
+    :Type: :ref:`field_type_reference`
+
+    The *Value*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_rule:
+
+Rule
+====
+:Model Name: ``ir.rule``
+:Base Module: :ref:`ir_module`
+
+The *Rule*-model introduces the conception of ...
+
+.. _ir_rule_fields:
+
+Fields
+------
+
+
+.. _ir_ir_rule_field:
+
+:guilabel:`Field`:
+    :Internal Name: ``field``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model_field`
+
+    The *Field*-field is used to store ...
+
+
+
+
+.. _ir_ir_rule_operand:
+
+:guilabel:`Operand`:
+    :Internal Name: ``operand``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+    The *Operand*-field is used to store ...
+
+
+
+
+.. _ir_ir_rule_operator:
+
+:guilabel:`Operator`:
+    :Internal Name: ``operator``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`child_of`
+    * :guilabel:`not child_of`
+    * :guilabel:`=`
+    * :guilabel:`!=`
+    * :guilabel:`like`
+    * :guilabel:`not like`
+    * :guilabel:`ilike`
+    * :guilabel:`not ilike`
+    * :guilabel:`in`
+    * :guilabel:`not in`
+    * :guilabel:`<=`
+    * :guilabel:`>=`
+    * :guilabel:`<`
+    * :guilabel:`>`
+
+    The *Operator*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_rule_group:
+
+Rule group
+==========
+:Model Name: ``ir.rule.group``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Record Rules`
+
+The *Rule group*-model introduces the conception of ...
+
+.. _ir_rule_group_fields:
+
+Fields
+------
+
+
+.. _ir_ir_rule_group_perm_create:
+
+:guilabel:`Create Access`:
+    :Internal Name: ``perm_create``
+    :Type: :ref:`field_type_boolean`
+
+    The *Create Access*-field is used to store ...
+
+
+
+
+.. _ir_ir_rule_group_default_p:
+
+:guilabel:`Default`:
+    :Internal Name: ``default_p``
+    :Type: :ref:`field_type_boolean`
+
+    Add this rule to all users by default
+
+
+
+
+.. _ir_ir_rule_group_perm_delete:
+
+:guilabel:`Delete Access`:
+    :Internal Name: ``perm_delete``
+    :Type: :ref:`field_type_boolean`
+
+    The *Delete Access*-field is used to store ...
+
+
+
+
+.. _ir_ir_rule_group_global_p:
+
+:guilabel:`Global`:
+    :Internal Name: ``global_p``
+    :Type: :ref:`field_type_boolean`
+
+    Make the rule global  so every users must follow this rule
+
+
+
+
+.. _ir_ir_rule_group_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_rule_group_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_rule_group_perm_read:
+
+:guilabel:`Read Access`:
+    :Internal Name: ``perm_read``
+    :Type: :ref:`field_type_boolean`
+
+    The *Read Access*-field is used to store ...
+
+
+
+
+.. _ir_ir_rule_group_rules:
+
+:guilabel:`Tests`:
+    :Internal Name: ``rules``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`ir_rule`
+
+    The rule is satisfied if at least one test is True
+
+
+
+
+.. _ir_ir_rule_group_perm_write:
+
+:guilabel:`Write Access`:
+    :Internal Name: ``perm_write``
+    :Type: :ref:`field_type_boolean`
+
+    The *Write Access*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_sequence:
+
+Sequence
+========
+:Model Name: ``ir.sequence``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Sequences --> Sequences`
+
+The *Sequence*-model introduces the conception of ...
+
+.. _ir_sequence_fields:
+
+Fields
+------
+
+
+.. _ir_ir_sequence_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _ir_ir_sequence_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+    :Base Module: :ref:`company_module`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_number_increment:
+
+:guilabel:`Increment Number`:
+    :Internal Name: ``number_increment``
+    :Type: :ref:`field_type_integer`
+
+    The *Increment Number*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_last_timestamp:
+
+:guilabel:`Last Timestamp`:
+    :Internal Name: ``last_timestamp``
+    :Type: :ref:`field_type_integer`
+
+    The *Last Timestamp*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_number_next:
+
+:guilabel:`Next Number`:
+    :Internal Name: ``number_next``
+    :Type: :ref:`field_type_integer`
+
+    The *Next Number*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_padding:
+
+:guilabel:`Number padding`:
+    :Internal Name: ``padding``
+    :Type: :ref:`field_type_integer`
+
+    The *Number padding*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_prefix:
+
+:guilabel:`Prefix`:
+    :Internal Name: ``prefix``
+    :Type: :ref:`field_type_char`
+
+    The *Prefix*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_code:
+
+:guilabel:`Sequence Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+    The *Sequence Code*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_name:
+
+:guilabel:`Sequence Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Sequence Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_suffix:
+
+:guilabel:`Suffix`:
+    :Internal Name: ``suffix``
+    :Type: :ref:`field_type_char`
+
+    The *Suffix*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_timestamp_offset:
+
+:guilabel:`Timestamp Offset`:
+    :Internal Name: ``timestamp_offset``
+    :Type: :ref:`field_type_float`
+
+    The *Timestamp Offset*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_timestamp_rounding:
+
+:guilabel:`Timestamp Rounding`:
+    :Internal Name: ``timestamp_rounding``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The *Timestamp Rounding*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Incremental`
+    * :guilabel:`Decimal Timestamp`
+    * :guilabel:`Hexadecimal Timestamp`
+
+    The *Type*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_sequence_strict:
+
+Sequence Strict
+===============
+:Model Name: ``ir.sequence.strict``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Sequences --> Sequences Strict`
+
+The *Sequence Strict*-model introduces the conception of ...
+
+.. _ir_sequence_strict_fields:
+
+Fields
+------
+
+
+.. _ir_sequence_type:
+
+Sequence type
+=============
+:Model Name: ``ir.sequence.type``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Sequences --> Sequence Types`
+
+The *Sequence type*-model introduces the conception of ...
+
+.. _ir_sequence_type_fields:
+
+Fields
+------
+
+
+.. _ir_ir_sequence_type_code:
+
+:guilabel:`Sequence Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Sequence Code*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_type_name:
+
+:guilabel:`Sequence Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Sequence Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_sequence_type_groups:
+
+:guilabel:`User Groups`:
+    :Internal Name: ``groups``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`res_group`
+    :Base Module: :ref:`res_module`
+
+    Groups allowed to edit the sequences of this type
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_translation:
+
+Translation
+===========
+:Model Name: ``ir.translation``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Localization --> Translations`
+
+The *Translation*-model introduces the conception of ...
+
+.. _ir_translation_fields:
+
+Fields
+------
+
+
+.. _ir_ir_translation_name:
+
+:guilabel:`Field Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Field Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_translation_fuzzy:
+
+:guilabel:`Fuzzy`:
+    :Internal Name: ``fuzzy``
+    :Type: :ref:`field_type_boolean`
+
+    The *Fuzzy*-field is used to store ...
+
+
+
+
+.. _ir_ir_translation_lang:
+
+:guilabel:`Language`:
+    :Internal Name: ``lang``
+    :Type: :ref:`field_type_selection`
+
+    The *Language*-field is used to store ...
+
+
+
+
+.. _ir_ir_translation_module:
+
+:guilabel:`Module`:
+    :Internal Name: ``module``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Module*-field is used to store ...
+
+
+
+
+.. _ir_ir_translation_res_id:
+
+:guilabel:`Resource ID`:
+    :Internal Name: ``res_id``
+    :Type: :ref:`field_type_integer`
+
+    The *Resource ID*-field is used to store ...
+
+
+
+
+.. _ir_ir_translation_src:
+
+:guilabel:`Source`:
+    :Internal Name: ``src``
+    :Type: :ref:`field_type_text`
+
+    The *Source*-field is used to store ...
+
+
+
+
+.. _ir_ir_translation_value:
+
+:guilabel:`Translation Value`:
+    :Internal Name: ``value``
+    :Type: :ref:`field_type_text`
+
+    The *Translation Value*-field is used to store ...
+
+
+
+
+.. _ir_ir_translation_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Field`
+    * :guilabel:`Model`
+    * :guilabel:`ODT`
+    * :guilabel:`Selection`
+    * :guilabel:`View`
+    * :guilabel:`Wizard Button`
+    * :guilabel:`Help`
+    * :guilabel:`Error`
+
+    The *Type*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_trigger:
+
+Trigger
+=======
+:Model Name: ``ir.trigger``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> Models --> Triggers`
+
+The *Trigger*-model introduces the conception of ...
+
+.. _ir_trigger_fields:
+
+Fields
+------
+
+
+.. _ir_ir_trigger_action_function:
+
+:guilabel:`Action Function`:
+    :Internal Name: ``action_function``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Action Function*-field is used to store ...
+
+
+
+
+.. _ir_ir_trigger_action_model:
+
+:guilabel:`Action Model`:
+    :Internal Name: ``action_model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model`
+
+    The *Action Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_trigger_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _ir_ir_trigger_condition:
+
+:guilabel:`Condition`:
+    :Internal Name: ``condition``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    A Python statement evaluated with record represented by "self" It
+    triggers the action if true.
+
+
+
+
+.. _ir_ir_trigger_limit_number:
+
+:guilabel:`Limit Number`:
+    :Internal Name: ``limit_number``
+    :Type: :ref:`field_type_integer`
+
+    Limit the number of call to "Action Function" by records. 0 for no
+    limit.
+
+
+
+
+.. _ir_ir_trigger_minimum_delay:
+
+:guilabel:`Minimum Delay`:
+    :Internal Name: ``minimum_delay``
+    :Type: :ref:`field_type_float`
+
+    Set a minimum delay in minutes between call to "Action Function" for
+    the same record. 0 for no delay.
+
+
+
+
+.. _ir_ir_trigger_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_trigger_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_trigger_on_create:
+
+:guilabel:`On Create`:
+    :Internal Name: ``on_create``
+    :Type: :ref:`field_type_boolean`
+
+    The *On Create*-field is used to store ...
+
+
+
+
+.. _ir_ir_trigger_on_delete:
+
+:guilabel:`On Delete`:
+    :Internal Name: ``on_delete``
+    :Type: :ref:`field_type_boolean`
+
+    The *On Delete*-field is used to store ...
+
+
+
+
+.. _ir_ir_trigger_on_time:
+
+:guilabel:`On Time`:
+    :Internal Name: ``on_time``
+    :Type: :ref:`field_type_boolean`
+
+    The *On Time*-field is used to store ...
+
+
+
+
+.. _ir_ir_trigger_on_write:
+
+:guilabel:`On Write`:
+    :Internal Name: ``on_write``
+    :Type: :ref:`field_type_boolean`
+
+    The *On Write*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_trigger_log:
+
+Trigger Log
+===========
+:Model Name: ``ir.trigger.log``
+:Base Module: :ref:`ir_module`
+
+The *Trigger Log*-model introduces the conception of ...
+
+.. _ir_trigger_log_fields:
+
+Fields
+------
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_ui_menu:
+
+UI menu
+=======
+:Model Name: ``ir.ui.menu``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Menu`
+
+The *UI menu*-model introduces the conception of ...
+
+.. _ir_ui_menu_fields:
+
+Fields
+------
+
+
+.. _ir_ir_ui_menu_action:
+
+:guilabel:`Action`:
+    :Internal Name: ``action``
+    :Type: :ref:`field_type_reference`
+
+
+    The following options are available:
+
+    * :guilabel:`<no selection>`
+    * :guilabel:`ir.action.report`
+    * :guilabel:`ir.action.act_window`
+    * :guilabel:`ir.action.wizard`
+    * :guilabel:`ir.action.url`
+
+    The *Action*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_menu_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _ir_ir_ui_menu_complete_name:
+
+:guilabel:`Complete Name`:
+    :Internal Name: ``complete_name``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Complete Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_menu_groups:
+
+:guilabel:`Groups`:
+    :Internal Name: ``groups``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`res_group`
+
+    The *Groups*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_menu_icon:
+
+:guilabel:`Icon`:
+    :Internal Name: ``icon``
+    :Type: :ref:`field_type_selection`
+
+    The *Icon*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_menu_name:
+
+:guilabel:`Menu`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Menu*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_menu_parent:
+
+:guilabel:`Parent Menu`:
+    :Internal Name: ``parent``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_ui_menu`
+
+    The parent record in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _ir_ir_ui_menu_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+
+    The position of the record order in a list.
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_translation_set_report_start:
+
+Update Report Translation
+=========================
+:Model Name: ``ir.translation.set_report.start``
+:Base Module: :ref:`ir_module`
+
+The *Update Report Translation*-model introduces the conception of ...
+
+
+
+.. _ir_translation_set_report_init:
+
+Update Report Translation
+=========================
+:Model Name: ``ir.translation.set_report.init``
+:Base Module: :ref:`ir_module`
+
+The *Update Report Translation*-model introduces the conception of ...
+
+
+
+.. _ir_translation_update_init:
+
+Update translation - language
+=============================
+:Model Name: ``ir.translation.update.init``
+:Base Module: :ref:`ir_module`
+
+The *Update translation - language*-model introduces the conception of ...
+
+.. _ir_translation_update_init_fields:
+
+Fields
+------
+
+
+.. _ir_ir_translation_update_init_lang:
+
+:guilabel:`Language`:
+    :Internal Name: ``lang``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+    The *Language*-field is used to store ...
+
+
+
+
+.. _ir_ui_view:
+
+View
+====
+:Model Name: ``ir.ui.view``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> Views`
+
+The *View*-model introduces the conception of ...
+
+.. _ir_ui_view_fields:
+
+Fields
+------
+
+
+.. _ir_ir_ui_view_field_childs:
+
+:guilabel:`Children Field`:
+    :Internal Name: ``field_childs``
+    :Type: :ref:`field_type_char`
+
+    The *Children Field*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_domain:
+
+:guilabel:`Domain`:
+    :Internal Name: ``domain``
+    :Type: :ref:`field_type_char`
+
+    The *Domain*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_inherit:
+
+:guilabel:`Inherited View`:
+    :Internal Name: ``inherit``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_ui_view`
+
+    The *Inherited View*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_priority:
+
+:guilabel:`Priority`:
+    :Internal Name: ``priority``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_integer`
+
+    The *Priority*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_arch:
+
+:guilabel:`View Architecture`:
+    :Internal Name: ``arch``
+    :Type: :ref:`field_type_text`
+
+    The *View Architecture*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_type:
+
+:guilabel:`View Type`:
+    :Internal Name: ``type``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`<no selection>`
+    * :guilabel:`Tree`
+    * :guilabel:`Form`
+    * :guilabel:`Graph`
+    * :guilabel:`Board`
+
+    The *View Type*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Administration" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _ir_ui_view_sc:
+
+View shortcut
+=============
+:Model Name: ``ir.ui.view_sc``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> View Shortcuts`
+
+The *View shortcut*-model introduces the conception of ...
+
+.. _ir_ui_view_sc_fields:
+
+Fields
+------
+
+
+.. _ir_ir_ui_view_sc_resource:
+
+:guilabel:`Resource Name`:
+    :Internal Name: ``resource``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Resource Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_sc_res_id:
+
+:guilabel:`Resource Ref.`:
+    :Internal Name: ``res_id``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_integer`
+
+    The *Resource Ref.*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_sc_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+
+    The position of the record order in a list.
+
+
+
+.. _ir_ir_ui_view_sc_name:
+
+:guilabel:`Shortcut Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Shortcut Name*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_sc_user_id:
+
+:guilabel:`User Ref.`:
+    :Internal Name: ``user_id``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_user`
+
+    The *User Ref.*-field is used to store ...
+
+
+
+
+.. _ir_ui_view_tree_width:
+
+View Tree Width
+===============
+:Model Name: ``ir.ui.view_tree_width``
+:Base Module: :ref:`ir_module`
+
+:Menu:
+    :menuselection:`Administration --> User Interface --> View Tree Width`
+
+The *View Tree Width*-model introduces the conception of ...
+
+.. _ir_ui_view_tree_width_fields:
+
+Fields
+------
+
+
+.. _ir_ir_ui_view_tree_width_field:
+
+:guilabel:`Field`:
+    :Internal Name: ``field``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Field*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_tree_width_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_tree_width_user:
+
+:guilabel:`User`:
+    :Internal Name: ``user``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_user`
+
+    The *User*-field is used to store ...
+
+
+
+
+.. _ir_ir_ui_view_tree_width_width:
+
+:guilabel:`Width`:
+    :Internal Name: ``width``
+    :Type: :ref:`field_type_integer`
+
+    The *Width*-field is used to store ...
+
+

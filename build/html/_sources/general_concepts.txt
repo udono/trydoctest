@@ -1,0 +1,212 @@
+.. _general_concepts:
+
+===================
+General Conceptions
+===================
+To simplify usage and programming of Tryton we are using recurring and reusable
+conceptions.
+
+
+.. _general_concept_view_types:
+
+View Types
+==========
+Tryton provides the following view types:
+
+    * List
+
+      * Table
+      * Tree
+
+    * Form
+    * Graph
+    * Board
+
+
+.. _general_concept_list_view:
+
+List
+----
+A list view is for showing and editing many records.
+A list view can be represeted like a flat table or like a nested tree
+structure.
+
+
+.. _general_concept_list_view_sequence:
+
+Sequence
+........
+A sequence represents the position of the record in a list as an integer
+number.
+
+
+Editable
+........
+An editable list is like a spreadsheet table which shows data and allows to
+edit data.
+
+
+.. _dragndrop:
+
+Drag'n Drop
+...........
+Drag'n Drop is done by selecting one ore more records, click and hold mouse1
+while droping the selection into another field...
+
+
+.. _general_concept_tree:
+
+Tree
+....
+*Trees* are hierarchical data structures composed of linked nodes.
+A node *can* have one and only one *parent*.
+Nodes without a *parent* are called *root* nodes.
+A node *can* have many *children*.
+Nodes without *children* are called *leafs*.
+
+Nodes which are not *leafs*, can be expanded by click or right-arrow-key and
+showing their *children* nodes.
+
+A tree is build up by node entries.
+The parent and children fields can be set manual or with :ref:`dragndrop`.
+
+
+Form
+====
+The form view is for data entry of a single record.
+
+
+Graph
+=====
+The graph view is for showing many records in a pie or line chart...
+
+
+Board
+=====
+The board view allows to combine tree, form and graph views in a single view.
+
+
+.. _general_concept_special_fields:
+
+Special Fields
+==============
+
+.. _general_concept_active_field:
+
+Active
+======
+
+The :guilabel:`Active` field implements the conception of *soft deletion*.
+In contrary to default *deletion*, a record is not deleted in the database,
+but is no longer available for future use.
+
+Deactiveation is used in :ref:`ir_model`\ s which would forbid the deletion of
+a record once it is referenced in another model.
+
+Deaktivated records of a model can be searched with the search bar entry:
+`Active:False`.
+
+The default for :guilabel:`Active` fields is ``True``.
+
+
+Field Types
+===========
+
+.. _field_type_selection:
+
+Selection
+---------
+
+.. _field_type_boolean:
+
+Boolean
+-------
+
+.. _field_type_char:
+
+Single Line Text
+----------------
+
+.. _field_type_text:
+
+Multi Line Text
+---------------
+
+.. _field_type_sha:
+
+Encrypted Single Line Text
+--------------------------
+
+.. _field_type_datetime:
+
+Point in Time
+-------------
+
+.. _field_type_date:
+
+Date
+----
+
+.. _field_type_integer:
+
+Integer Number
+--------------
+
+.. _field_type_float:
+
+Float Number
+------------
+
+.. _field_type_numeric:
+
+Numeric Number
+--------------
+
+.. _field_type_many2many:
+
+Many-To-Many
+------------
+
+.. _field_type_one2many:
+
+One-To-Many
+-----------
+
+.. _field_type_many2one:
+
+Many-To-One
+-----------
+
+.. _field_type_one2one:
+
+One-To-One
+----------
+
+.. _field_type_binary:
+
+Binary
+------
+
+.. _field_type_reference:
+
+Reference
+---------
+
+
+Fieldattributes
+===============
+
+.. _required:
+
+Required
+--------
+It is mandatory to fill content into a field with this attribute, to
+successfull save the corresponding record into the database.
+
+
+.. _readonly:
+
+Read Only
+---------
+The edition of a field with this attribute is disabled. A read only field can
+not be changed directly by the user.

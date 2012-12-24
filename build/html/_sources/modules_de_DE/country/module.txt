@@ -1,0 +1,11 @@
+.. _country_module:
+
+=======
+Country
+=======
+:Module Name: trytond_country
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

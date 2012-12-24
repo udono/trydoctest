@@ -1,0 +1,1085 @@
+:tocdepth: 1
+
+
+
+.. _sale_open_opportunity_employee_init:
+
+Open Sale Opportunity per Employee Init
+=======================================
+:Model Name: ``sale.open_opportunity_employee.init``
+:Base Module: :ref:`sale_opportunity_module`
+
+The *Open Sale Opportunity per Employee Init*-model introduces the conception
+of ...
+
+.. _sale_open_opportunity_employee_init_fields:
+
+Fields
+------
+
+
+.. _sale_opportunity_sale_open_opportunity_employee_init_end_date:
+
+:guilabel:`End Date`:
+    :Internal Name: ``end_date``
+    :Type: :ref:`field_type_date`
+
+    The *End Date*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_open_opportunity_employee_init_start_date:
+
+:guilabel:`Start Date`:
+    :Internal Name: ``start_date``
+    :Type: :ref:`field_type_date`
+
+    The *Start Date*-field is used to store ...
+
+
+
+
+.. _sale_opportunity:
+
+Sale Opportunity
+================
+:Model Name: ``sale.opportunity``
+:Base Module: :ref:`sale_opportunity_module`
+
+:Menu:
+    :menuselection:`Sales --> Leads and Opportunities`
+
+    :menuselection:`Sales --> Leads and Opportunities --> Cancelled Leads and
+    Opportunities`
+
+    :menuselection:`Sales --> Leads and Opportunities --> Converted
+    Opportunities`
+
+    :menuselection:`Sales --> Leads and Opportunities --> Lost Leads and
+    Opportunities`
+
+    :menuselection:`Sales --> Leads and Opportunities --> Opened Leads`
+
+    :menuselection:`Sales --> Leads and Opportunities --> Opportunities`
+
+The *Sale Opportunity*-model introduces the conception of ...
+
+.. _sale_opportunity_fields:
+
+Fields
+------
+
+
+.. _sale_opportunity_sale_opportunity_address:
+
+:guilabel:`Address`:
+    :Internal Name: ``address``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_address`
+
+    The *Address*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_amount:
+
+:guilabel:`Amount`:
+    :Internal Name: ``amount``
+    :Type: :ref:`field_type_numeric`
+
+    Estimated revenue amount
+
+
+
+
+.. _sale_opportunity_sale_opportunity_comment:
+
+:guilabel:`Comment`:
+    :Internal Name: ``comment``
+    :Type: :ref:`field_type_text`
+
+    The *Comment*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_probability:
+
+:guilabel:`Conversion Probability`:
+    :Internal Name: ``probability``
+    :Type: :ref:`field_type_integer`
+
+    Percentage between 0 and 100
+
+
+
+
+.. _sale_opportunity_sale_opportunity_currency:
+
+:guilabel:`Currency`:
+    :Internal Name: ``currency``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+
+    The *Currency*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee:
+
+:guilabel:`Employee`:
+    :Internal Name: ``employee``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_employee`
+
+    The *Employee*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_end_date:
+
+:guilabel:`End Date`:
+    :Internal Name: ``end_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *End Date*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history:
+
+:guilabel:`History`:
+    :Internal Name: ``history``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`sale_opportunity_history`
+
+    The *History*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_lines:
+
+:guilabel:`Lines`:
+    :Internal Name: ``lines``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`sale_opportunity_line`
+
+    The *Lines*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_payment_term:
+
+:guilabel:`Payment Term`:
+    :Internal Name: ``payment_term``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_invoice_payment_term`
+
+    The *Payment Term*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_lost_reason:
+
+:guilabel:`Reason for loss`:
+    :Internal Name: ``lost_reason``
+    :Type: :ref:`field_type_text`
+
+    The *Reason for loss*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_sale:
+
+:guilabel:`Sale`:
+    :Internal Name: ``sale``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`sale_sale`
+
+    The *Sale*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_start_date:
+
+:guilabel:`Start Date`:
+    :Internal Name: ``start_date``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_date`
+
+    The *Start Date*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Lead`
+    * :guilabel:`Opportunity`
+    * :guilabel:`Converted`
+    * :guilabel:`Cancelled`
+    * :guilabel:`Lost`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_warehouse:
+
+:guilabel:`Warehouse`:
+    :Internal Name: ``warehouse``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Warehouse*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Sale Opportunity" have
+the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Sales" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _sale_opportunity_history:
+
+Sale Opportunity History
+========================
+:Model Name: ``sale.opportunity.history``
+:Base Module: :ref:`sale_opportunity_module`
+
+The *Sale Opportunity History*-model introduces the conception of ...
+
+.. _sale_opportunity_history_fields:
+
+Fields
+------
+
+
+.. _sale_opportunity_sale_opportunity_history_address:
+
+:guilabel:`Address`:
+    :Internal Name: ``address``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_address`
+
+    The *Address*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_date:
+
+:guilabel:`Change Date`:
+    :Internal Name: ``date``
+    :Type: :ref:`field_type_datetime`
+
+    The *Change Date*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_comment:
+
+:guilabel:`Comment`:
+    :Internal Name: ``comment``
+    :Type: :ref:`field_type_text`
+
+    The *Comment*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_probability:
+
+:guilabel:`Conversion Probability`:
+    :Internal Name: ``probability``
+    :Type: :ref:`field_type_integer`
+
+    The *Conversion Probability*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Type: :ref:`field_type_char`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_employee:
+
+:guilabel:`Employee`:
+    :Internal Name: ``employee``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_employee`
+
+    The *Employee*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_end_date:
+
+:guilabel:`End Date`:
+    :Internal Name: ``end_date``
+    :Type: :ref:`field_type_date`
+
+    The *End Date*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_lines:
+
+:guilabel:`Lines`:
+    :Internal Name: ``lines``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`sale_opportunity_line`
+
+    The *Lines*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_lost_reason:
+
+:guilabel:`Reason for loss`:
+    :Internal Name: ``lost_reason``
+    :Type: :ref:`field_type_text`
+
+    The *Reason for loss*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_opportunity:
+
+:guilabel:`Sale Opportunity`:
+    :Internal Name: ``opportunity``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`sale_opportunity`
+
+    The *Sale Opportunity*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_start_date:
+
+:guilabel:`Start Date`:
+    :Internal Name: ``start_date``
+    :Type: :ref:`field_type_date`
+
+    The *Start Date*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Lead`
+    * :guilabel:`Opportunity`
+    * :guilabel:`Converted`
+    * :guilabel:`Cancelled`
+    * :guilabel:`Lost`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_history_user:
+
+:guilabel:`User`:
+    :Internal Name: ``user``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`res_user`
+
+    The *User*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Sale Opportunity" have
+the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Sales" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _sale_opportunity_line:
+
+Sale Opportunity Line
+=====================
+:Model Name: ``sale.opportunity.line``
+:Base Module: :ref:`sale_opportunity_module`
+
+The *Sale Opportunity Line*-model introduces the conception of ...
+
+.. _sale_opportunity_line_fields:
+
+Fields
+------
+
+
+.. _sale_opportunity_sale_opportunity_line_opportunity:
+
+:guilabel:`Opportunity`:
+    :Internal Name: ``opportunity``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`sale_opportunity`
+
+    The *Opportunity*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_line_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_line_quantity:
+
+:guilabel:`Quantity`:
+    :Internal Name: ``quantity``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The *Quantity*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_line_sale_line:
+
+:guilabel:`Sale Line`:
+    :Internal Name: ``sale_line``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`sale_line`
+
+    The *Sale Line*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_line_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+
+    The position of the record order in a list.
+
+
+
+.. _sale_opportunity_sale_opportunity_line_unit:
+
+:guilabel:`Unit`:
+    :Internal Name: ``unit``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+
+    The *Unit*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Sale Opportunity" have
+the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Sales" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _sale_opportunity_employee:
+
+Sale Opportunity per Employee
+=============================
+:Model Name: ``sale.opportunity_employee``
+:Base Module: :ref:`sale_opportunity_module`
+
+The *Sale Opportunity per Employee*-model introduces the conception of ...
+
+.. _sale_opportunity_employee_fields:
+
+Fields
+------
+
+
+.. _sale_opportunity_sale_opportunity_employee_amount:
+
+:guilabel:`Amount`:
+    :Internal Name: ``amount``
+    :Type: :ref:`field_type_numeric`
+
+    The *Amount*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_conversion_amount_rate:
+
+:guilabel:`Conversion Amount Rate`:
+    :Internal Name: ``conversion_amount_rate``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    In %
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_conversion_rate:
+
+:guilabel:`Conversion Rate`:
+    :Internal Name: ``conversion_rate``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    In %
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_converted:
+
+:guilabel:`Converted`:
+    :Internal Name: ``converted``
+    :Type: :ref:`field_type_integer`
+
+    The *Converted*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_converted_amount:
+
+:guilabel:`Converted Amount`:
+    :Internal Name: ``converted_amount``
+    :Type: :ref:`field_type_numeric`
+
+    The *Converted Amount*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_currency:
+
+:guilabel:`Currency`:
+    :Internal Name: ``currency``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+
+    The *Currency*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_employee:
+
+:guilabel:`Employee`:
+    :Internal Name: ``employee``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_employee`
+
+    The *Employee*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_lost:
+
+:guilabel:`Lost`:
+    :Internal Name: ``lost``
+    :Type: :ref:`field_type_integer`
+
+    The *Lost*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_number:
+
+:guilabel:`Number`:
+    :Internal Name: ``number``
+    :Type: :ref:`field_type_integer`
+
+    The *Number*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_employee_monthly:
+
+Sale Opportunity per Employee per Month
+=======================================
+:Model Name: ``sale.opportunity_employee_monthly``
+:Base Module: :ref:`sale_opportunity_module`
+
+:Menu:
+    :menuselection:`Sales --> Reporting --> Opportunities per Employee per
+    Month`
+
+The *Sale Opportunity per Employee per Month*-model introduces the conception
+of ...
+
+.. _sale_opportunity_employee_monthly_fields:
+
+Fields
+------
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_amount:
+
+:guilabel:`Amount`:
+    :Internal Name: ``amount``
+    :Type: :ref:`field_type_numeric`
+
+    The *Amount*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_conversion_amount_rate:
+
+:guilabel:`Conversion Amount Rate`:
+    :Internal Name: ``conversion_amount_rate``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    In %
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_conversion_rate:
+
+:guilabel:`Conversion Rate`:
+    :Internal Name: ``conversion_rate``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    In %
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_converted:
+
+:guilabel:`Converted`:
+    :Internal Name: ``converted``
+    :Type: :ref:`field_type_integer`
+
+    The *Converted*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_converted_amount:
+
+:guilabel:`Converted Amount`:
+    :Internal Name: ``converted_amount``
+    :Type: :ref:`field_type_numeric`
+
+    The *Converted Amount*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_currency:
+
+:guilabel:`Currency`:
+    :Internal Name: ``currency``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+
+    The *Currency*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_employee:
+
+:guilabel:`Employee`:
+    :Internal Name: ``employee``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_employee`
+
+    The *Employee*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_lost:
+
+:guilabel:`Lost`:
+    :Internal Name: ``lost``
+    :Type: :ref:`field_type_integer`
+
+    The *Lost*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_month:
+
+:guilabel:`Month`:
+    :Internal Name: ``month``
+    :Type: :ref:`field_type_integer`
+
+    The *Month*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_number:
+
+:guilabel:`Number`:
+    :Internal Name: ``number``
+    :Type: :ref:`field_type_integer`
+
+    The *Number*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_employee_monthly_year:
+
+:guilabel:`Year`:
+    :Internal Name: ``year``
+    :Type: :ref:`field_type_char`
+
+    The *Year*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_monthly:
+
+Sale Opportunity per Month
+==========================
+:Model Name: ``sale.opportunity_monthly``
+:Base Module: :ref:`sale_opportunity_module`
+
+:Menu:
+    :menuselection:`Sales --> Reporting --> Opportunities per Month`
+
+The *Sale Opportunity per Month*-model introduces the conception of ...
+
+.. _sale_opportunity_monthly_fields:
+
+Fields
+------
+
+
+.. _sale_opportunity_sale_opportunity_monthly_amount:
+
+:guilabel:`Amount`:
+    :Internal Name: ``amount``
+    :Type: :ref:`field_type_numeric`
+
+    The *Amount*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_conversion_amount_rate:
+
+:guilabel:`Conversion Amount Rate`:
+    :Internal Name: ``conversion_amount_rate``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    In %
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_conversion_rate:
+
+:guilabel:`Conversion Rate`:
+    :Internal Name: ``conversion_rate``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    In %
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_converted:
+
+:guilabel:`Converted`:
+    :Internal Name: ``converted``
+    :Type: :ref:`field_type_integer`
+
+    The *Converted*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_converted_amount:
+
+:guilabel:`Converted Amount`:
+    :Internal Name: ``converted_amount``
+    :Type: :ref:`field_type_numeric`
+
+    The *Converted Amount*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_currency:
+
+:guilabel:`Currency`:
+    :Internal Name: ``currency``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+
+    The *Currency*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_lost:
+
+:guilabel:`Lost`:
+    :Internal Name: ``lost``
+    :Type: :ref:`field_type_integer`
+
+    The *Lost*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_month:
+
+:guilabel:`Month`:
+    :Internal Name: ``month``
+    :Type: :ref:`field_type_integer`
+
+    The *Month*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_number:
+
+:guilabel:`Number`:
+    :Internal Name: ``number``
+    :Type: :ref:`field_type_integer`
+
+    The *Number*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_year:
+
+:guilabel:`Year`:
+    :Internal Name: ``year``
+    :Type: :ref:`field_type_char`
+
+    The *Year*-field is used to store ...
+
+
+
+
+.. _sale_opportunity_sale_opportunity_monthly_year_month:
+
+:guilabel:`Year-Month`:
+    :Internal Name: ``year_month``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Year-Month*-field is used to store ...
+
+

@@ -1,0 +1,6 @@
+.. _account_de_skr03_module:
+
+==============================
+German Chart of Accounts SKR03
+==============================
+:Module Name: trytond_account_de_skr03

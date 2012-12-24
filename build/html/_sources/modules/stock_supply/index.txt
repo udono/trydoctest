@@ -1,0 +1,531 @@
+:tocdepth: 1
+
+
+
+.. _purchase_request_create_purchase_ask_party:
+
+Create Purchase Ask Party
+=========================
+:Model Name: ``purchase.request.create_purchase.ask_party``
+:Base Module: :ref:`stock_supply_module`
+
+The *Create Purchase Ask Party*-model introduces the conception of ...
+
+.. _purchase_request_create_purchase_ask_party_fields:
+
+Fields
+------
+
+
+.. _stock_supply_purchase_request_create_purchase_ask_party_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_create_purchase_ask_party_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_create_purchase_ask_party_party:
+
+:guilabel:`Supplier`:
+    :Internal Name: ``party``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Supplier*-field is used to store ...
+
+
+
+
+.. _purchase_request_create_purchase_ask_term:
+
+Create Purchase Ask Term
+========================
+:Model Name: ``purchase.request.create_purchase.ask_term``
+:Base Module: :ref:`stock_supply_module`
+
+The *Create Purchase Ask Term*-model introduces the conception of ...
+
+.. _purchase_request_create_purchase_ask_term_fields:
+
+Fields
+------
+
+
+.. _stock_supply_purchase_request_create_purchase_ask_term_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_create_purchase_ask_term_payment_term:
+
+:guilabel:`Payment Term`:
+    :Internal Name: ``payment_term``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_invoice_payment_term`
+
+    The *Payment Term*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_create_purchase_ask_term_party:
+
+:guilabel:`Supplier`:
+    :Internal Name: ``party``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Supplier*-field is used to store ...
+
+
+
+
+.. _purchase_request_create_purchase_request_init:
+
+Create Purchase Request Init
+============================
+:Model Name: ``purchase.request.create_purchase_request.init``
+:Base Module: :ref:`stock_supply_module`
+
+The *Create Purchase Request Init*-model introduces the conception of ...
+
+
+
+.. _stock_order_point:
+
+Order Point
+===========
+:Model Name: ``stock.order_point``
+:Base Module: :ref:`stock_supply_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Order Points`
+
+The *Order Point*-model introduces the conception of ...
+
+.. _stock_order_point_fields:
+
+Fields
+------
+
+
+.. _stock_supply_stock_order_point_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_location:
+
+:guilabel:`Location`:
+    :Internal Name: ``location``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Location*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_max_quantity:
+
+:guilabel:`Maximal Quantity`:
+    :Internal Name: ``max_quantity``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The *Maximal Quantity*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_min_quantity:
+
+:guilabel:`Minimal Quantity`:
+    :Internal Name: ``min_quantity``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The *Minimal Quantity*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_provisioning_location:
+
+:guilabel:`Provisioning Location`:
+    :Internal Name: ``provisioning_location``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Provisioning Location*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_storage_location:
+
+:guilabel:`Storage Location`:
+    :Internal Name: ``storage_location``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Storage Location*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Internal`
+    * :guilabel:`Purchase`
+
+    The *Type*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_unit:
+
+:guilabel:`Unit`:
+    :Internal Name: ``unit``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+
+    The *Unit*-field is used to store ...
+
+
+
+
+.. _stock_supply_stock_order_point_warehouse_location:
+
+:guilabel:`Warehouse Location`:
+    :Internal Name: ``warehouse_location``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Warehouse Location*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _purchase_request:
+
+Purchase Request
+================
+:Model Name: ``purchase.request``
+:Base Module: :ref:`stock_supply_module`
+
+:Menu:
+    :menuselection:`Purchase --> Purchase Requests`
+
+    :menuselection:`Purchase --> Purchase Requests --> Draft Purchase
+    Requests`
+
+The *Purchase Request*-model introduces the conception of ...
+
+.. _purchase_request_fields:
+
+Fields
+------
+
+
+.. _stock_supply_purchase_request_purchase_date:
+
+:guilabel:`Best Purchase Date`:
+    :Internal Name: ``purchase_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *Best Purchase Date*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_computed_quantity:
+
+:guilabel:`Computed Quantity`:
+    :Internal Name: ``computed_quantity``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    The *Computed Quantity*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_computed_uom:
+
+:guilabel:`Computed UOM`:
+    :Internal Name: ``computed_uom``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+
+    The *Computed UOM*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_supply_date:
+
+:guilabel:`Expected Supply Date`:
+    :Internal Name: ``supply_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *Expected Supply Date*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_origin:
+
+:guilabel:`Origin`:
+    :Internal Name: ``origin``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_reference`
+
+    The *Origin*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_purchase:
+
+:guilabel:`Purchase`:
+    :Internal Name: ``purchase``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`purchase_purchase`
+
+    The *Purchase*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_quantity:
+
+:guilabel:`Quantity`:
+    :Internal Name: ``quantity``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The *Quantity*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Purchased`
+    * :guilabel:`Done`
+    * :guilabel:`Draft`
+    * :guilabel:`Cancel`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_stock_level:
+
+:guilabel:`Stock at Supply Date`:
+    :Internal Name: ``stock_level``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    The *Stock at Supply Date*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_uom:
+
+:guilabel:`UOM`:
+    :Internal Name: ``uom``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+
+    The *UOM*-field is used to store ...
+
+
+
+
+.. _stock_supply_purchase_request_warehouse:
+
+:guilabel:`Warehouse`:
+    :Internal Name: ``warehouse``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Warehouse*-field is used to store ...
+
+
+
+
+Wizards
+-------
+:guilabel:`Create Purchase`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Purchase" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Purchase Request" have
+the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+

@@ -1,0 +1,109 @@
+
+
+.. _product_type_tax:
+
+Steuer Artikeltyp
+=================
+ :Modellname: ``product.type_tax``
+ :Basismodul: :ref:`account_invoice_tax_rule_product_type_module`
+
+ :Menü:
+        :menuselection:`Buchhaltung --> Einstellungen --> Steuern --> Steuern Artikeltypen`
+
+Das Modell *"Steuer Artikeltyp"* ...
+
+
+.. _product_type_tax_fields:
+
+Felder
+------
+
+
+.. _product_type_tax_code_field:
+
+:guilabel:`Code`:
+    :Feldname: ``code``
+    :Feldtyp: :ref:`field_type_char`
+    :Eigenschaft: :ref:`required`
+
+    Code
+
+
+.. _product_type_tax_name_field:
+
+:guilabel:`Name`:
+    :Feldname: ``name``
+    :Feldtyp: :ref:`field_type_char`
+    :Eigenschaft: :ref:`required`
+
+    Name
+
+
+Zugriffsberechtigungen
+----------------------
+Die folgenden Zugriffsberechtigungen für Benutzer gelten für das Modell:
+
+Mitglieder *ohne* Gruppe
+........................
+ :Lesen: erlaubt
+ :Schreiben: verboten
+ :Erstellen: verboten
+ :Löschen: verboten
+
+Mitglieder in Gruppe *Buchhaltung Administration*
+.................................................
+ :Lesen: erlaubt
+ :Schreiben: erlaubt
+ :Erstellen: erlaubt
+ :Löschen: erlaubt
+
+
+
+
+
+
+#:after:account/index:section:xxx#
+
+
+
+.. _account_tax_rule_line_template_product_type_tax_field:
+
+:guilabel:`Steuer Artikeltyp`:
+    :Feldname: ``product_type_tax``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`readonly`
+    :Zielmodell: :ref:`product_type_tax`
+    :Quellmodul: :ref:`account_invoice_tax_rule_product_type_module`
+
+    Steuer Artikeltyp
+
+
+#:after:product/index:section:xxx#
+
+
+
+.. _product_template_type_tax_field:
+
+:guilabel:`Steuer Typ`:
+    :Feldname: ``type_tax``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`product_type_tax`
+    :Quellmodul: :ref:`account_invoice_tax_rule_product_type_module`
+
+    Steuer Typ
+
+
+#:after:account/index:section:xxx#
+
+
+
+.. _account_tax_rule_line_product_type_tax_field:
+
+:guilabel:`Steuer Artikeltyp`:
+    :Feldname: ``product_type_tax``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`product_type_tax`
+    :Quellmodul: :ref:`account_invoice_tax_rule_product_type_module`
+
+    Steuer Artikeltyp

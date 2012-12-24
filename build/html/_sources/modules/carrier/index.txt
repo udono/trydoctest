@@ -1,0 +1,66 @@
+:tocdepth: 1
+
+
+
+.. _carrier:
+
+carrier
+=======
+:Model Name: ``carrier``
+:Inherits from: :ref:`party_party`
+:Base Module: :ref:`carrier_module`
+
+:Menu:
+    :menuselection:`Carrier Management --> Carriers`
+
+    :menuselection:`Carrier Management --> Carriers --> New Carrier`
+
+The *carrier*-model introduces the conception of ...
+
+.. _carrier_fields:
+
+Fields
+------
+
+
+.. _carrier_carrier_carrier_cost_method:
+
+:guilabel:`Carrier Cost Method`:
+    :Internal Name: ``carrier_cost_method``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Product Price`
+
+    Method to compute carrier cost
+
+
+
+
+.. _carrier_carrier_carrier_product:
+
+:guilabel:`Carrier Product`:
+    :Internal Name: ``carrier_product``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Carrier Product*-field is used to store ...
+
+
+
+
+.. _carrier_carrier_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+

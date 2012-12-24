@@ -1,0 +1,128 @@
+.. _bank_bank:
+
+Bank
+====
+ :Modellname: ``bank.bank``
+ :Basismodul: :ref:`party_bank_module`
+ :Erbt von: :ref:`party_module`
+
+ :Menü:
+        :menuselection:`Parteien --> Banken`
+
+
+Das Modell *"Bank"* stellt das Konzept einer Bank bzw. eines Kreditinstituts zur
+Verfügung.
+Eine Bank ist eine Spezialisierung des :ref:`party_party`\ -Modells.
+
+
+.. _bank_bank_fields:
+
+Felder
+------
+
+.. _bank_bank_bank_code_field:
+
+:guilabel:`Bankleitzahl`:
+    :Feldname: ``bank_code``
+    :Feldtyp: :ref:`field_type_char`
+
+    Die Bankleitzahl (BLZ) der Bank.
+
+.. _bank_bank_bic_field:
+
+:guilabel:`BIC/SWIFT`:
+    :Feldname: ``bic``
+    :Feldtyp: :ref:`field_type_char`
+
+    Der *Business Identifier Code* der *Society for Worldwide Interbank
+    Financial Telecommunication*.
+
+.. _bank_account:
+
+Bankkonto
+=========
+ :Modellname: ``bank.account``
+ :Basismodul: :ref:`party_bank_module`
+
+Das Modell *"Bankkonto"* stellt Bankkonten zur Verfügung.
+
+.. _bank_account_fields:
+
+Felder
+------
+
+
+.. _bank_account_owner_field:
+
+:guilabel:`Abweichender Kontoinhaber`:
+    :Feldname: ``owner``
+    :Feldtyp: :ref:`field_type_char`
+
+    Der Name des Kontoinhabers, falls dieser vom Namen der Partei abweicht.
+
+.. _bank_account_bank_field:
+
+:guilabel:`Bank`:
+    :Feldname: ``bank``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`bank_bank`
+
+    Die Bank bei der das Konto geführt wird.
+
+.. _bank_account_bank_code_field:
+
+:guilabel:`Bankleitzahl`:
+    :Feldname: ``bank_code``
+    :Feldtyp: :ref:`field_type_char`
+    :Eigenschaft: :ref:`readonly`
+
+    Die Bankleitzahl (BLZ) der Bank.
+
+.. _bank_account_bic_field:
+
+:guilabel:`BIC/SWIFT`:
+    :Feldname: ``bic``
+    :Feldtyp: :ref:`field_type_char`
+    :Eigenschaft: :ref:`readonly`
+
+    Der *Business Identifier Code* der *Society for Worldwide Interbank
+    Financial Telecommunication*.
+
+.. _bank_account_iban_field:
+
+:guilabel:`IBAN`:
+    :Feldname: ``iban``
+    :Feldtyp: :ref:`field_type_char`
+
+    Die *International Bank Account Number* der Bank.
+
+.. _bank_account_code_field:
+
+:guilabel:`Kontonummer`:
+    :Feldname: ``code``
+    :Feldtyp: :ref:`field_type_char`
+
+    Die Kontonummer des Bankkontos.
+
+.. _bank_account_currency_field:
+
+:guilabel:`Währung`:
+    :Feldname: ``currency``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`currency_currency`
+
+    Die Währung in der das Konto geführt wird.
+
+
+#:after:party/party_base:section:felder_name_der_name_der_partei_code#
+
+.. _party_party_bank_accounts_field:
+
+:guilabel:`Bankkonten`:
+    :Feldname: ``bank_accounts``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Zielmodell: :ref:`bank_account`
+    :Quellmodul: :ref:`party_bank_module`
+
+    Die :ref:`Bankkonten <bank_account>` der Partei.

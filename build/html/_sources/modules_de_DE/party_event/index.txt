@@ -1,0 +1,268 @@
+
+
+.. _party_event:
+
+Ereignis
+========
+ :Modellname: ``party.event``
+ :Basismodul: :ref:`party_event_module`
+
+ :Menü:
+        :menuselection:`Parteien --> Ereignisse`
+
+Das Modell *"Ereignis"* führt das Konzept von Ereignissen ein, die in
+Bezug zu einer oder mehreren :ref:`party_party`\ en stehen.
+Parteibezogene Ereignisse sind eine Grundfunktion des *Customer Relationship
+Management* (CRM).
+Parteien Ereignisse können Kommunikationen, Notizen oder andere Informationen
+sein.
+
+.. _party_event_fields:
+
+Felder
+------
+
+
+.. _party_event_reference_count_field:
+
+:guilabel:`Anzahl Verweise`:
+    :Feldname: ``reference_count``
+    :Feldtyp: :ref:`field_type_integer`
+    :Eigenschaft: :ref:`readonly`
+
+    Die Anzahl der Verweise über die dieses Ereignis verfügt.
+
+.. _party_event_description_field:
+
+:guilabel:`Beschreibung`:
+    :Feldname: ``description``
+    :Feldtyp: :ref:`field_type_text`
+    :Eigenschaft: :ref:`required`
+
+    Die Beschreibung des Ereignisses. Die erste Zeile der Beschreibung
+    wird automatisch im Feld Zusammenfassung eingetragen.
+
+
+.. _party_event_parties_field:
+
+:guilabel:`Parteien`:
+    :Feldname: ``parties``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Zielmodell: :ref:`party_party`
+
+    Parteien die zu diesem Ereignis gehören.
+
+
+.. _party_event_type_field:
+
+:guilabel:`Typ`:
+    :Feldname: ``type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Der Ereignistyp. Ein Standardwert kann in den Einstellungen der
+    Partei gesetzt werden.
+
+.. _party_event_references_field:
+
+:guilabel:`Verweise`:
+    :Feldname: ``references``
+    :Feldtyp: :ref:`field_type_one2many`
+    :Zielmodell: :ref:`party_event_reference`
+
+    Die hinterlegten Verweise eines Ereignisses.
+
+.. _party_event_time_field:
+
+:guilabel:`Zeitpunkt`:
+    :Feldname: ``time``
+    :Feldtyp: :ref:`field_type_datetime`
+    :Eigenschaft: :ref:`required`
+
+    Der Zeitpunkt an dem das Ereignis stattfindet.
+
+.. _party_event_summary_field:
+
+:guilabel:`Zusammenfassung`:
+    :Feldname: ``summary``
+    :Feldtyp: :ref:`field_type_char`
+
+    Die Zusammenfassung des Ereignisses. Wird automatisch mit der
+    ersten Zeile des Beschreibungstexts ausgefüllt.
+
+
+.. _party_event_type:
+
+Ereignistyp
+===========
+ :Modellname: ``party.event.type``
+ :Basismodul: :ref:`party_event_module`
+
+ :Menü:
+        :menuselection:`Parteien --> Einstellungen --> Ereignisse --> Ereignistypen`
+
+Das Modell *"Ereignistyp"* dient der Standardisierung von
+:ref:`party_event` \ en.
+Ereignistypen können frei definiert werden, je nach den zu verwendenden Arten
+von parteibezogenen Ereignissen.
+Ereignistypen sind beispielsweise *Notiz*, *Telefonat*, *E-Mail*, *Gespräch*.
+
+.. _party_event_type_fields:
+
+Felder
+------
+
+.. _party_event_type_description_field:
+
+:guilabel:`Beschreibung`:
+    :Feldname: ``description``
+    :Feldtyp: :ref:`field_type_text`
+
+    Die Beschreibung des Ereignistypen.
+
+.. _party_event_type_code_field:
+
+:guilabel:`Code`:
+    :Feldname: ``code``
+    :Feldtyp: :ref:`field_type_char`
+    :Eigenschaft: :ref:`required`
+
+    Der Code des Ereignistyps.
+
+.. _party_event_type_name_field:
+
+:guilabel:`Name`:
+    :Feldname: ``name``
+    :Feldtyp: :ref:`field_type_char`
+    :Eigenschaft: :ref:`required`
+
+    Die Bezeichnung des Ereignistyps.
+
+.. _party_event_type_sequence_field:
+
+:guilabel:`Reihenfolge`:
+    :Feldname: ``sequence``
+    :Feldtyp: :ref:`field_type_integer`
+
+    Dieses Feld legt die Position der Sortierreihenfolge in Listen fest.
+
+.. _party_event_type_system_type_field:
+
+:guilabel:`Systemtyp`:
+    :Feldname: ``system_type``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Der interne Typ auf dem ein Ereignistyp basiert.
+    Die folgenden Optionen stehen zur Auswahl:
+
+    :guilabel:`Notiz`:
+        Allgemeiner Standard Systemtyp ohne weitere Funktion.
+
+.. _party_event_link:
+
+Ereignisverknüpfung
+===================
+ :Modellname: ``party.event.link``
+ :Basismodul: :ref:`party_event_module`
+
+ :Menü:
+        :menuselection:`Parteien --> Einstellungen --> Ereignisse --> Ereignisverknüpfungen`
+
+Das Modell *"Ereignisverknüpfung"* definiert die als
+:ref:`party_event_reference` zur Verfügung stehenden :ref:`ir_model`\ e.
+
+.. _party_event_link_fields:
+
+Felder
+------
+
+.. _party_event_link_model_field:
+
+:guilabel:`Modell`:
+    :Feldname: ``model``
+    :Feldtyp: :ref:`field_type_selection`
+    :Eigenschaft: :ref:`required`
+
+    Das zur Verfügung gestellte :ref:`ir_model`.
+
+.. _party_event_link_name_field:
+
+:guilabel:`Name`:
+    :Feldname: ``name``
+    :Feldtyp: :ref:`field_type_char`
+    :Eigenschaft: :ref:`required`
+
+    Der Name unter dem das :guilabel:`Modell` in :ref:`party_event_reference`
+    :guilabel:`Verweis (links)` aufgeführt werden soll.
+
+.. _party_event_link_sequence_field:
+
+:guilabel:`Reihenfolge`:
+    :Feldname: ``sequence``
+    :Feldtyp: :ref:`field_type_integer`
+
+    Dieses Feld legt die Position der Sortierreihenfolge in Listen an.
+
+
+.. _party_event_reference:
+
+Ereignisverweis
+===============
+ :Modellname: ``party.event.reference``
+ :Basismodul: :ref:`party_event_module`
+
+Das Modell *"Ereignisverweis"* sammelt Verweise auf Ressourcen in anderen
+Modellen.
+
+
+.. _party_event_reference_fields:
+
+Felder
+------
+
+
+.. _party_event_reference_sequence_field:
+
+:guilabel:`Reihenfolge`:
+    :Feldname: ``sequence``
+    :Feldtyp: :ref:`field_type_integer`
+
+    Dieses Feld legt die Position der Sortierreihenfolge in Listen fest.
+
+.. _party_event_reference_reference_field:
+
+:guilabel:`Verweis`:
+    :Feldname: ``reference``
+    :Feldtyp: :ref:`field_type_reference`
+    :Eigenschaft: :ref:`required`
+
+    Die :ref:`party_event_link` und der Datensatz auf den verwiesen werden
+    soll.
+
+
+#:after:party/party_base:section:felder_name_der_name_der_partei_code#
+
+.. _party_party_events_field:
+
+:guilabel:`Ereignisse`:
+    :Feldname: ``events``
+    :Feldtyp: :ref:`field_type_many2many`
+    :Zielmodell: :ref:`party_event`
+    :Quellmodul: :ref:`party_event_module`
+
+    Die :ref:`party_event`\ e der Partei.
+
+
+#:after:party/index:section:xxx#
+
+
+.. _party_configuration_party_event_type_field:
+
+:guilabel:`Parteien Ereignistyp`:
+    :Feldname: ``party_event_type``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Zielmodell: :ref:`party_event_type`
+    :Quellmodul: :ref:`party_event_module`
+
+    Der Standard Ereignistyp bei Neuerstellung eines Ereignisses.

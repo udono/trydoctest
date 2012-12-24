@@ -1,0 +1,6 @@
+.. _stock_split_module:
+
+==============================
+Lager Aufteilung Lagerbewegung
+==============================
+:Modul Name: trytond_stock_split

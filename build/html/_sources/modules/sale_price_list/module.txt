@@ -1,0 +1,6 @@
+.. _sale_price_list_module:
+
+==============
+Sale Pricelist
+==============
+:Module Name: trytond_sale_price_list

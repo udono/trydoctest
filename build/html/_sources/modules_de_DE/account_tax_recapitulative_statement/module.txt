@@ -1,0 +1,6 @@
+.. _account_tax_recapitulative_statement_module:
+
+============================================
+Buchhaltung Steuern Zusammenfassende Meldung
+============================================
+:Modul Name: trytond_account_tax_recapitulative_statement

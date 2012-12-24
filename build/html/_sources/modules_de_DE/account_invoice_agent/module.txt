@@ -1,0 +1,6 @@
+.. _account_invoice_agent_module:
+
+===========================
+Fakturierung Sachbearbeiter
+===========================
+:Modul Name: trytond_account_invoice_agent

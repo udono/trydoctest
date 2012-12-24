@@ -1,0 +1,2245 @@
+:tocdepth: 1
+
+
+
+.. _stock_shipment_internal_assign_assign_failed:
+
+Assign Shipment Internal Assign Failed
+======================================
+:Model Name: ``stock.shipment.internal.assign.assign_failed``
+:Base Module: :ref:`stock_module`
+
+The *Assign Shipment Internal Assign Failed*-model introduces the conception
+of ...
+
+.. _stock_shipment_internal_assign_assign_failed_fields:
+
+Fields
+------
+
+
+.. _stock_stock_shipment_internal_assign_assign_failed_moves:
+
+:guilabel:`Moves`:
+    :Internal Name: ``moves``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`stock_shipment_internal_assign_assign_failed`
+
+    The *Moves*-field is used to store ...
+
+
+
+
+.. _stock_shipment_out_assign_assign_failed:
+
+Assign Shipment Out Assign Failed
+=================================
+:Model Name: ``stock.shipment.out.assign.assign_failed``
+:Base Module: :ref:`stock_module`
+
+The *Assign Shipment Out Assign Failed*-model introduces the conception of ...
+
+.. _stock_shipment_out_assign_assign_failed_fields:
+
+Fields
+------
+
+
+.. _stock_stock_shipment_out_assign_assign_failed_inventory_moves:
+
+:guilabel:`Inventory Moves`:
+    :Internal Name: ``inventory_moves``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`stock_shipment_out_assign_assign_failed`
+
+    The *Inventory Moves*-field is used to store ...
+
+
+
+
+.. _stock_shipment_in_return_assign_assign_failed:
+
+Assign Supplier Return Shipment Assign Failed
+=============================================
+:Model Name: ``stock.shipment.in.return.assign.assign_failed``
+:Base Module: :ref:`stock_module`
+
+The *Assign Supplier Return Shipment Assign Failed*-model introduces the
+conception of ...
+
+.. _stock_shipment_in_return_assign_assign_failed_fields:
+
+Fields
+------
+
+
+.. _stock_stock_shipment_in_return_assign_assign_failed_moves:
+
+:guilabel:`Moves`:
+    :Internal Name: ``moves``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`stock_shipment_in_return_assign_assign_failed`
+
+    The *Moves*-field is used to store ...
+
+
+
+
+.. _stock_location_stock_date_init:
+
+Compute stock quantities
+========================
+:Model Name: ``stock.location_stock_date.init``
+:Base Module: :ref:`stock_module`
+
+The *Compute stock quantities*-model introduces the conception of ...
+
+.. _stock_location_stock_date_init_fields:
+
+Fields
+------
+
+
+.. _stock_stock_location_stock_date_init_forecast_date:
+
+:guilabel:`At Date`:
+    :Internal Name: ``forecast_date``
+    :Type: :ref:`field_type_date`
+
+    Allow to compute expected stock quantities for this date. * An empty
+    value is an infinite date in the future. * A date in the past will
+    provide historical values.
+
+
+
+
+.. _stock_product_stock_date_init:
+
+Compute stock quantities
+========================
+:Model Name: ``stock.product_stock_date.init``
+:Base Module: :ref:`stock_module`
+
+The *Compute stock quantities*-model introduces the conception of ...
+
+.. _stock_product_stock_date_init_fields:
+
+Fields
+------
+
+
+.. _stock_stock_location_stock_date_init_forecast_date:
+
+:guilabel:`At Date`:
+    :Internal Name: ``forecast_date``
+    :Type: :ref:`field_type_date`
+
+    Allow to compute expected stock quantities for this date. * An empty
+    value is an infinite date in the future. * A date in the past will
+    provide historical values.
+
+
+
+
+.. _stock_shipment_out_return:
+
+Customer Return Shipment
+========================
+:Model Name: ``stock.shipment.out.return``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Customer Shipments --> Customer
+    Return Shipments`
+
+The *Customer Return Shipment*-model introduces the conception of ...
+
+.. _stock_shipment_out_return_fields:
+
+Fields
+------
+
+
+.. _stock_stock_shipment_out_return_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_customer:
+
+:guilabel:`Customer`:
+    :Internal Name: ``customer``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Customer*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_delivery_address:
+
+:guilabel:`Delivery Address`:
+    :Internal Name: ``delivery_address``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_address`
+
+    The *Delivery Address*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_effective_date:
+
+:guilabel:`Effective Date`:
+    :Internal Name: ``effective_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *Effective Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_incoming_moves:
+
+:guilabel:`Incoming Moves`:
+    :Internal Name: ``incoming_moves``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Incoming Moves*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_inventory_moves:
+
+:guilabel:`Inventory Moves`:
+    :Internal Name: ``inventory_moves``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Inventory Moves*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_planned_date:
+
+:guilabel:`Planned Date`:
+    :Internal Name: ``planned_date``
+    :Type: :ref:`field_type_date`
+
+    The *Planned Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_reference:
+
+:guilabel:`Reference`:
+    :Internal Name: ``reference``
+    :Type: :ref:`field_type_char`
+
+    The *Reference*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Done`
+    * :guilabel:`Canceled`
+    * :guilabel:`Received`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_return_warehouse:
+
+:guilabel:`Warehouse`:
+    :Internal Name: ``warehouse``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Warehouse*-field is used to store ...
+
+
+
+
+Reports
+--------
+:guilabel:`Restocking List`:
+    Restocking List
+    The *Restocking List*-Report is based on style ``company/header_A4.odt``.
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_shipment_out:
+
+Customer Shipment
+=================
+:Model Name: ``stock.shipment.out``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Customer Shipments`
+
+    :menuselection:`Inventory & Stock --> Customer Shipments --> Assigned
+    Customer Shipments`
+
+    :menuselection:`Inventory & Stock --> Customer Shipments --> Customer
+    Shipments Ready for Shipping`
+
+    :menuselection:`Inventory & Stock --> Customer Shipments --> Customer
+    Shipments Waiting Assignation`
+
+The *Customer Shipment*-model introduces the conception of ...
+
+.. _stock_shipment_out_fields:
+
+Fields
+------
+
+
+.. _stock_stock_shipment_out_carrier:
+
+:guilabel:`Carrier`:
+    :Internal Name: ``carrier``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`carrier`
+    :Base Module: :ref:`sale_shipment_cost_module`
+
+    The *Carrier*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_cost:
+
+:guilabel:`Cost`:
+    :Internal Name: ``cost``
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`sale_shipment_cost_module`
+
+    The *Cost*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_cost_currency:
+
+:guilabel:`Cost Currency`:
+    :Internal Name: ``cost_currency``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+    :Base Module: :ref:`sale_shipment_cost_module`
+
+    The *Cost Currency*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_customer:
+
+:guilabel:`Customer`:
+    :Internal Name: ``customer``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Customer*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_delivery_address:
+
+:guilabel:`Delivery Address`:
+    :Internal Name: ``delivery_address``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_address`
+
+    The *Delivery Address*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_effective_date:
+
+:guilabel:`Effective Date`:
+    :Internal Name: ``effective_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *Effective Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_inventory_moves:
+
+:guilabel:`Inventory Moves`:
+    :Internal Name: ``inventory_moves``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Inventory Moves*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_outgoing_moves:
+
+:guilabel:`Outgoing Moves`:
+    :Internal Name: ``outgoing_moves``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Outgoing Moves*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_planned_date:
+
+:guilabel:`Planned Date`:
+    :Internal Name: ``planned_date``
+    :Type: :ref:`field_type_date`
+
+    The *Planned Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_reference:
+
+:guilabel:`Reference`:
+    :Internal Name: ``reference``
+    :Type: :ref:`field_type_char`
+
+    The *Reference*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Done`
+    * :guilabel:`Canceled`
+    * :guilabel:`Assigned`
+    * :guilabel:`Packed`
+    * :guilabel:`Waiting`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_out_warehouse:
+
+:guilabel:`Warehouse`:
+    :Internal Name: ``warehouse``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Warehouse*-field is used to store ...
+
+
+
+
+Reports
+--------
+:guilabel:`Delivery Note`:
+    Delivery Note
+    The *Delivery Note*-Report is based on style ``company/header_A4.odt``.
+:guilabel:`Picking List`:
+    Picking List
+    The *Picking List*-Report is based on style ``company/header_A4.odt``.
+
+
+Wizards
+-------
+:guilabel:`Assign Shipment Out`:
+    
+:guilabel:`Create Return Shipment`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Sales" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_shipment_internal:
+
+Internal Shipment
+=================
+:Model Name: ``stock.shipment.internal``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Internal Shipments`
+
+    :menuselection:`Inventory & Stock --> Internal Shipments --> Assigned
+    Internal Shipments`
+
+    :menuselection:`Inventory & Stock --> Internal Shipments --> Draft
+    Internal Shipments`
+
+    :menuselection:`Inventory & Stock --> Internal Shipments --> Internal
+    Shipments Waiting Assignation`
+
+The *Internal Shipment*-model introduces the conception of ...
+
+.. _stock_shipment_internal_fields:
+
+Fields
+------
+
+
+.. _stock_stock_shipment_internal_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_internal_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_internal_effective_date:
+
+:guilabel:`Effective Date`:
+    :Internal Name: ``effective_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *Effective Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_internal_from_location:
+
+:guilabel:`From Location`:
+    :Internal Name: ``from_location``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *From Location*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_internal_moves:
+
+:guilabel:`Moves`:
+    :Internal Name: ``moves``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Moves*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_internal_planned_date:
+
+:guilabel:`Planned Date`:
+    :Internal Name: ``planned_date``
+    :Type: :ref:`field_type_date`
+
+    The *Planned Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_internal_reference:
+
+:guilabel:`Reference`:
+    :Internal Name: ``reference``
+    :Type: :ref:`field_type_char`
+
+    The *Reference*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_internal_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Canceled`
+    * :guilabel:`Assigned`
+    * :guilabel:`Waiting`
+    * :guilabel:`Done`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_internal_to_location:
+
+:guilabel:`To Location`:
+    :Internal Name: ``to_location``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *To Location*-field is used to store ...
+
+
+
+
+Reports
+--------
+:guilabel:`Internal Shipment`:
+    Internal Shipment
+    The *Internal Shipment*-Report is based on style ``company/header_A4.odt``.
+
+
+Wizards
+-------
+:guilabel:`Assign Shipment Internal`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_configuration:
+
+Stock Configuration
+===================
+:Model Name: ``stock.configuration``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Configuration --> Stock
+    Configuration`
+
+The *Stock Configuration*-model introduces the conception of ...
+
+.. _stock_configuration_fields:
+
+Fields
+------
+
+
+.. _stock_stock_configuration_shipment_out_return_sequence:
+
+:guilabel:`Customer Return Shipment Sequence`:
+    :Internal Name: ``shipment_out_return_sequence``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_sequence`
+
+    The *Customer Return Shipment Sequence*-field is used to store ...
+
+
+
+
+.. _stock_stock_configuration_shipment_out_sequence:
+
+:guilabel:`Customer Shipment Sequence`:
+    :Internal Name: ``shipment_out_sequence``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_sequence`
+
+    The *Customer Shipment Sequence*-field is used to store ...
+
+
+
+
+.. _stock_stock_configuration_shipment_internal_sequence:
+
+:guilabel:`Internal Shipment Sequence`:
+    :Internal Name: ``shipment_internal_sequence``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_sequence`
+
+    The *Internal Shipment Sequence*-field is used to store ...
+
+
+
+
+.. _stock_stock_configuration_shipment_in_return_sequence:
+
+:guilabel:`Supplier Return Shipment Sequence`:
+    :Internal Name: ``shipment_in_return_sequence``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_sequence`
+
+    The *Supplier Return Shipment Sequence*-field is used to store ...
+
+
+
+
+.. _stock_stock_configuration_shipment_in_sequence:
+
+:guilabel:`Supplier Shipment Sequence`:
+    :Internal Name: ``shipment_in_sequence``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_sequence`
+
+    The *Supplier Shipment Sequence*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_inventory:
+
+Stock Inventory
+===============
+:Model Name: ``stock.inventory``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Inventories`
+
+    :menuselection:`Inventory & Stock --> Inventories --> Draft Inventories`
+
+The *Stock Inventory*-model introduces the conception of ...
+
+.. _stock_inventory_fields:
+
+Fields
+------
+
+
+.. _stock_stock_inventory_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_date:
+
+:guilabel:`Date`:
+    :Internal Name: ``date``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_date`
+
+    The *Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_lines:
+
+:guilabel:`Lines`:
+    :Internal Name: ``lines``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_inventory_line`
+
+    The *Lines*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_location:
+
+:guilabel:`Location`:
+    :Internal Name: ``location``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Location*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_lost_found:
+
+:guilabel:`Lost and Found`:
+    :Internal Name: ``lost_found``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Lost and Found*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Done`
+    * :guilabel:`Canceled`
+
+    The *State*-field is used to store ...
+
+
+
+
+Wizards
+-------
+:guilabel:`Complete Inventory`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_inventory_line:
+
+Stock Inventory Line
+====================
+:Model Name: ``stock.inventory.line``
+:Base Module: :ref:`stock_module`
+
+The *Stock Inventory Line*-model introduces the conception of ...
+
+.. _stock_inventory_line_fields:
+
+Fields
+------
+
+
+.. _stock_stock_inventory_line_expected_quantity:
+
+:guilabel:`Expected Quantity`:
+    :Internal Name: ``expected_quantity``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    The *Expected Quantity*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_line_inventory:
+
+:guilabel:`Inventory`:
+    :Internal Name: ``inventory``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_inventory`
+
+    The *Inventory*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_line_move:
+
+:guilabel:`Move`:
+    :Internal Name: ``move``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_move`
+
+    The *Move*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_line_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_line_quantity:
+
+:guilabel:`Quantity`:
+    :Internal Name: ``quantity``
+    :Type: :ref:`field_type_float`
+
+    The *Quantity*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_line_unit_digits:
+
+:guilabel:`Unit Digits`:
+    :Internal Name: ``unit_digits``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_integer`
+
+    The *Unit Digits*-field is used to store ...
+
+
+
+
+.. _stock_stock_inventory_line_uom:
+
+:guilabel:`UOM`:
+    :Internal Name: ``uom``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+
+    The *UOM*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_location:
+
+Stock Location
+==============
+:Model Name: ``stock.location``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Configuration --> Locations`
+
+    :menuselection:`Inventory & Stock --> Locations`
+
+The *Stock Location*-model introduces the conception of ...
+
+.. _stock_location_fields:
+
+Fields
+------
+
+
+.. _stock_stock_location_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _stock_stock_location_address:
+
+:guilabel:`Address`:
+    :Internal Name: ``address``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_address`
+
+    The *Address*-field is used to store ...
+
+
+
+
+.. _stock_stock_location_childs:
+
+:guilabel:`Children`:
+    :Internal Name: ``childs``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_location`
+
+    The children records in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _stock_stock_location_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _stock_stock_location_forecast_quantity:
+
+:guilabel:`Forecast Quantity`:
+    :Internal Name: ``forecast_quantity``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    The *Forecast Quantity*-field is used to store ...
+
+
+
+
+.. _stock_stock_location_input_location:
+
+:guilabel:`Input`:
+    :Internal Name: ``input_location``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Input*-field is used to store ...
+
+
+
+
+.. _stock_stock_location_type:
+
+:guilabel:`Location type`:
+    :Internal Name: ``type``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Supplier`
+    * :guilabel:`Customer`
+    * :guilabel:`Lost and Found`
+    * :guilabel:`Warehouse`
+    * :guilabel:`Storage`
+    * :guilabel:`Production`
+    * :guilabel:`View`
+
+    The *Location type*-field is used to store ...
+
+
+
+
+.. _stock_stock_location_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _stock_stock_location_output_location:
+
+:guilabel:`Output`:
+    :Internal Name: ``output_location``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Output*-field is used to store ...
+
+
+
+
+.. _stock_stock_location_parent:
+
+:guilabel:`Parent`:
+    :Internal Name: ``parent``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The parent record in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _stock_stock_location_quantity:
+
+:guilabel:`Quantity`:
+    :Internal Name: ``quantity``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    The *Quantity*-field is used to store ...
+
+
+
+
+.. _stock_stock_location_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+    :Base Module: :ref:`stock_location_sequence_module`
+
+    The position of the record order in a list.
+
+
+
+.. _stock_stock_location_storage_location:
+
+:guilabel:`Storage`:
+    :Internal Name: ``storage_location``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Storage*-field is used to store ...
+
+
+
+
+Wizards
+-------
+:guilabel:`Product Quantities`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_move:
+
+Stock Move
+==========
+:Model Name: ``stock.move``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Moves`
+
+    :menuselection:`Inventory & Stock --> Moves --> Moves from Suppliers`
+
+    :menuselection:`Inventory & Stock --> Moves --> Moves from Suppliers -->
+    Moves from Suppliers Waiting Arrival`
+
+    :menuselection:`Inventory & Stock --> Moves --> Moves to Customers`
+
+The *Stock Move*-model introduces the conception of ...
+
+.. _stock_move_fields:
+
+Fields
+------
+
+
+.. _stock_stock_move_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_currency:
+
+:guilabel:`Currency`:
+    :Internal Name: ``currency``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+
+    The *Currency*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_effective_date:
+
+:guilabel:`Effective Date`:
+    :Internal Name: ``effective_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *Effective Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_from_location:
+
+:guilabel:`From Location`:
+    :Internal Name: ``from_location``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *From Location*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_planned_date:
+
+:guilabel:`Planned Date`:
+    :Internal Name: ``planned_date``
+    :Type: :ref:`field_type_date`
+
+    The *Planned Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_purchase:
+
+:guilabel:`Purchase`:
+    :Internal Name: ``purchase``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`purchase_purchase`
+    :Base Module: :ref:`purchase_module`
+
+    The *Purchase*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_purchase_currency:
+
+:guilabel:`Purchase Currency`:
+    :Internal Name: ``purchase_currency``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+    :Base Module: :ref:`purchase_module`
+
+    The *Purchase Currency*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_purchase_quantity:
+
+:guilabel:`Purchase Quantity`:
+    :Internal Name: ``purchase_quantity``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+    :Base Module: :ref:`purchase_module`
+
+    The *Purchase Quantity*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_purchase_unit:
+
+:guilabel:`Purchase Unit`:
+    :Internal Name: ``purchase_unit``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+    :Base Module: :ref:`purchase_module`
+
+    The *Purchase Unit*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_purchase_unit_digits:
+
+:guilabel:`Purchase Unit Digits`:
+    :Internal Name: ``purchase_unit_digits``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_integer`
+    :Base Module: :ref:`purchase_module`
+
+    The *Purchase Unit Digits*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_purchase_unit_price:
+
+:guilabel:`Purchase Unit Price`:
+    :Internal Name: ``purchase_unit_price``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`purchase_module`
+
+    The *Purchase Unit Price*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_quantity:
+
+:guilabel:`Quantity`:
+    :Internal Name: ``quantity``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The *Quantity*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Assigned`
+    * :guilabel:`Done`
+    * :guilabel:`Canceled`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_to_location:
+
+:guilabel:`To Location`:
+    :Internal Name: ``to_location``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *To Location*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_unit_digits:
+
+:guilabel:`Unit Digits`:
+    :Internal Name: ``unit_digits``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_integer`
+
+    The *Unit Digits*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_unit_price:
+
+:guilabel:`Unit Price`:
+    :Internal Name: ``unit_price``
+    :Type: :ref:`field_type_numeric`
+
+    The *Unit Price*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_unit_price_required:
+
+:guilabel:`Unit Price Required`:
+    :Internal Name: ``unit_price_required``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_boolean`
+
+    The *Unit Price Required*-field is used to store ...
+
+
+
+
+.. _stock_stock_move_uom:
+
+:guilabel:`Uom`:
+    :Internal Name: ``uom``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+
+    The *Uom*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Purchase" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Sales" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_period:
+
+Stock Period
+============
+:Model Name: ``stock.period``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Configuration --> Periods`
+
+The *Stock Period*-model introduces the conception of ...
+
+.. _stock_period_fields:
+
+Fields
+------
+
+
+.. _stock_stock_period_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_stock_period_date:
+
+:guilabel:`Date`:
+    :Internal Name: ``date``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_date`
+
+    The *Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_period_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Closed`
+
+    The *State*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_period_cache:
+
+Stock Period Cache
+==================
+:Model Name: ``stock.period.cache``
+:Base Module: :ref:`stock_module`
+
+The *Stock Period Cache*-model introduces the conception of ...
+
+.. _stock_period_cache_fields:
+
+Fields
+------
+
+
+.. _stock_stock_period_cache_internal_quantity:
+
+:guilabel:`Internal Quantity`:
+    :Internal Name: ``internal_quantity``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+
+    The *Internal Quantity*-field is used to store ...
+
+
+
+
+.. _stock_stock_period_cache_location:
+
+:guilabel:`Location`:
+    :Internal Name: ``location``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Location*-field is used to store ...
+
+
+
+
+.. _stock_stock_period_cache_period:
+
+:guilabel:`Period`:
+    :Internal Name: ``period``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_period`
+
+    The *Period*-field is used to store ...
+
+
+
+
+.. _stock_stock_period_cache_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Product*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_shipment_in_return:
+
+Supplier Return Shipment
+========================
+:Model Name: ``stock.shipment.in.return``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Supplier Shipments --> Supplier
+    Return Shipments`
+
+The *Supplier Return Shipment*-model introduces the conception of ...
+
+.. _stock_shipment_in_return_fields:
+
+Fields
+------
+
+
+.. _stock_stock_shipment_in_return_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_return_effective_date:
+
+:guilabel:`Effective Date`:
+    :Internal Name: ``effective_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *Effective Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_return_from_location:
+
+:guilabel:`From Location`:
+    :Internal Name: ``from_location``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *From Location*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_return_moves:
+
+:guilabel:`Moves`:
+    :Internal Name: ``moves``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Moves*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_return_planned_date:
+
+:guilabel:`Planned Date`:
+    :Internal Name: ``planned_date``
+    :Type: :ref:`field_type_date`
+
+    The *Planned Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_return_reference:
+
+:guilabel:`Reference`:
+    :Internal Name: ``reference``
+    :Type: :ref:`field_type_char`
+
+    The *Reference*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_return_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Canceled`
+    * :guilabel:`Assigned`
+    * :guilabel:`Waiting`
+    * :guilabel:`Done`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_return_to_location:
+
+:guilabel:`To Location`:
+    :Internal Name: ``to_location``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *To Location*-field is used to store ...
+
+
+
+
+Wizards
+-------
+:guilabel:`Assign Purchase Return Shipment`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _stock_shipment_in:
+
+Supplier Shipment
+=================
+:Model Name: ``stock.shipment.in``
+:Base Module: :ref:`stock_module`
+
+:Menu:
+    :menuselection:`Inventory & Stock --> Supplier Shipments`
+
+    :menuselection:`Inventory & Stock --> Supplier Shipments --> Draft
+    Supplier Shipment`
+
+    :menuselection:`Inventory & Stock --> Supplier Shipments --> Received
+    Supplier shipments`
+
+The *Supplier Shipment*-model introduces the conception of ...
+
+.. _stock_shipment_in_fields:
+
+Fields
+------
+
+
+.. _stock_stock_shipment_in_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_contact_address:
+
+:guilabel:`Contact Address`:
+    :Internal Name: ``contact_address``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_address`
+
+    The *Contact Address*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_effective_date:
+
+:guilabel:`Effective Date`:
+    :Internal Name: ``effective_date``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_date`
+
+    The *Effective Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_incoming_moves:
+
+:guilabel:`Incoming Moves`:
+    :Internal Name: ``incoming_moves``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Incoming Moves*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_inventory_moves:
+
+:guilabel:`Inventory Moves`:
+    :Internal Name: ``inventory_moves``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Inventory Moves*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_planned_date:
+
+:guilabel:`Planned Date`:
+    :Internal Name: ``planned_date``
+    :Type: :ref:`field_type_date`
+
+    The *Planned Date*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_reference:
+
+:guilabel:`Reference`:
+    :Internal Name: ``reference``
+    :Type: :ref:`field_type_char`
+
+    The *Reference*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Done`
+    * :guilabel:`Canceled`
+    * :guilabel:`Received`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_supplier:
+
+:guilabel:`Supplier`:
+    :Internal Name: ``supplier``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Supplier*-field is used to store ...
+
+
+
+
+.. _stock_stock_shipment_in_warehouse:
+
+:guilabel:`Warehouse`:
+    :Internal Name: ``warehouse``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Warehouse*-field is used to store ...
+
+
+
+
+Reports
+--------
+:guilabel:`Restocking List`:
+    Restocking List
+    The *Restocking List*-Report is based on style ``company/header_A4.odt``.
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Purchase" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock" have the following
+access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: forbidden
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Stock Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+

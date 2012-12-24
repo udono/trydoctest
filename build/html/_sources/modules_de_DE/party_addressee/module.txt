@@ -1,0 +1,6 @@
+.. _party_addressee_module:
+
+===============
+Partei Adressat
+===============
+:Modul Name: trytond_party_addressee

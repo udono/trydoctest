@@ -1,0 +1,6 @@
+.. _account_option_party_required_module:
+
+===============================
+Buchhaltung Partei Erforderlich
+===============================
+:Modul Name: trytond_account_option_party_required

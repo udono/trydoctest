@@ -1,0 +1,522 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Einstellungen Kontenregeln &mdash; Dokumentation v0.1.0</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="Dokumentation v0.1.0" href="../../index.html" />
+    <link rel="next" title="Kontenplan Eigenschaften Erstellen" href="../account_timeline/index.html" />
+    <link rel="prev" title="Dialog OPOS-Konto" href="../account_party_open_items/index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="../account_timeline/index.html" title="Kontenplan Eigenschaften Erstellen"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="../account_party_open_items/index.html" title="Dialog OPOS-Konto"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="einstellungen-kontenregeln">
+<span id="account-account-rule-configuration"></span><h1>Einstellungen Kontenregeln<a class="headerlink" href="#einstellungen-kontenregeln" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.account.rule.configuration</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-product-rule-module"><em>Buchhaltung Artikel Regel</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menü:</th><td class="field-body"><em class="menuselection">Buchhaltung ‣ Einstellungen ‣ Allgemein ‣ Kontenregeln ‣ Einstellungen Kontenregeln</em></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Einstellungen Kontenregeln&#8221;</em> ...</p>
+<div class="section" id="felder">
+<span id="account-account-rule-configuration-fields"></span><h2>Felder<a class="headerlink" href="#felder" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-account-rule-configuration-default-account-expense-rule-field">
+<dt><em class="guilabel">Standard Aufwandskontenregel</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">default_account_expense_rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-account-rule"><em>Kontenregel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Standard Aufwandskontenregel</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-rule-configuration-default-account-revenue-rule-field">
+<dt><em class="guilabel">Standard Ertragskontenregel</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">default_account_revenue_rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-account-rule"><em>Kontenregel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Standard Ertragskontenregel</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="kontenregel">
+<span id="account-account-rule"></span><h1>Kontenregel<a class="headerlink" href="#kontenregel" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.account.rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-product-rule-module"><em>Buchhaltung Artikel Regel</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Menü:</th><td class="field-body"><em class="menuselection">Buchhaltung ‣ Einstellungen ‣ Allgemein ‣ Kontenregeln</em></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Kontenregel&#8221;</em> ...</p>
+<div class="section" id="account-account-rule-fields">
+<span id="id1"></span><h2>Felder<a class="headerlink" href="#account-account-rule-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-account-rule-name-field">
+<dt><em class="guilabel">Name</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">name</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-char"><em>Text (einzeilig)</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Name</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-rule-company-field">
+<dt><em class="guilabel">Unternehmen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">company</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../company/index.html#company-company"><em>Unternehmen</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Unternehmen</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-rule-lines-field">
+<dt><em class="guilabel">Zeilen</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">lines</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-one2many"><em>1:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-account-rule-line"><em>Zeile Kontenregel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Zeilen</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="zugriffsberechtigungen">
+<h2>Zugriffsberechtigungen<a class="headerlink" href="#zugriffsberechtigungen" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Die folgenden Zugriffsberechtigungen für Benutzer gelten für das Modell:</p>
+<div class="section" id="mitglieder-ohne-gruppe">
+<h3>Mitglieder <em>ohne</em> Gruppe<a class="headerlink" href="#mitglieder-ohne-gruppe" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">verboten</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="mitglieder-in-gruppe-buchhaltung-administration">
+<h3>Mitglieder in Gruppe <em>Buchhaltung Administration</em><a class="headerlink" href="#mitglieder-in-gruppe-buchhaltung-administration" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">erlaubt</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="zeile-kontenregel">
+<span id="account-account-rule-line"></span><h1>Zeile Kontenregel<a class="headerlink" href="#zeile-kontenregel" title="Permalink zu dieser Überschrift">¶</a></h1>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Modellname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account.account.rule.line</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Basismodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-product-rule-module"><em>Buchhaltung Artikel Regel</em></a></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Das Modell <em>&#8220;Zeile Kontenregel&#8221;</em> ...</p>
+<div class="section" id="account-account-rule-line-fields">
+<span id="id2"></span><h2>Felder<a class="headerlink" href="#account-account-rule-line-fields" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="docutils" id="account-account-rule-line-account-field">
+<dt><em class="guilabel">Konto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-account"><em>Konto</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Konto</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-rule-line-rule-field">
+<dt><em class="guilabel">Regel</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-account-rule"><em>Kontenregel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Regel</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-rule-line-sequence-field">
+<dt><em class="guilabel">Reihenfolge</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">sequence</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-integer"><em>Ganzzahl</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Dieses Feld legt die Position der Sortierreihenfolge in Listen an.</p>
+</dd>
+</dl>
+<dl class="docutils" id="account-account-rule-line-taxes-field">
+<dt><em class="guilabel">Steuern</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">taxes</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2many"><em>M:N-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Eigenschaft:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#required"><em>erforderlich</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="../account/index.html#account-tax"><em>Konto Steuer</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Steuern</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id3">
+<h2>Zugriffsberechtigungen<a class="headerlink" href="#id3" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Die folgenden Zugriffsberechtigungen für Benutzer gelten für das Modell:</p>
+<div class="section" id="id4">
+<h3>Mitglieder <em>ohne</em> Gruppe<a class="headerlink" href="#id4" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">verboten</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">verboten</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h3>Mitglieder in Gruppe <em>Buchhaltung Administration</em><a class="headerlink" href="#id5" title="Permalink zu dieser Überschrift">¶</a></h3>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Lesen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Schreiben:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Erstellen:</th><td class="field-body">erlaubt</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Löschen:</th><td class="field-body">erlaubt</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>#:after:product/index:section:xxx#</p>
+<dl class="docutils" id="product-template-account-expense-rule-field">
+<dt><em class="guilabel">Regel Aufwandskonto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_expense_rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-account-rule"><em>Kontenregel</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-product-rule-module"><em>Buchhaltung Artikel Regel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Diese Kontenregel wird ausgeführt, wenn die Partei ein Lieferant
+ist.</p>
+</dd>
+</dl>
+<dl class="docutils" id="product-template-account-revenue-rule-field">
+<dt><em class="guilabel">Regel Ertragskonto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_revenue_rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-account-rule"><em>Kontenregel</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-product-rule-module"><em>Buchhaltung Artikel Regel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Diese Kontenregel wird ausgeführt, wenn die Partei ein Kunde ist.</p>
+</dd>
+</dl>
+<p>#:after:product/index:section:xxx#</p>
+<dl class="docutils" id="product-category-account-expense-rule-field">
+<dt><em class="guilabel">Regel Aufwandskonto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_expense_rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-account-rule"><em>Kontenregel</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-product-rule-module"><em>Buchhaltung Artikel Regel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Diese Kontenregel wird ausgeführt, wenn die Partei ein Lieferant
+ist.</p>
+</dd>
+</dl>
+<dl class="docutils" id="product-category-account-revenue-rule-field">
+<dt><em class="guilabel">Regel Ertragskonto</em>:</dt>
+<dd><table class="first docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Feldname:</th><td class="field-body"><tt class="docutils literal"><span class="pre">account_revenue_rule</span></tt></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feldtyp:</th><td class="field-body"><a class="reference internal" href="../../general_concepts.html#field-type-many2one"><em>M:1-Beziehung</em></a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zielmodell:</th><td class="field-body"><a class="reference internal" href="#account-account-rule"><em>Kontenregel</em></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Quellmodul:</th><td class="field-body"><a class="reference internal" href="module.html#account-product-rule-module"><em>Buchhaltung Artikel Regel</em></a></td>
+</tr>
+</tbody>
+</table>
+<p class="last">Diese Kontenregel wird ausgeführt, wenn die Partei ein Kunde ist.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Inhalt</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Einstellungen Kontenregeln</a><ul>
+<li><a class="reference internal" href="#felder">Felder</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kontenregel">Kontenregel</a><ul>
+<li><a class="reference internal" href="#account-account-rule-fields">Felder</a></li>
+<li><a class="reference internal" href="#zugriffsberechtigungen">Zugriffsberechtigungen</a><ul>
+<li><a class="reference internal" href="#mitglieder-ohne-gruppe">Mitglieder <em>ohne</em> Gruppe</a></li>
+<li><a class="reference internal" href="#mitglieder-in-gruppe-buchhaltung-administration">Mitglieder in Gruppe <em>Buchhaltung Administration</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#zeile-kontenregel">Zeile Kontenregel</a><ul>
+<li><a class="reference internal" href="#account-account-rule-line-fields">Felder</a></li>
+<li><a class="reference internal" href="#id3">Zugriffsberechtigungen</a><ul>
+<li><a class="reference internal" href="#id4">Mitglieder <em>ohne</em> Gruppe</a></li>
+<li><a class="reference internal" href="#id5">Mitglieder in Gruppe <em>Buchhaltung Administration</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Vorheriges Thema</h4>
+  <p class="topless"><a href="../account_party_open_items/index.html"
+                        title="vorheriges Kapitel">Dialog OPOS-Konto</a></p>
+  <h4>Nächstes Thema</h4>
+  <p class="topless"><a href="../account_timeline/index.html"
+                        title="nächstes Kapitel">Kontenplan Eigenschaften Erstellen</a></p>
+  <h3>Diese Seite</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/modules_de_DE/account_product_rule/index.txt"
+           rel="nofollow">Quelltext anzeigen</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Schnellsuche</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Los" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="../account_timeline/index.html" title="Kontenplan Eigenschaften Erstellen"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="../account_party_open_items/index.html" title="Dialog OPOS-Konto"
+             >zurück</a> |</li>
+        <li><a href="../../index.html">Dokumentation v0.1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Udo Spallek, Korbinian Preisler, Mathias Behrle, virtual things, MBSolutions.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3 erstellt.
+    </div>
+  </body>
+</html>

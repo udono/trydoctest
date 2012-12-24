@@ -1,0 +1,6 @@
+.. _purchase_product_rule_module:
+
+=====================
+Einkauf Artikel Regel
+=====================
+:Modul Name: trytond_purchase_product_rule

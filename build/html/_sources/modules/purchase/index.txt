@@ -1,0 +1,867 @@
+:tocdepth: 1
+
+
+
+.. _purchase_handle_invoice_exception_ask:
+
+Invoice Exception Ask
+=====================
+:Model Name: ``purchase.handle.invoice.exception.ask``
+:Base Module: :ref:`purchase_module`
+
+The *Invoice Exception Ask*-model introduces the conception of ...
+
+.. _purchase_handle_invoice_exception_ask_fields:
+
+Fields
+------
+
+
+.. _purchase_sale_handle_invoice_exception_ask_recreate_invoices:
+
+:guilabel:`Recreate Invoices`:
+    :Internal Name: ``recreate_invoices``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`sale_handle_invoice_exception_ask`
+    :Base Module: :ref:`sale_module`
+
+    The selected invoices will be recreated. The other ones will be
+    ignored.
+
+
+
+
+.. _purchase_product_supplier:
+
+Product Supplier
+================
+:Model Name: ``purchase.product_supplier``
+:Base Module: :ref:`purchase_module`
+
+The *Product Supplier*-model introduces the conception of ...
+
+.. _purchase_product_supplier_fields:
+
+Fields
+------
+
+
+.. _purchase_purchase_product_supplier_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_product_supplier_delivery_time:
+
+:guilabel:`Delivery Time`:
+    :Internal Name: ``delivery_time``
+    :Type: :ref:`field_type_integer`
+
+    In number of days
+
+
+
+
+.. _purchase_purchase_product_supplier_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_product_supplier_prices:
+
+:guilabel:`Prices`:
+    :Internal Name: ``prices``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`purchase_product_supplier_price`
+
+    The *Prices*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_product_supplier_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_template`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_product_supplier_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+
+    The position of the record order in a list.
+
+
+
+.. _purchase_purchase_product_supplier_party:
+
+:guilabel:`Supplier`:
+    :Internal Name: ``party``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Supplier*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_product_supplier_weekdays:
+
+:guilabel:`Week Days`:
+    :Internal Name: ``weekdays``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`purchase_product_supplier_day`
+    :Base Module: :ref:`stock_supply_day_module`
+
+    The *Week Days*-field is used to store ...
+
+
+
+
+.. _purchase_product_supplier_price:
+
+Product Supplier Price
+======================
+:Model Name: ``purchase.product_supplier.price``
+:Base Module: :ref:`purchase_module`
+
+The *Product Supplier Price*-model introduces the conception of ...
+
+.. _purchase_product_supplier_price_fields:
+
+Fields
+------
+
+
+.. _purchase_purchase_product_supplier_price_quantity:
+
+:guilabel:`Quantity`:
+    :Internal Name: ``quantity``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    Minimal quantity
+
+
+
+
+.. _purchase_purchase_product_supplier_price_product_supplier:
+
+:guilabel:`Supplier`:
+    :Internal Name: ``product_supplier``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`purchase_product_supplier`
+
+    The *Supplier*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_product_supplier_price_unit_price:
+
+:guilabel:`Unit Price`:
+    :Internal Name: ``unit_price``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_numeric`
+
+    The *Unit Price*-field is used to store ...
+
+
+
+
+.. _purchase_purchase:
+
+Purchase
+========
+:Model Name: ``purchase.purchase``
+:Base Module: :ref:`purchase_module`
+
+:Menu:
+    :menuselection:`Purchase --> Purchases`
+
+    :menuselection:`Purchase --> Purchases --> Confirmed Purchases`
+
+    :menuselection:`Purchase --> Purchases --> Draft Purchases`
+
+    :menuselection:`Purchase --> Purchases --> Purchases in Quotation`
+
+The *Purchase*-model introduces the conception of ...
+
+.. _purchase_purchase_fields:
+
+Fields
+------
+
+
+.. _purchase_purchase_purchase_comment:
+
+:guilabel:`Comment`:
+    :Internal Name: ``comment``
+    :Type: :ref:`field_type_text`
+
+    The *Comment*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_currency:
+
+:guilabel:`Currency`:
+    :Internal Name: ``currency``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+
+    The *Currency*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_currency_digits:
+
+:guilabel:`Currency Digits`:
+    :Internal Name: ``currency_digits``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_integer`
+
+    The *Currency Digits*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Type: :ref:`field_type_char`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_invoice_address:
+
+:guilabel:`Invoice Address`:
+    :Internal Name: ``invoice_address``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_address`
+
+    The *Invoice Address*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_invoice_lines:
+
+:guilabel:`Invoice Lines`:
+    :Internal Name: ``invoice_lines``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`account_invoice_line`
+    :Base Module: :ref:`purchase_invoice_line_standalone_module`
+
+    The *Invoice Lines*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_invoice_method:
+
+:guilabel:`Invoice Method`:
+    :Internal Name: ``invoice_method``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Manual`
+    * :guilabel:`Based On Order`
+    * :guilabel:`Based On Shipment`
+
+    The *Invoice Method*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_invoices:
+
+:guilabel:`Invoices`:
+    :Internal Name: ``invoices``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`account_invoice`
+
+    The *Invoices*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_invoice_state:
+
+:guilabel:`Invoice State`:
+    :Internal Name: ``invoice_state``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`None`
+    * :guilabel:`Waiting`
+    * :guilabel:`Paid`
+    * :guilabel:`Exception`
+
+    The *Invoice State*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_lines:
+
+:guilabel:`Lines`:
+    :Internal Name: ``lines``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`purchase_line`
+
+    The *Lines*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_moves:
+
+:guilabel:`Moves`:
+    :Internal Name: ``moves``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_move`
+
+    The *Moves*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_party_lang:
+
+:guilabel:`Party Language`:
+    :Internal Name: ``party_lang``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Party Language*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_payment_term:
+
+:guilabel:`Payment Term`:
+    :Internal Name: ``payment_term``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_invoice_payment_term`
+
+    The *Payment Term*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_purchase_date:
+
+:guilabel:`Purchase Date`:
+    :Internal Name: ``purchase_date``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_date`
+
+    The *Purchase Date*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_reference:
+
+:guilabel:`Reference`:
+    :Internal Name: ``reference``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_char`
+
+    The *Reference*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_shipments:
+
+:guilabel:`Shipments`:
+    :Internal Name: ``shipments``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_shipment_in`
+
+    The *Shipments*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_shipment_state:
+
+:guilabel:`Shipment State`:
+    :Internal Name: ``shipment_state``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`None`
+    * :guilabel:`Waiting`
+    * :guilabel:`Received`
+    * :guilabel:`Exception`
+
+    The *Shipment State*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`required`, :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Quotation`
+    * :guilabel:`Confirmed`
+    * :guilabel:`Done`
+    * :guilabel:`Canceled`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_supplier_reference:
+
+:guilabel:`Supplier Reference`:
+    :Internal Name: ``supplier_reference``
+    :Type: :ref:`field_type_char`
+
+    The *Supplier Reference*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_tax_amount:
+
+:guilabel:`Tax`:
+    :Internal Name: ``tax_amount``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+
+    The *Tax*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_total_amount:
+
+:guilabel:`Total`:
+    :Internal Name: ``total_amount``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+
+    The *Total*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_untaxed_amount:
+
+:guilabel:`Untaxed`:
+    :Internal Name: ``untaxed_amount``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+
+    The *Untaxed*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_purchase_warehouse:
+
+:guilabel:`Warehouse`:
+    :Internal Name: ``warehouse``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`stock_location`
+
+    The *Warehouse*-field is used to store ...
+
+
+
+
+Reports
+--------
+:guilabel:`Purchase`:
+    Purchase
+    The *Purchase*-Report is based on style ``company/header_A4.odt``.
+
+
+Wizards
+-------
+:guilabel:`Handle Invoice Exception`:
+    
+:guilabel:`Handle Shipment Exception`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Purchase" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _purchase_configuration:
+
+Purchase Configuration
+======================
+:Model Name: ``purchase.configuration``
+:Base Module: :ref:`purchase_module`
+
+:Menu:
+    :menuselection:`Purchase --> Configuration --> Purchase Configuration`
+
+The *Purchase Configuration*-model introduces the conception of ...
+
+.. _purchase_configuration_fields:
+
+Fields
+------
+
+
+.. _purchase_purchase_configuration_purchase_invoice_method:
+
+:guilabel:`Invoice Method`:
+    :Internal Name: ``purchase_invoice_method``
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Manual`
+    * :guilabel:`Based On Order`
+    * :guilabel:`Based On Shipment`
+
+    The *Invoice Method*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_configuration_purchase_sequence:
+
+:guilabel:`Purchase Reference Sequence`:
+    :Internal Name: ``purchase_sequence``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_sequence`
+
+    The *Purchase Reference Sequence*-field is used to store ...
+
+
+
+
+.. _purchase_line:
+
+Purchase Line
+=============
+:Model Name: ``purchase.line``
+:Base Module: :ref:`purchase_module`
+
+The *Purchase Line*-model introduces the conception of ...
+
+.. _purchase_line_fields:
+
+Fields
+------
+
+
+.. _purchase_purchase_line_amount:
+
+:guilabel:`Amount`:
+    :Internal Name: ``amount``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+
+    The *Amount*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_analytic_accounts:
+
+:guilabel:`Analytic Accounts`:
+    :Internal Name: ``analytic_accounts``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`analytic_account_account_selection`
+    :Base Module: :ref:`analytic_purchase_module`
+
+    The *Analytic Accounts*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_text`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_note:
+
+:guilabel:`Note`:
+    :Internal Name: ``note``
+    :Type: :ref:`field_type_text`
+
+    The *Note*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_product:
+
+:guilabel:`Product`:
+    :Internal Name: ``product``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_product`
+
+    The *Product*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_purchase:
+
+:guilabel:`Purchase`:
+    :Internal Name: ``purchase``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`purchase_purchase`
+
+    The *Purchase*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_quantity:
+
+:guilabel:`Quantity`:
+    :Internal Name: ``quantity``
+    :Type: :ref:`field_type_float`
+
+    The *Quantity*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_sequence:
+
+:guilabel:`Sequence`:
+    :Internal Name: ``sequence``
+    :Type: :ref:`field_type_integer`
+
+    The position of the record order in a list.
+
+
+
+.. _purchase_purchase_line_taxes:
+
+:guilabel:`Taxes`:
+    :Internal Name: ``taxes``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`account_tax`
+
+    The *Taxes*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Line`
+    * :guilabel:`Subtotal`
+    * :guilabel:`Title`
+    * :guilabel:`Comment`
+
+    The *Type*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_unit:
+
+:guilabel:`Unit`:
+    :Internal Name: ``unit``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+
+    The *Unit*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_unit_digits:
+
+:guilabel:`Unit Digits`:
+    :Internal Name: ``unit_digits``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_integer`
+
+    The *Unit Digits*-field is used to store ...
+
+
+
+
+.. _purchase_purchase_line_unit_price:
+
+:guilabel:`Unit Price`:
+    :Internal Name: ``unit_price``
+    :Type: :ref:`field_type_numeric`
+
+    The *Unit Price*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Purchase" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: forbidden
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _purchase_handle_shipment_exception_ask:
+
+Shipment Exception Ask
+======================
+:Model Name: ``purchase.handle.shipment.exception.ask``
+:Base Module: :ref:`purchase_module`
+
+The *Shipment Exception Ask*-model introduces the conception of ...
+
+.. _purchase_handle_shipment_exception_ask_fields:
+
+Fields
+------
+
+
+.. _purchase_sale_handle_shipment_exception_ask_recreate_moves:
+
+:guilabel:`Recreate Moves`:
+    :Internal Name: ``recreate_moves``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`sale_handle_shipment_exception_ask`
+    :Base Module: :ref:`sale_module`
+
+    The *Recreate Moves*-field is used to store ...
+
+

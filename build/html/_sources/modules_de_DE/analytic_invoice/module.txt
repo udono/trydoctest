@@ -1,0 +1,6 @@
+.. _analytic_invoice_module:
+
+================
+Analytic Invoice
+================
+:Module Name: trytond_analytic_invoice

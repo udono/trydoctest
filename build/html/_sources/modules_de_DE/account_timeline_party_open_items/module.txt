@@ -1,0 +1,6 @@
+.. _account_timeline_party_open_items_module:
+
+=========================================================
+Buchhaltung Gültigkeitsdauer Parteien Offene-Posten-Liste
+=========================================================
+:Modul Name: trytond_account_timeline_party_open_items

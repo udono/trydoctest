@@ -1,0 +1,6 @@
+.. _account_timeline_tax_de_module:
+
+====================================================
+Buchhaltung Gültigkeitsdauer Steuern für Deutschland
+====================================================
+:Modul Name: trytond_account_timeline_tax_de

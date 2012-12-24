@@ -1,0 +1,81 @@
+:tocdepth: 1
+
+
+
+.. _webdav_collection:
+
+Collection
+==========
+:Model Name: ``webdav.collection``
+:Base Module: :ref:`webdav_module`
+
+:Menu:
+    :menuselection:`Administration --> WebDAV --> Collections`
+
+    :menuselection:`Administration --> WebDAV --> Collections --> Collections`
+
+The *Collection*-model introduces the conception of ...
+
+.. _webdav_collection_fields:
+
+Fields
+------
+
+
+.. _webdav_webdav_collection_childs:
+
+:guilabel:`Children`:
+    :Internal Name: ``childs``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`webdav_collection`
+
+    The children records in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _webdav_webdav_collection_domain:
+
+:guilabel:`Domain`:
+    :Internal Name: ``domain``
+    :Type: :ref:`field_type_char`
+
+    The *Domain*-field is used to store ...
+
+
+
+
+.. _webdav_webdav_collection_model:
+
+:guilabel:`Model`:
+    :Internal Name: ``model``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`ir_model`
+
+    The *Model*-field is used to store ...
+
+
+
+
+.. _webdav_webdav_collection_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _webdav_webdav_collection_parent:
+
+:guilabel:`Parent`:
+    :Internal Name: ``parent``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`webdav_collection`
+
+    The parent record in a tree-structure. See section
+    :ref:`general_concept_tree`.
+

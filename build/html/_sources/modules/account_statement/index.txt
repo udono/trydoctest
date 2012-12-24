@@ -1,0 +1,411 @@
+:tocdepth: 1
+
+
+
+.. _account_statement:
+
+Account Statement
+=================
+:Model Name: ``account.statement``
+:Base Module: :ref:`account_statement_module`
+
+:Menu:
+    :menuselection:`Financial --> Statements --> All Statement`
+
+    :menuselection:`Financial --> Statements --> Draft Statements`
+
+    :menuselection:`Financial --> Statements --> Posted Statements`
+
+    :menuselection:`Financial --> Statements --> Validated Statement`
+
+The *Account Statement*-model introduces the conception of ...
+
+.. _account_statement_fields:
+
+Fields
+------
+
+
+.. _account_statement_account_statement_balance:
+
+:guilabel:`Balance`:
+    :Internal Name: ``balance``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+
+    The *Balance*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_currency_digits:
+
+:guilabel:`Currency Digits`:
+    :Internal Name: ``currency_digits``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_integer`
+
+    The *Currency Digits*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_date:
+
+:guilabel:`Date`:
+    :Internal Name: ``date``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_date`
+
+    The *Date*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_end_balance:
+
+:guilabel:`End Balance`:
+    :Internal Name: ``end_balance``
+    :Type: :ref:`field_type_numeric`
+
+    The *End Balance*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_journal:
+
+:guilabel:`Journal`:
+    :Internal Name: ``journal``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_statement_journal`
+
+    The *Journal*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_move_lines:
+
+:guilabel:`Move Lines`:
+    :Internal Name: ``move_lines``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`account_move_line`
+
+    The *Move Lines*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_start_balance:
+
+:guilabel:`Start Balance`:
+    :Internal Name: ``start_balance``
+    :Type: :ref:`field_type_numeric`
+
+    The *Start Balance*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_state:
+
+:guilabel:`State`:
+    :Internal Name: ``state``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Draft`
+    * :guilabel:`Validated`
+    * :guilabel:`Canceled`
+    * :guilabel:`Posted`
+
+    The *State*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_lines:
+
+:guilabel:`Transactions`:
+    :Internal Name: ``lines``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`account_statement_line`
+
+    The *Transactions*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Account" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Account Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Statement" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+
+.. _account_statement_line:
+
+Account Statement Line
+======================
+:Model Name: ``account.statement.line``
+:Base Module: :ref:`account_statement_module`
+
+The *Account Statement Line*-model introduces the conception of ...
+
+.. _account_statement_line_fields:
+
+Fields
+------
+
+
+.. _account_statement_account_statement_line_account:
+
+:guilabel:`Account`:
+    :Internal Name: ``account``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+
+    The *Account*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_line_move:
+
+:guilabel:`Account Move`:
+    :Internal Name: ``move``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_move`
+
+    The *Account Move*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_line_amount:
+
+:guilabel:`Amount`:
+    :Internal Name: ``amount``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_numeric`
+
+    The *Amount*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_line_date:
+
+:guilabel:`Date`:
+    :Internal Name: ``date``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_date`
+
+    The *Date*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_line_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Type: :ref:`field_type_char`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_line_invoice:
+
+:guilabel:`Invoice`:
+    :Internal Name: ``invoice``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_invoice`
+
+    The *Invoice*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_line_party:
+
+:guilabel:`Party`:
+    :Internal Name: ``party``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`party_party`
+
+    The *Party*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Account" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Account Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+:ref:`res_user`\ s being member of :ref:`res_group` "Statement" have the
+following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+
+.. _account_statement_journal:
+
+Statement Journal
+=================
+:Model Name: ``account.statement.journal``
+:Base Module: :ref:`account_statement_module`
+
+:Menu:
+    :menuselection:`Financial --> Configuration --> Statements --> Statement
+    Journals`
+
+The *Statement Journal*-model introduces the conception of ...
+
+.. _account_statement_journal_fields:
+
+Fields
+------
+
+
+.. _account_statement_account_statement_journal_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_journal_currency:
+
+:guilabel:`Currency`:
+    :Internal Name: ``currency``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+
+    The *Currency*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_journal_journal:
+
+:guilabel:`Journal`:
+    :Internal Name: ``journal``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_journal`
+
+    The *Journal*-field is used to store ...
+
+
+
+
+.. _account_statement_account_statement_journal_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Account Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+

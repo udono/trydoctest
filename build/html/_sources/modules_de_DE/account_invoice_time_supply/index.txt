@@ -1,0 +1,27 @@
+
+
+
+
+
+#:after:account_invoice/index:section:xxx#
+
+
+
+.. _account_invoice_time_of_supply_start_field:
+
+:guilabel:`Beginn Lieferzeitraum`:
+    :Feldname: ``time_of_supply_start``
+    :Feldtyp: :ref:`field_type_date`
+    :Quellmodul: :ref:`account_invoice_time_supply_module`
+
+    Beginn Lieferzeitraum
+
+
+.. _account_invoice_time_of_supply_end_field:
+
+:guilabel:`Ende Lieferzeitraum`:
+    :Feldname: ``time_of_supply_end``
+    :Feldtyp: :ref:`field_type_date`
+    :Quellmodul: :ref:`account_invoice_time_supply_module`
+
+    Ende Lieferzeitraum

@@ -1,0 +1,31 @@
+
+
+
+
+
+#:after:account/index:section:xxx#
+
+
+
+.. _account_move_external_reference_field:
+
+:guilabel:`Externer Beleg`:
+    :Feldname: ``external_reference``
+    :Feldtyp: :ref:`field_type_char`
+    :Quellmodul: :ref:`account_move_external_reference_module`
+
+    Externer Beleg
+
+
+#:after:account/index:section:xxx#
+
+
+
+.. _account_move_line_external_reference_field:
+
+:guilabel:`Externer Beleg`:
+    :Feldname: ``external_reference``
+    :Feldtyp: :ref:`field_type_char`
+    :Quellmodul: :ref:`account_move_external_reference_module`
+
+    Externer Beleg

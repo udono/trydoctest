@@ -1,0 +1,6 @@
+.. _account_timeline_invoice_product_rule_module:
+
+===========================================================
+Platzhalter für Modul account_timeline_invoice_product_rule
+===========================================================
+:Modul Name: trytond_account_timeline_invoice_product_rule

@@ -1,0 +1,6 @@
+.. _account_de_skr03_gmbh_2011_timeline_module:
+
+=======================================================
+Deutscher Kontenrahmen SKR03 GmbH 2011 Gültigkeitsdauer
+=======================================================
+:Modul Name: trytond_account_de_skr03_gmbh_2011_timeline

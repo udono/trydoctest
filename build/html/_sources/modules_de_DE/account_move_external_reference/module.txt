@@ -1,0 +1,6 @@
+.. _account_move_external_reference_module:
+
+=======================================
+Buchhaltung Buchungssatz Externer Beleg
+=======================================
+:Modul Name: trytond_account_move_external_reference

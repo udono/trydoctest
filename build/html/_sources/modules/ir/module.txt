@@ -1,0 +1,11 @@
+.. _ir_module:
+
+==
+IR
+==
+:Module Name: trytond_ir
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

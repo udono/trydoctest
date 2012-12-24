@@ -1,0 +1,259 @@
+:tocdepth: 1
+
+
+
+.. _company_company:
+
+Company
+=======
+:Model Name: ``company.company``
+:Inherits from: :ref:`party_party`
+:Base Module: :ref:`company_module`
+
+:Menu:
+    :menuselection:`Party --> Configuration --> Companies`
+
+    :menuselection:`Party --> Configuration --> Companies --> Companies`
+
+The *Company*-model introduces the conception of ...
+
+.. _company_company_fields:
+
+Fields
+------
+
+
+.. _company_company_company_childs:
+
+:guilabel:`Children`:
+    :Internal Name: ``childs``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`company_company`
+
+    The children records in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _company_company_company_currency:
+
+:guilabel:`Currency`:
+    :Internal Name: ``currency``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`currency_currency`
+
+    The *Currency*-field is used to store ...
+
+
+
+
+.. _company_company_company_employees:
+
+:guilabel:`Employees`:
+    :Internal Name: ``employees``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`company_employee`
+
+    The *Employees*-field is used to store ...
+
+
+
+
+.. _company_company_company_footer:
+
+:guilabel:`Footer`:
+    :Internal Name: ``footer``
+    :Type: :ref:`field_type_text`
+
+    The *Footer*-field is used to store ...
+
+
+
+
+.. _company_company_company_header:
+
+:guilabel:`Header`:
+    :Internal Name: ``header``
+    :Type: :ref:`field_type_text`
+
+    The *Header*-field is used to store ...
+
+
+
+
+.. _company_company_company_hours_per_work_day:
+
+:guilabel:`Hours per Work Day`:
+    :Internal Name: ``hours_per_work_day``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+    :Base Module: :ref:`company_work_time_module`
+
+    The *Hours per Work Day*-field is used to store ...
+
+
+
+
+.. _company_company_company_hours_per_work_month:
+
+:guilabel:`Hours per Work Month`:
+    :Internal Name: ``hours_per_work_month``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+    :Base Module: :ref:`company_work_time_module`
+
+    The *Hours per Work Month*-field is used to store ...
+
+
+
+
+.. _company_company_company_hours_per_work_week:
+
+:guilabel:`Hours per Work Week`:
+    :Internal Name: ``hours_per_work_week``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+    :Base Module: :ref:`company_work_time_module`
+
+    The *Hours per Work Week*-field is used to store ...
+
+
+
+
+.. _company_company_company_hours_per_work_year:
+
+:guilabel:`Hours per Work Year`:
+    :Internal Name: ``hours_per_work_year``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+    :Base Module: :ref:`company_work_time_module`
+
+    The *Hours per Work Year*-field is used to store ...
+
+
+
+
+.. _company_company_company_parent:
+
+:guilabel:`Parent`:
+    :Internal Name: ``parent``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The parent record in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Party Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _company_company_config_init:
+
+Company Config Init
+===================
+:Model Name: ``company.company.config.init``
+:Base Module: :ref:`company_module`
+
+The *Company Config Init*-model introduces the conception of ...
+
+
+
+.. _company_employee:
+
+Employee
+========
+:Model Name: ``company.employee``
+:Inherits from: :ref:`party_party`
+:Base Module: :ref:`company_module`
+
+:Menu:
+    :menuselection:`Party --> Configuration --> Employees`
+
+The *Employee*-model introduces the conception of ...
+
+.. _company_employee_fields:
+
+Fields
+------
+
+
+.. _company_company_employee_company:
+
+:guilabel:`Company`:
+    :Internal Name: ``company``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`company_company`
+
+    The *Company*-field is used to store ...
+
+
+
+
+.. _company_company_employee_cost_price:
+
+:guilabel:`Cost Price`:
+    :Internal Name: ``cost_price``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+    :Base Module: :ref:`project_revenue_module`
+
+    Hourly cost price for this Employee
+
+
+
+
+.. _company_company_employee_cost_prices:
+
+:guilabel:`Cost Prices`:
+    :Internal Name: ``cost_prices``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`company_employee_cost_price`
+    :Base Module: :ref:`project_revenue_module`
+
+    List of hourly cost price over time
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Party Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+

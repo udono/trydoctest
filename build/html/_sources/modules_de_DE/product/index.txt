@@ -1,0 +1,958 @@
+:tocdepth: 1
+
+
+
+.. _product_product:
+
+Product
+=======
+:Model Name: ``product.product``
+:Inherits from: :ref:`product_template`
+:Base Module: :ref:`product_module`
+
+:Menu:
+    :menuselection:`Product --> Products`
+
+The *Product*-model introduces the conception of ...
+
+.. _product_product_fields:
+
+Fields
+------
+
+
+.. _product_product_product_code:
+
+:guilabel:`Code`:
+    :Internal Name: ``code``
+    :Type: :ref:`field_type_char`
+
+    The *Code*-field is used to store ...
+
+
+
+
+.. _product_product_product_locations:
+
+:guilabel:`Default Locations`:
+    :Internal Name: ``locations``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`stock_product_location`
+    :Base Module: :ref:`stock_product_location_module`
+
+    The *Default Locations*-field is used to store ...
+
+
+
+
+.. _product_product_product_description:
+
+:guilabel:`Description`:
+    :Internal Name: ``description``
+    :Type: :ref:`field_type_text`
+
+    The *Description*-field is used to store ...
+
+
+
+
+.. _product_product_product_forecast_quantity:
+
+:guilabel:`Forecast Quantity`:
+    :Internal Name: ``forecast_quantity``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+    :Base Module: :ref:`stock_module`
+
+    The *Forecast Quantity*-field is used to store ...
+
+
+
+
+.. _product_product_product_quantity:
+
+:guilabel:`Quantity`:
+    :Internal Name: ``quantity``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_float`
+    :Base Module: :ref:`stock_module`
+
+    The *Quantity*-field is used to store ...
+
+
+
+
+Wizards
+-------
+:guilabel:`Cost History`:
+    
+:guilabel:`Product by Location`:
+    
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Product Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _product_category:
+
+Product Category
+================
+:Model Name: ``product.category``
+:Base Module: :ref:`product_module`
+
+:Menu:
+    :menuselection:`Product --> Categories`
+
+    :menuselection:`Product --> Categories --> Categories`
+
+The *Product Category*-model introduces the conception of ...
+
+.. _product_category_fields:
+
+Fields
+------
+
+
+.. _product_product_category_account_cogs:
+
+:guilabel:`Account Cost of Goods Sold`:
+    :Internal Name: ``account_cogs``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_anglo_saxon_module`
+
+    The *Account Cost of Goods Sold*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_expense:
+
+:guilabel:`Account Expense`:
+    :Internal Name: ``account_expense``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_product_module`
+
+    The *Account Expense*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_revenue:
+
+:guilabel:`Account Revenue`:
+    :Internal Name: ``account_revenue``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_product_module`
+
+    The *Account Revenue*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_stock:
+
+:guilabel:`Account Stock`:
+    :Internal Name: ``account_stock``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    The *Account Stock*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_stock_customer:
+
+:guilabel:`Account Stock Customer`:
+    :Internal Name: ``account_stock_customer``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    The *Account Stock Customer*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_stock_lost_found:
+
+:guilabel:`Account Stock Lost and Found`:
+    :Internal Name: ``account_stock_lost_found``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    The *Account Stock Lost and Found*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_stock_supplier:
+
+:guilabel:`Account Stock Supplier`:
+    :Internal Name: ``account_stock_supplier``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    The *Account Stock Supplier*-field is used to store ...
+
+
+
+
+.. _product_product_category_childs:
+
+:guilabel:`Children`:
+    :Internal Name: ``childs``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`product_category`
+
+    The children records in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _product_product_category_customer_taxes:
+
+:guilabel:`Customer Taxes`:
+    :Internal Name: ``customer_taxes``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`account_tax`
+    :Base Module: :ref:`account_product_module`
+
+    The *Customer Taxes*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_journal_stock_customer:
+
+:guilabel:`Journal Stock Customer`:
+    :Internal Name: ``account_journal_stock_customer``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_journal`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    The *Journal Stock Customer*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_journal_stock_lost_found:
+
+:guilabel:`Journal Stock Lost and Found`:
+    :Internal Name: ``account_journal_stock_lost_found``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_journal`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    The *Journal Stock Lost and Found*-field is used to store ...
+
+
+
+
+.. _product_product_category_account_journal_stock_supplier:
+
+:guilabel:`Journal Stock Supplier`:
+    :Internal Name: ``account_journal_stock_supplier``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_journal`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    The *Journal Stock Supplier*-field is used to store ...
+
+
+
+
+.. _product_product_category_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _product_product_category_parent:
+
+:guilabel:`Parent`:
+    :Internal Name: ``parent``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_category`
+
+    The parent record in a tree-structure. See section
+    :ref:`general_concept_tree`.
+
+
+
+.. _product_product_category_supplier_taxes:
+
+:guilabel:`Supplier Taxes`:
+    :Internal Name: ``supplier_taxes``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`account_tax`
+    :Base Module: :ref:`account_product_module`
+
+    The *Supplier Taxes*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Product Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _product_template:
+
+Product Template
+================
+:Model Name: ``product.template``
+:Base Module: :ref:`product_module`
+
+The *Product Template*-model introduces the conception of ...
+
+.. _product_template_fields:
+
+Fields
+------
+
+
+.. _product_product_template_account_cogs:
+
+:guilabel:`Account Cost of Good Sold`:
+    :Internal Name: ``account_cogs``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_anglo_saxon_module`
+
+    This account will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_expense:
+
+:guilabel:`Account Expense`:
+    :Internal Name: ``account_expense``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_product_module`
+
+    This account will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_journal_stock_customer:
+
+:guilabel:`Account Journal Stock Customer`:
+    :Internal Name: ``account_journal_stock_customer``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_journal`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    This journal will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_journal_stock_lost_found:
+
+:guilabel:`Account Journal Stock Lost and Found`:
+    :Internal Name: ``account_journal_stock_lost_found``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_journal`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    This journal will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_journal_stock_supplier:
+
+:guilabel:`Account Journal Stock Supplier`:
+    :Internal Name: ``account_journal_stock_supplier``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_journal`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    This journal will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_revenue:
+
+:guilabel:`Account Revenue`:
+    :Internal Name: ``account_revenue``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_product_module`
+
+    This account will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_stock:
+
+:guilabel:`Account Stock`:
+    :Internal Name: ``account_stock``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    This account will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_stock_customer:
+
+:guilabel:`Account Stock Customer`:
+    :Internal Name: ``account_stock_customer``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    This account will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_stock_lost_found:
+
+:guilabel:`Account Stock Lost and Found`:
+    :Internal Name: ``account_stock_lost_found``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    This account will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_account_stock_supplier:
+
+:guilabel:`Account Stock Supplier`:
+    :Internal Name: ``account_stock_supplier``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`account_account`
+    :Base Module: :ref:`account_stock_continental_module`
+
+    This account will be used instead of the one defined on the category.
+
+
+
+
+.. _product_product_template_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _product_product_template_category:
+
+:guilabel:`Category`:
+    :Internal Name: ``category``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_category`
+
+    The *Category*-field is used to store ...
+
+
+
+
+.. _product_product_template_cost_price_method:
+
+:guilabel:`Cost Method`:
+    :Internal Name: ``cost_price_method``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Fixed`
+    * :guilabel:`Average`
+    * :guilabel:`FIFO`
+
+    The *Cost Method*-field is used to store ...
+
+
+
+
+.. _product_product_template_cost_price:
+
+:guilabel:`Cost Price`:
+    :Internal Name: ``cost_price``
+    :Type: :ref:`field_type_numeric`
+
+    The *Cost Price*-field is used to store ...
+
+
+
+
+.. _product_product_template_cost_price_uom:
+
+:guilabel:`Cost Price`:
+    :Internal Name: ``cost_price_uom``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+
+    The *Cost Price*-field is used to store ...
+
+
+
+
+.. _product_product_template_customer_taxes:
+
+:guilabel:`Customer Taxes`:
+    :Internal Name: ``customer_taxes``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`account_tax`
+    :Base Module: :ref:`account_product_module`
+
+    The *Customer Taxes*-field is used to store ...
+
+
+
+
+.. _product_product_template_default_uom:
+
+:guilabel:`Default UOM`:
+    :Internal Name: ``default_uom``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+
+    The *Default UOM*-field is used to store ...
+
+
+
+
+.. _product_product_template_delivery_time:
+
+:guilabel:`Delivery Time`:
+    :Internal Name: ``delivery_time``
+    :Type: :ref:`field_type_integer`
+    :Base Module: :ref:`sale_module`
+
+    In number of days
+
+
+
+
+.. _product_product_template_list_price_uom:
+
+:guilabel:`List Price`:
+    :Internal Name: ``list_price_uom``
+    :Attributes: :ref:`readonly`
+    :Type: :ref:`field_type_numeric`
+
+    The *List Price*-field is used to store ...
+
+
+
+
+.. _product_product_template_list_price:
+
+:guilabel:`List Price`:
+    :Internal Name: ``list_price``
+    :Type: :ref:`field_type_numeric`
+
+    The *List Price*-field is used to store ...
+
+
+
+
+.. _product_product_template_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _product_product_template_purchasable:
+
+:guilabel:`Purchasable`:
+    :Internal Name: ``purchasable``
+    :Type: :ref:`field_type_boolean`
+    :Base Module: :ref:`purchase_module`
+
+    The *Purchasable*-field is used to store ...
+
+
+
+
+.. _product_product_template_purchase_uom:
+
+:guilabel:`Purchase UOM`:
+    :Internal Name: ``purchase_uom``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+    :Base Module: :ref:`purchase_module`
+
+    The *Purchase UOM*-field is used to store ...
+
+
+
+
+.. _product_product_template_salable:
+
+:guilabel:`Salable`:
+    :Internal Name: ``salable``
+    :Type: :ref:`field_type_boolean`
+    :Base Module: :ref:`sale_module`
+
+    The *Salable*-field is used to store ...
+
+
+
+
+.. _product_product_template_sale_uom:
+
+:guilabel:`Sale UOM`:
+    :Internal Name: ``sale_uom``
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom`
+    :Base Module: :ref:`sale_module`
+
+    The *Sale UOM*-field is used to store ...
+
+
+
+
+.. _product_product_template_product_suppliers:
+
+:guilabel:`Suppliers`:
+    :Internal Name: ``product_suppliers``
+    :Type: :ref:`field_type_one2many`
+    :Relation Model: :ref:`purchase_product_supplier`
+    :Base Module: :ref:`purchase_module`
+
+    The *Suppliers*-field is used to store ...
+
+
+
+
+.. _product_product_template_supplier_taxes:
+
+:guilabel:`Supplier Taxes`:
+    :Internal Name: ``supplier_taxes``
+    :Type: :ref:`field_type_many2many`
+    :Relation Model: :ref:`account_tax`
+    :Base Module: :ref:`account_product_module`
+
+    The *Supplier Taxes*-field is used to store ...
+
+
+
+
+.. _product_product_template_type:
+
+:guilabel:`Type`:
+    :Internal Name: ``type``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_selection`
+
+
+    The following options are available:
+
+    * :guilabel:`Stockable`
+    * :guilabel:`Consumable`
+    * :guilabel:`Service`
+
+    The *Type*-field is used to store ...
+
+
+
+
+.. _product_product_template_account_category:
+
+:guilabel:`Use Category's accounts`:
+    :Internal Name: ``account_category``
+    :Type: :ref:`field_type_boolean`
+    :Base Module: :ref:`account_product_module`
+
+    Use the accounts defined on the category
+
+
+
+
+.. _product_product_template_taxes_category:
+
+:guilabel:`Use Category's Taxes`:
+    :Internal Name: ``taxes_category``
+    :Type: :ref:`field_type_boolean`
+    :Base Module: :ref:`account_product_module`
+
+    Use the taxes defined on the category
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Product Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _product_uom_category:
+
+Product uom category
+====================
+:Model Name: ``product.uom.category``
+:Base Module: :ref:`product_module`
+
+:Menu:
+    :menuselection:`Product --> Units of Measure --> Categories`
+
+The *Product uom category*-model introduces the conception of ...
+
+.. _product_uom_category_fields:
+
+Fields
+------
+
+
+.. _product_product_uom_category_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Product Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+
+
+
+.. _product_uom:
+
+Unit of measure
+===============
+:Model Name: ``product.uom``
+:Base Module: :ref:`product_module`
+
+:Menu:
+    :menuselection:`Product --> Units of Measure`
+
+The *Unit of measure*-model introduces the conception of ...
+
+.. _product_uom_fields:
+
+Fields
+------
+
+
+.. _product_product_uom_active:
+
+:guilabel:`Active`:
+    :Internal Name: ``active``
+    :Type: :ref:`field_type_boolean`
+
+    When not ticked the record is deactivated for future use. See section
+    :ref:`general_concept_active_field`.
+
+
+
+.. _product_product_uom_digits:
+
+:guilabel:`Display Digits`:
+    :Internal Name: ``digits``
+    :Type: :ref:`field_type_integer`
+
+    The *Display Digits*-field is used to store ...
+
+
+
+
+.. _product_product_uom_factor:
+
+:guilabel:`Factor`:
+    :Internal Name: ``factor``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The coefficient for the formula: coef (base unit) = 1 (this unit)
+
+
+
+
+.. _product_product_uom_name:
+
+:guilabel:`Name`:
+    :Internal Name: ``name``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Name*-field is used to store ...
+
+
+
+
+.. _product_product_uom_rate:
+
+:guilabel:`Rate`:
+    :Internal Name: ``rate``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The coefficient for the formula: 1 (base unit) = coef (this unit)
+
+
+
+
+.. _product_product_uom_rounding:
+
+:guilabel:`Rounding Precision`:
+    :Internal Name: ``rounding``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_float`
+
+    The *Rounding Precision*-field is used to store ...
+
+
+
+
+.. _product_product_uom_symbol:
+
+:guilabel:`Symbol`:
+    :Internal Name: ``symbol``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_char`
+
+    The *Symbol*-field is used to store ...
+
+
+
+
+.. _product_product_uom_category:
+
+:guilabel:`UOM Category`:
+    :Internal Name: ``category``
+    :Attributes: :ref:`required`
+    :Type: :ref:`field_type_many2one`
+    :Relation Model: :ref:`product_uom_category`
+
+    The *UOM Category*-field is used to store ...
+
+
+
+
+Access
+------
+The manipulation of records in this model is controlled by
+:ref:`ir_model_access` entries.
+:ref:`res_user`\ s being member of :ref:`res_group` "Product Administration"
+have the following access permissions:
+
+    :Read: allowed
+    :Write: allowed
+    :Create: allowed
+    :Delete: allowed
+
+
+All other :ref:`res_user`\ s have these access permissions:
+
+    :Read: allowed
+    :Write: forbidden
+    :Create: forbidden
+    :Delete: forbidden
+

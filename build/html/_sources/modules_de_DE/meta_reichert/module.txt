@@ -1,0 +1,6 @@
+.. _meta_reichert_module:
+
+============================
+Meta-Modul für Reichert GmbH
+============================
+:Modul Name: trytond_meta_reichert

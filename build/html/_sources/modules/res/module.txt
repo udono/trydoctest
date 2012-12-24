@@ -1,0 +1,11 @@
+.. _res_module:
+
+===
+Res
+===
+:Module Name: trytond_res
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

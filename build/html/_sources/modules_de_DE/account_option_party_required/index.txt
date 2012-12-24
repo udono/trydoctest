@@ -1,0 +1,34 @@
+
+
+
+
+
+#:after:account/index:section:xxx#
+
+
+
+.. _account_account_party_is_mandatory_field:
+
+:guilabel:`Partei erforderlich`:
+    :Feldname: ``party_is_mandatory``
+    :Feldtyp: :ref:`field_type_boolean`
+    :Quellmodul: :ref:`account_option_party_required_module`
+
+    Diese Option dann setzen, wenn bei Buchungszeilen, die dieses
+    Konto verwenden, die Angabe einer Partei erforderlich sein soll.
+
+
+#:after:account/index:section:xxx#
+
+
+
+.. _account_account_template_party_is_mandatory_field:
+
+:guilabel:`Partei erforderlich`:
+    :Feldname: ``party_is_mandatory``
+    :Feldtyp: :ref:`field_type_boolean`
+    :Eigenschaft: :ref:`readonly`
+    :Quellmodul: :ref:`account_option_party_required_module`
+
+    Diese Option dann setzen, wenn bei Buchungszeilen, die dieses
+    Konto verwenden, die Angabe einer Partei erforderlich sein soll.

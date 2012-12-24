@@ -1,0 +1,11 @@
+.. _account_module:
+
+=======
+Account
+=======
+:Module Name: trytond_account
+:Models:
+    .. toctree::
+       :maxdepth: 1
+
+       index 

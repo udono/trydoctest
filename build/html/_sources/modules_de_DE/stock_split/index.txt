@@ -1,0 +1,46 @@
+
+
+.. _stock_move_split_start:
+
+Split Move
+==========
+ :Modellname: ``stock.move.split.start``
+ :Basismodul: :ref:`stock_split_module`
+
+Das Modell *"Split Move"* ...
+
+
+.. _stock_move_split_start_fields:
+
+Felder
+------
+
+
+.. _stock_move_split_start_count_field:
+
+:guilabel:`Counts`:
+    :Feldname: ``count``
+    :Feldtyp: :ref:`field_type_integer`
+
+    The limit number of moves
+
+
+.. _stock_move_split_start_quantity_field:
+
+:guilabel:`Quantity`:
+    :Feldname: ``quantity``
+    :Feldtyp: :ref:`field_type_float`
+    :Eigenschaft: :ref:`required`
+
+    Quantity
+
+
+.. _stock_move_split_start_uom_field:
+
+:guilabel:`Uom`:
+    :Feldname: ``uom``
+    :Feldtyp: :ref:`field_type_many2one`
+    :Eigenschaft: :ref:`required`
+    :Zielmodell: :ref:`product_uom`
+
+    Uom

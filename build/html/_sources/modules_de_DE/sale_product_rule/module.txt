@@ -1,0 +1,6 @@
+.. _sale_product_rule_module:
+
+=====================
+Verkauf Artikel Regel
+=====================
+:Modul Name: trytond_sale_product_rule
