@@ -1,6 +1,0 @@
-.. _ldap_authentication_module:
-
-===================
-LDAP Authentication
-===================
-:Module Name: trytond_ldap_authentication

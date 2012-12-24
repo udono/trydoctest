@@ -1,6 +1,0 @@
-.. _account_tax_code_type_module:
-
-=================================
-Buchhaltung Steuerkennziffern Typ
-=================================
-:Modul Name: trytond_account_tax_code_type

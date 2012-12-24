@@ -1,6 +1,0 @@
-.. _analytic_purchase_module:
-
-=================
-Analytic Purchase
-=================
-:Module Name: trytond_analytic_purchase

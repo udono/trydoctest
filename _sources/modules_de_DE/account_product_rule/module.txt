@@ -1,6 +1,0 @@
-.. _account_product_rule_module:
-
-=========================
-Buchhaltung Artikel Regel
-=========================
-:Modul Name: trytond_account_product_rule

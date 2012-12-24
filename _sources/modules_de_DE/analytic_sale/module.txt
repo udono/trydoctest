@@ -1,6 +1,0 @@
-.. _analytic_sale_module:
-
-=============
-Analytic Sale
-=============
-:Module Name: trytond_analytic_sale

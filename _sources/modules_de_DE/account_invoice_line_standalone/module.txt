@@ -1,6 +1,0 @@
-.. _account_invoice_line_standalone_module:
-
-===============================
-Account Invoice Line Standalone
-===============================
-:Module Name: trytond_account_invoice_line_standalone

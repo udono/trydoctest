@@ -1,6 +1,0 @@
-.. _account_invoice_tax_rule_product_type_module:
-
-===================================
-Fakturierung Steuerregel Artikeltyp
-===================================
-:Modul Name: trytond_account_invoice_tax_rule_product_type

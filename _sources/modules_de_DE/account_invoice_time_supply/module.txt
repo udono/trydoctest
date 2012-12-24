@@ -1,6 +1,0 @@
-.. _account_invoice_time_supply_module:
-
-===========================
-Fakturierung Lieferzeitraum
-===========================
-:Modul Name: trytond_account_invoice_time_supply

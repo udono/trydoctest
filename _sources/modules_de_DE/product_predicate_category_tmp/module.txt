@@ -1,6 +1,0 @@
-.. _product_predicate_category_tmp_module:
-
-==============================================
-Name to specify for product_predicate_category
-==============================================
-:Modul Name: trytond_product_predicate_category_tmp

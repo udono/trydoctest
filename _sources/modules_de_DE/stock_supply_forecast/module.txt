@@ -1,6 +1,0 @@
-.. _stock_supply_forecast_module:
-
-=====================
-Stock Supply Forecast
-=====================
-:Module Name: trytond_stock_supply_forecast

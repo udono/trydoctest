@@ -1,6 +1,0 @@
-.. _account_move_invoice_module:
-
-=================================
-Buchhaltung Buchungssatz Rechnung
-=================================
-:Modul Name: trytond_account_move_invoice

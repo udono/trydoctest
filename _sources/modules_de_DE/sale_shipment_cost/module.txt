@@ -1,6 +1,0 @@
-.. _sale_shipment_cost_module:
-
-==================
-Sale Shipment Cost
-==================
-:Module Name: trytond_sale_shipment_cost

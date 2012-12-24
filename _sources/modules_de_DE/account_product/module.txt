@@ -1,6 +1,0 @@
-.. _account_product_module:
-
-===============
-Account Product
-===============
-:Module Name: trytond_account_product

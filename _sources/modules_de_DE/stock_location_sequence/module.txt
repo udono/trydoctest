@@ -1,6 +1,0 @@
-.. _stock_location_sequence_module:
-
-=======================
-Stock Location Sequence
-=======================
-:Module Name: trytond_stock_location_sequence

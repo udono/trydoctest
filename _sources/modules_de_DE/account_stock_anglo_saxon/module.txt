@@ -1,6 +1,0 @@
-.. _account_stock_anglo_saxon_module:
-
-=========================
-Account Stock Anglo-Saxon
-=========================
-:Module Name: trytond_account_stock_anglo_saxon

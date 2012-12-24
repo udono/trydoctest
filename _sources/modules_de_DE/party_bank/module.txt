@@ -1,6 +1,0 @@
-.. _party_bank_module:
-
-=======================
-Partei Bankverbindungen
-=======================
-:Modul Name: trytond_party_bank

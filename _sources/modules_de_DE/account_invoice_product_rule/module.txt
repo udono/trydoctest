@@ -1,6 +1,0 @@
-.. _account_invoice_product_rule_module:
-
-==========================
-Fakturierung Artikel Regel
-==========================
-:Modul Name: trytond_account_invoice_product_rule

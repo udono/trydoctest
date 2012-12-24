@@ -1,6 +1,0 @@
-.. _party_event_module:
-
-=================
-Partei Ereignisse
-=================
-:Modul Name: trytond_party_event

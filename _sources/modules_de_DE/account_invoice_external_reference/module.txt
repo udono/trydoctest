@@ -1,6 +1,0 @@
-.. _account_invoice_external_reference_module:
-
-===========================
-Fakturierung Externer Beleg
-===========================
-:Modul Name: trytond_account_invoice_external_reference

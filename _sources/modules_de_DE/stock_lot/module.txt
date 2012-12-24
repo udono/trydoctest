@@ -1,6 +1,0 @@
-.. _stock_lot_module:
-
-=======================
-Lager Chargenverwaltung
-=======================
-:Modul Name: trytond_stock_lot

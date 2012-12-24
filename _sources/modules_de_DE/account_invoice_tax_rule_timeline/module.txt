@@ -1,6 +1,0 @@
-.. _account_invoice_tax_rule_timeline_module:
-
-============================================
-Fakturierung Steuerregel Gültigkeitszeitraum
-============================================
-:Modul Name: trytond_account_invoice_tax_rule_timeline

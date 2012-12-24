@@ -1,9 +1,0 @@
-.. _party_type_module:
-
-==========
-Partei Typ
-==========
-:Modul Name: trytond_party_type
-
-Das *Partei-Typ-Modul* führt das Konzept zur Unterscheidung Parteien in die
-Typen *Person* und *Organisation* ein.
